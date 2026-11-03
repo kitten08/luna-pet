@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "provider": "Hugging Face ZeroGPU",
+  "space": "zerogpu-aoti/wan2-2-fp8da-aoti-faster",
+  "model": "Wan 2.2 I2V A14B fast 4-step",
+  "reference_sha256": "b1af79cfe0ed054561510fb7371f6258e6bbe94d5c0a9b5782ad58b8f575fe67",
+  "paid_spend": 0,
+  "clips": [
+    {
+      "action_id": "new-01",
+      "name": "微笑挥手打招呼",
+      "file": "微笑挥手-免费样片-v1.mp4",
+      "sha256": "7972df65e923cbae6a4e63c1648a6bf5f0856c16a89b835860b3bc450029fdbd",
+      "outfit": "original",
+      "seed": 1808,
+      "width": 560,
+      "height": 832,
+      "fps": 16.0,
+      "frames": 81,
+      "duration_seconds": 5.0625,
+      "has_alpha": false,
+      "steps": 4,
+      "guidance_scale": 1,
+      "guidance_scale_2": 1,
+      "randomize_seed": false,
+      "date": "2026-11-04",
+      "status": "sample_available_full_action_pending",
+      "visual_review": {
+        "method": "All frames decoded; visual spot-check of start, one-second keyframes and end, plus full-resolution hand inspection for wave.",
+        "reviewed_frame_indices": [
+          0,
+          16,
+          32,
+          48,
+          64,
+          80
+        ],
+        "result": "sample_only",
+        "notes": "可见抬手、五指张开、挥手和收势；人物整体稳定。首尾未逐像素对齐，不作为无缝循环。"
+      },
+      "full_action_requirements_remaining": [
+        "10秒编排",
+        "统一首尾站姿衔接",
+        "透明背景精修",
+        "其他三套服装"
+      ]
+    },
+    {
+      "action_id": "new-02",
+      "name": "双手托腮开心大笑",
+      "file": "托腮开心笑-免费样片-v1.mp4",
+      "sha256": "4aadbc2e662a9cbd301762d9acd0414b9c5256786da2ebbfd98f002112af4be5",
+      "outfit": "original",
+      "seed": 1809,
+      "width": 560,
+      "height": 832,
+      "fps": 16.0,
+      "frames": 81,
+      "duration_seconds": 5.0625,
+      "has_alpha": false,
+      "steps": 4,
+      "guidance_scale": 1,
+      "guidance_scale_2": 1,
+      "randomize_seed": false,
+      "date": "2026-11-04",
+      "status": "sample_available_full_action_pending",
+      "visual_review": {
+        "method": "All frames decoded; visual spot-check of start, one-second keyframes and end, plus full-resolution hand inspection for wave.",
+        "reviewed_frame_indices": [
+          0,
+          16,
+          32,
+          48,
+          64,
+          80
+        ],
+        "result": "sample_only",
+        "notes": "可见双手托腮、闭眼大笑和收手；笑容与脸部有生成式变化，仍为样片。"
+      },
+      "full_action_requirements_remaining": [
+        "10秒编排",
+        "统一首尾站姿衔接",
+        "透明背景精修",
+        "其他三套服装"
+      ]
+    },
+    {
+      "action_id": "new-03",
+      "name": "双食指相对害羞",
+      "file": "双食指害羞-免费样片-v1.mp4",
+      "sha256": "b2541aefd492bf05d98eb4b89e3950b8c6e49af9e8f5b46ad9e7b9b3aa246b61",
+      "outfit": "original",
+      "seed": 1810,
+      "width": 560,
+      "height": 832,
+      "fps": 16.0,
+      "frames": 81,
+      "duration_seconds": 5.0625,
+      "has_alpha": false,
+      "steps": 4,
+      "guidance_scale": 1,
+      "guidance_scale_2": 1,
+      "randomize_seed": false,
+      "date": "2026-11-04",
+      "status": "sample_available_full_action_pending",
+      "visual_review": {
+        "method": "All frames decoded; visual spot-check of start, one-second keyframes and end, plus full-resolution hand inspection for wave.",
+        "reviewed_frame_indices": [
+          0,
+          16,
+          32,
+          48,
+          64,
+          80
+        ],
+        "result": "sample_only",
+        "notes": "可见双手抬起、食指尖相触与歪头眨眼；食指方向呈斜向，后续正式版需进一步约束手势。"
+      },
+      "full_action_requirements_remaining": [
+        "10秒编排",
+        "统一首尾站姿衔接",
+        "透明背景精修",
+        "其他三套服装"
+      ]
+    },
+    {
+      "action_id": "new-04",
+      "name": "抱胸鼓嘴傲娇",
+      "file": "抱胸鼓嘴-免费样片-v1.mp4",
+      "sha256": "682daffc89a0d16815e0e292125ea3410c9b76892b05216235182749654a7594",
+      "outfit": "original",
+      "seed": 1811,
+      "width": 560,
+      "height": 832,
+      "fps": 16.0,
+      "frames": 81,
+      "duration_seconds": 5.0625,
+      "has_alpha": false,
+      "steps": 4,
+      "guidance_scale": 1,
+      "guidance_scale_2": 1,
+      "randomize_seed": false,
+      "date": "2026-11-04",
+      "status": "sample_available_full_action_pending",
+      "visual_review": {
+        "method": "All frames decoded; visual spot-check of start, one-second keyframes and end, plus full-resolution hand inspection for wave.",
+        "reviewed_frame_indices": [
+          0,
+          16,
+          32,
+          48,
+          64,
+          80
+        ],
+        "result": "sample_only",
+        "notes": "可见抱胸、侧头和短暂嘟嘴，之后表情较快转为微笑；正式版需延长鼓腮表情。"
+      },
+      "full_action_requirements_remaining": [
+        "10秒编排",
+        "统一首尾站姿衔接",
+        "透明背景精修",
+        "其他三套服装"
+      ]
+    }
+  ],
+  "full_10_second_actions_completed": 0,
+  "generation_blocker": {
+    "code": "daily_zerogpu_limit",
+    "observed": "2026-11-04",
+    "message": "You've hit your daily ZeroGPU limit",
+    "failed_action_id": "new-05",
+    "failed_seed": 1812,
+    "retry_policy": "Wait for normal account quota reset; never purchase, switch account or evade limits."
+  }
+}

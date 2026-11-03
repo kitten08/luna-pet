@@ -1,0 +1,1578 @@
+{
+  "schema_version": 2,
+  "purpose": "用户要求的真实视频动画制作；非现有网格动画的导出",
+  "source_of_choreography": "仅用户粘贴附件、新增九个动作和睡眠三段补充；未使用 GitHub 动作配置",
+  "attachment_count": 105,
+  "new_action_count": 9,
+  "sleep_action_count": 3,
+  "total_action_entries": 117,
+  "video_files_generated": 4,
+  "full_10_second_actions_completed": 0,
+  "generation_results": {
+    "schema_version": 1,
+    "provider": "Hugging Face ZeroGPU",
+    "space": "zerogpu-aoti/wan2-2-fp8da-aoti-faster",
+    "model": "Wan 2.2 I2V A14B fast 4-step",
+    "reference_sha256": "b1af79cfe0ed054561510fb7371f6258e6bbe94d5c0a9b5782ad58b8f575fe67",
+    "paid_spend": 0,
+    "clips": [
+      {
+        "action_id": "new-01",
+        "name": "微笑挥手打招呼",
+        "file": "微笑挥手-免费样片-v1.mp4",
+        "sha256": "7972df65e923cbae6a4e63c1648a6bf5f0856c16a89b835860b3bc450029fdbd",
+        "outfit": "original",
+        "seed": 1808,
+        "width": 560,
+        "height": 832,
+        "fps": 16.0,
+        "frames": 81,
+        "duration_seconds": 5.0625,
+        "has_alpha": false,
+        "steps": 4,
+        "guidance_scale": 1,
+        "guidance_scale_2": 1,
+        "randomize_seed": false,
+        "date": "2026-11-04",
+        "status": "sample_available_full_action_pending",
+        "visual_review": {
+          "method": "All frames decoded; visual spot-check of start, one-second keyframes and end, plus full-resolution hand inspection for wave.",
+          "reviewed_frame_indices": [
+            0,
+            16,
+            32,
+            48,
+            64,
+            80
+          ],
+          "result": "sample_only",
+          "notes": "可见抬手、五指张开、挥手和收势；人物整体稳定。首尾未逐像素对齐，不作为无缝循环。"
+        },
+        "full_action_requirements_remaining": [
+          "10秒编排",
+          "统一首尾站姿衔接",
+          "透明背景精修",
+          "其他三套服装"
+        ]
+      },
+      {
+        "action_id": "new-02",
+        "name": "双手托腮开心大笑",
+        "file": "托腮开心笑-免费样片-v1.mp4",
+        "sha256": "4aadbc2e662a9cbd301762d9acd0414b9c5256786da2ebbfd98f002112af4be5",
+        "outfit": "original",
+        "seed": 1809,
+        "width": 560,
+        "height": 832,
+        "fps": 16.0,
+        "frames": 81,
+        "duration_seconds": 5.0625,
+        "has_alpha": false,
+        "steps": 4,
+        "guidance_scale": 1,
+        "guidance_scale_2": 1,
+        "randomize_seed": false,
+        "date": "2026-11-04",
+        "status": "sample_available_full_action_pending",
+        "visual_review": {
+          "method": "All frames decoded; visual spot-check of start, one-second keyframes and end, plus full-resolution hand inspection for wave.",
+          "reviewed_frame_indices": [
+            0,
+            16,
+            32,
+            48,
+            64,
+            80
+          ],
+          "result": "sample_only",
+          "notes": "可见双手托腮、闭眼大笑和收手；笑容与脸部有生成式变化，仍为样片。"
+        },
+        "full_action_requirements_remaining": [
+          "10秒编排",
+          "统一首尾站姿衔接",
+          "透明背景精修",
+          "其他三套服装"
+        ]
+      },
+      {
+        "action_id": "new-03",
+        "name": "双食指相对害羞",
+        "file": "双食指害羞-免费样片-v1.mp4",
+        "sha256": "b2541aefd492bf05d98eb4b89e3950b8c6e49af9e8f5b46ad9e7b9b3aa246b61",
+        "outfit": "original",
+        "seed": 1810,
+        "width": 560,
+        "height": 832,
+        "fps": 16.0,
+        "frames": 81,
+        "duration_seconds": 5.0625,
+        "has_alpha": false,
+        "steps": 4,
+        "guidance_scale": 1,
+        "guidance_scale_2": 1,
+        "randomize_seed": false,
+        "date": "2026-11-04",
+        "status": "sample_available_full_action_pending",
+        "visual_review": {
+          "method": "All frames decoded; visual spot-check of start, one-second keyframes and end, plus full-resolution hand inspection for wave.",
+          "reviewed_frame_indices": [
+            0,
+            16,
+            32,
+            48,
+            64,
+            80
+          ],
+          "result": "sample_only",
+          "notes": "可见双手抬起、食指尖相触与歪头眨眼；食指方向呈斜向，后续正式版需进一步约束手势。"
+        },
+        "full_action_requirements_remaining": [
+          "10秒编排",
+          "统一首尾站姿衔接",
+          "透明背景精修",
+          "其他三套服装"
+        ]
+      },
+      {
+        "action_id": "new-04",
+        "name": "抱胸鼓嘴傲娇",
+        "file": "抱胸鼓嘴-免费样片-v1.mp4",
+        "sha256": "682daffc89a0d16815e0e292125ea3410c9b76892b05216235182749654a7594",
+        "outfit": "original",
+        "seed": 1811,
+        "width": 560,
+        "height": 832,
+        "fps": 16.0,
+        "frames": 81,
+        "duration_seconds": 5.0625,
+        "has_alpha": false,
+        "steps": 4,
+        "guidance_scale": 1,
+        "guidance_scale_2": 1,
+        "randomize_seed": false,
+        "date": "2026-11-04",
+        "status": "sample_available_full_action_pending",
+        "visual_review": {
+          "method": "All frames decoded; visual spot-check of start, one-second keyframes and end, plus full-resolution hand inspection for wave.",
+          "reviewed_frame_indices": [
+            0,
+            16,
+            32,
+            48,
+            64,
+            80
+          ],
+          "result": "sample_only",
+          "notes": "可见抱胸、侧头和短暂嘟嘴，之后表情较快转为微笑；正式版需延长鼓腮表情。"
+        },
+        "full_action_requirements_remaining": [
+          "10秒编排",
+          "统一首尾站姿衔接",
+          "透明背景精修",
+          "其他三套服装"
+        ]
+      }
+    ],
+    "full_10_second_actions_completed": 0,
+    "generation_blocker": {
+      "code": "daily_zerogpu_limit",
+      "observed": "2026-11-04",
+      "message": "You've hit your daily ZeroGPU limit",
+      "failed_action_id": "new-05",
+      "failed_seed": 1812,
+      "retry_policy": "Wait for normal account quota reset; never purchase, switch account or evade limits."
+    }
+  },
+  "generation_policy": {
+    "excluded_providers": [
+      "Runway"
+    ],
+    "media_type": "genuine_continuous_video",
+    "disallow_still_warp_substitution": true,
+    "maximum_paid_spend": 0,
+    "allow_paid_calls": false
+  },
+  "provider_access": {
+    "provider": "Hugging Face ZeroGPU",
+    "status": "daily_free_quota_exhausted_after_four_samples",
+    "space": "zerogpu-aoti/wan2-2-fp8da-aoti-faster",
+    "space_url": "https://huggingface.co/spaces/zerogpu-aoti/wan2-2-fp8da-aoti-faster",
+    "api_url": "https://zerogpu-aoti-wan2-2-fp8da-aoti-faster.hf.space",
+    "authenticated": true,
+    "cost_policy": {
+      "maximum_paid_spend": 0,
+      "allow_paid_calls": false,
+      "allow_subscription_purchase": false
+    },
+    "last_attempt": {
+      "date": "2026-11-04",
+      "action": "握拳含泪委屈",
+      "action_id": "new-05",
+      "duration_seconds": 5,
+      "source_fps": 16,
+      "inference_steps": 4,
+      "seed": 1812,
+      "result": "daily_zerogpu_limit",
+      "error_message": "You've hit your daily ZeroGPU limit",
+      "video_files_generated": 4
+    },
+    "next_step": "额度正常重置后继续 new-05；完整10秒及睡眠三段需要支持10秒或可控续接的免费方案，不能用减速复制代替。",
+    "limitations": [
+      "该公开演示单段最长5秒；10秒完整动作需要另行确认支持的免费生成或续接方式。",
+      "公开免费额度受账号、排队及每日GPU运行时间限制，不能保证一次完成117个动作。"
+    ],
+    "quota_documentation": "https://huggingface.co/docs/hub/spaces-zerogpu",
+    "authenticated_parent_page_confirmed": true,
+    "browser_handoff": {
+      "tab_id": "7",
+      "url": "https://huggingface.co/spaces/zerogpu-aoti/wan2-2-fp8da-aoti-faster",
+      "reference_image_uploaded": true,
+      "settings_prepared": true,
+      "next_action_id": "new-05"
+    }
+  },
+  "sleep_transition_contract": {
+    "character_adaptation": "沿用原始棕发女孩的脸、长发、服装与饰品，不增加蓝发、鲸尾或原图不存在的呆毛。坐姿时长发和裙摆自然垂落，双手在脸侧作枕；不将头发变成尾巴或被子。",
+    "clarifications": [
+      "睡眠循环中的‘禁止闭眼’按上下文纠正为‘禁止睁眼’，全程闭眼。",
+      "睡眠循环中的‘禁止循环’按上下文理解为禁止重复入睡、起身等大动作；片段本身必须能够无缝循环。",
+      "睡觉-开始不适用‘每个动作结束恢复站姿’通用约定，结束必须保持睡姿。",
+      "睡眠循环不适用通用自然眨眼要求，眼睛始终闭合。",
+      "只有睡眠循环出现两三个半透明小 Zzz，开始与起来均不得出现。"
+    ],
+    "anchors": [
+      {
+        "id": "standing-front",
+        "description": "原始棕发女孩标准正面站姿，双脚并拢、双臂自然下垂、睁眼平视，干净画面。",
+        "status": "reference_available"
+      },
+      {
+        "id": "sleep-curled",
+        "description": "在原位置蜷坐，膝盖收在身前，双手叠合垫在脸侧，头轻靠手背，双眼闭合，长发与裙摆自然落在身侧，无 Zzz；该姿势关键帧需要先生成并验收，当前不是已有视频帧。",
+        "status": "not_generated"
+      }
+    ],
+    "actions": [
+      {
+        "id": "sleep-start",
+        "name": "睡觉-开始",
+        "source": "user_sleep_followup",
+        "duration_seconds": 10,
+        "status": "awaiting_generation",
+        "start_anchor": "standing-front",
+        "end_anchor": "sleep-curled",
+        "start_eyes": "open",
+        "end_eyes": "closed",
+        "return_to_standing": false,
+        "loopable": false,
+        "zzz_allowed": false,
+        "timeline": [
+          {
+            "start": 0,
+            "end": 2,
+            "description": "首帧标准正面站立，随后张嘴打哈欠、眼角泛泪，双臂上举伸懒腰；手指与头发均不出画。"
+          },
+          {
+            "start": 2,
+            "end": 4,
+            "description": "双眼慢慢完全闭合，双臂收回，膝盖弯曲，身体重心平稳下沉，长发随重力自然跟随。"
+          },
+          {
+            "start": 4,
+            "end": 7,
+            "description": "在原处缓慢蜷坐，膝盖收于身前，双手叠合垫在脸侧，头轻靠手背；保持原有服装自然形态。"
+          },
+          {
+            "start": 7,
+            "end": 10,
+            "description": "固定睡姿，只保留极微弱呼吸；最后一帧保持共同睡姿关键帧，绝不起身或回站姿。"
+          }
+        ],
+        "prompt_en": "Animate the exact brown-haired chibi girl in the original reference, preserving her facial identity, beauty mark, long brown hair, necklace, earrings, outfit and illustration finish. Use genuine continuous animated body motion, not a warped still image. Locked camera, fixed framing, constant character scale, same floor location, no lateral drift, no cuts or zoom. Keep her entire body, hair, hands and shoes within safe frame margins. Use the appropriate supplied start and end keyframes; do not change her anatomy or invent a tail. One uninterrupted ten-second full-body animation. First frame: the exact relaxed front-facing standing reference pose, eyes open, both arms down, feet together. 0-2 seconds: she yawns with tiny watery eyes and raises both arms into a gentle stretch. 2-4 seconds: her eyelids grow heavy and close fully, her arms lower and her knees bend as her center of gravity slowly descends. 4-7 seconds: she settles into a compact curled seated sleeping pose at the same location, knees drawn in front, both hands gently stacked beside her cheek as a pillow, her head resting on her hands. Her long hair and existing skirt drape naturally. 7-10 seconds: remain in this exact curled sleeping pose, eyes fully closed, only extremely subtle breathing. End on the shared curled-sleep keyframe and stay asleep. Do not stand back up or return to the opening pose. No Zzz, letters, icons, props or added anatomy at any time.",
+        "outfit": "original",
+        "reference_image": "reference-original.png"
+      },
+      {
+        "id": "sleep-loop",
+        "name": "睡眠循环",
+        "source": "user_sleep_followup",
+        "duration_seconds": 10,
+        "status": "awaiting_generation",
+        "start_anchor": "sleep-curled",
+        "end_anchor": "sleep-curled",
+        "start_eyes": "closed",
+        "end_eyes": "closed",
+        "return_to_standing": false,
+        "loopable": true,
+        "zzz_allowed": true,
+        "zzz_at_endpoints": false,
+        "timeline": [
+          {
+            "start": 0,
+            "end": 1,
+            "description": "使用共同睡姿关键帧，保持蜷坐睡姿静止，双眼始终闭合，没有 Zzz。"
+          },
+          {
+            "start": 1,
+            "end": 4,
+            "description": "缓慢吸气，胸腔与肩线只有极轻微起伏；第一个半透明小 Zzz 在头顶出现并缓慢上升。"
+          },
+          {
+            "start": 4,
+            "end": 7,
+            "description": "缓慢呼气，身体回到最低点；另外一至两个小 Zzz 依次出现，缓慢上升，位置不遮脸。"
+          },
+          {
+            "start": 7,
+            "end": 9,
+            "description": "全部 Zzz 逐个淡出，9 秒前完全消失；继续轻微呼吸，不改变手、腿、头部的接触位置。"
+          },
+          {
+            "start": 9,
+            "end": 10,
+            "description": "呼吸自然回到起始相位，最后一帧与第一帧像素重合；不能靠瞬间跳切复位或重复入睡动作衔接。"
+          }
+        ],
+        "prompt_en": "Animate the exact brown-haired chibi girl in the original reference, preserving her facial identity, beauty mark, long brown hair, necklace, earrings, outfit and illustration finish. Use genuine continuous animated body motion, not a warped still image. Locked camera, fixed framing, constant character scale, same floor location, no lateral drift, no cuts or zoom. Keep her entire body, hair, hands and shoes within safe frame margins. Use the appropriate supplied start and end keyframes; do not change her anatomy or invent a tail. Create one seamless ten-second sleeping loop anchored by the identical supplied curled-sleep image at both endpoints. She is already asleep in a curled seated pose, knees drawn up, both hands stacked under her cheek, eyes completely closed. Keep the same body silhouette, head, hand and knee contact positions, camera and location throughout. 0-1 seconds: rest still with no lettering. 1-4 seconds: one extremely gentle inhale lifts the chest and shoulders almost imperceptibly; one tiny translucent Zzz appears above her head and drifts slowly upward. 4-7 seconds: she exhales softly and returns to the lower breathing position; one or two additional tiny translucent Zzz marks appear in sequence and drift upward. 7-9 seconds: every Zzz fades away completely. 9-10 seconds: breathing smoothly reaches the identical initial phase. The very last frame matches the very first frame exactly, including the plain background, sleeping silhouette, closed eyes and absence of Zzz. She never opens her eyes, wakes up, sits higher, stands or repeats the falling-asleep action. No other text, icons or props.",
+        "outfit": "original",
+        "reference_image": "reference-original.png"
+      },
+      {
+        "id": "sleep-wake",
+        "name": "睡觉起来",
+        "source": "user_sleep_followup",
+        "duration_seconds": 10,
+        "status": "awaiting_generation",
+        "start_anchor": "sleep-curled",
+        "end_anchor": "standing-front",
+        "start_eyes": "closed",
+        "end_eyes": "open",
+        "return_to_standing": true,
+        "loopable": false,
+        "zzz_allowed": false,
+        "timeline": [
+          {
+            "start": 0,
+            "end": 4,
+            "description": "首帧使用共同睡姿关键帧，蜷坐闭眼，只有极微弱呼吸；不得提前站起。"
+          },
+          {
+            "start": 4,
+            "end": 6,
+            "description": "慢慢睁眼，双手离开脸侧后撑地，上半身缓慢抬起，头发自然滑落。"
+          },
+          {
+            "start": 6,
+            "end": 8,
+            "description": "双臂上举伸懒腰，腰背小幅后展，随后收臂保持平衡，双腿发力平稳起身；无漂浮起身或突然换姿。"
+          },
+          {
+            "start": 8,
+            "end": 10,
+            "description": "原处站稳，双脚并拢，双臂自然垂下，睁眼平视；发丝和衣摆轻微回落后收住，最后一帧回到标准正面站姿。"
+          }
+        ],
+        "prompt_en": "Animate the exact brown-haired chibi girl in the original reference, preserving her facial identity, beauty mark, long brown hair, necklace, earrings, outfit and illustration finish. Use genuine continuous animated body motion, not a warped still image. Locked camera, fixed framing, constant character scale, same floor location, no lateral drift, no cuts or zoom. Keep her entire body, hair, hands and shoes within safe frame margins. Use the appropriate supplied start and end keyframes; do not change her anatomy or invent a tail. One uninterrupted ten-second waking animation. Begin with the exact shared curled-sleep keyframe: seated low at the original location, knees drawn up, both hands stacked beneath her cheek, head resting on them, eyes closed, hair and skirt draped naturally. 0-4 seconds: remain asleep in that pose with only extremely subtle breathing. 4-6 seconds: her eyes slowly open; she lowers her hands to brace lightly on the ground and slowly lifts her upper body. 6-8 seconds: she raises her arms in a relaxed stretch with a small backward extension, then uses her knees and legs to stand up naturally at the same floor position, maintaining balance. 8-10 seconds: she settles into the exact standard front-facing standing reference pose, feet together, both arms resting at her sides, eyes open and looking forward. Hair and fabric finish their follow-through and settle. Finish fully standing and calm. No Zzz, letters, icons, props or added anatomy at any time.",
+        "outfit": "original",
+        "reference_image": "reference-original.png"
+      }
+    ],
+    "validation_requirements": [
+      "入睡结束帧、循环起止帧、醒来开始帧必须使用同一张已验收睡姿关键帧；目前该关键帧未生成。",
+      "站姿开始与醒来结束使用统一站姿参考；角色大小、镜头、地面锚点保持一致。",
+      "循环片段生成后必须做逐帧比对，确认首尾相位、轮廓、背景、透明边缘及 Zzz 状态一致；提示词本身不能证明无缝。",
+      "循环接缝附近的运动速度也要连续，不得用跳切复位掩盖不同姿势。",
+      "每套衣服单独生成与验收对应的共享睡姿关键帧，不跨服装混用。"
+    ]
+  },
+  "actions": [
+    {
+      "id": "attached-001",
+      "name": "原地小憩沉睡",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "原地小憩沉睡\n动作概述\nQ版蓝发女仆开始犯困，眼睑逐渐闭合，头部自然下垂轻微低垂，身体重心轻微下沉至打瞌睡姿势。头顶向上冒出两个三个“Zzz”气泡。身体如漂浮在水面般进行深度调整的上下微浮，检查海洋生物属性。头部和底部均在画幅安全，全程居中，不另外。\n\n按秒分割画面\n\n0~3秒：双眼缓缓闭合，头微微下一点，重心微微下沉，表现出困意。\n3~7秒：像漂浮在水中极缓慢上下微微波动，头顶每隔约2秒飘出一个透明“Zzz”气泡，缓慢上升。\n7~10秒：身体重力升起，重心逐渐上移，头部抬起，眼睛睁开，身体恢复到正常高度，双臂自然垂落。第10秒结束时，与标准正面完全一致。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-002",
+      "name": "原地漂浮踏步",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "原地漂浮踏步\n动作概述\nQ版蓝发女仆在原地进行轻快、有节奏的小碎步踏步。曼德在体态摇摆自然交替左右摆动。裙摆和荷叶边随原地踏步动作产生自然的褶皱与飘动。注意：双脚格式向前或对称移动，犹如在跑步机上原地踏步，动作全程在画幅中央完成，不超出底部边缘，不切脚。\n\n按秒分割画面\n\n0~3秒：双脚开始轻快交替踏步，手臂在躯体恐慌并左右摆动。\n3~7秒：踏步节奏加快，裙摆、荷叶边和鲸鱼尾伴随着踏步产生自然条纹，表情轻松。\n7~10秒：踏步逐渐剂量溶液停止，双脚并磅，手动落下。第10秒结束秒时，恢复为标准正面垂直。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-003",
+      "name": "点击回复-开心跃动",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "点击回复-开心跃动\n动作概述\nQ版蓝发女仆突然原地向上轻快跳跃，曼德高高举起并张开欢呼状，另外有灿烂的着装，头顶瞬间弹出一个红色的爱心特效。跳跃后身体稳定站定。确保在跳跃至最高点时，角色头顶的呆毛依然完全以画幅顶边下方，画面出画幅。\n\n按秒分割画面\n\n0~2秒：身体轻微下蹲力蹲，视线朝上，双臂微张。\n2~5秒：双脚发力垂直向上跳跃，点时双手高举欢呼，最高头顶弹出半透明红色爱心特效。\n5~7秒：受重力自然下落，双脚落回原处，膝盖微曲缓冲。\n7~10秒：站稳，手动放下。第10秒时结束，彻底恢复为标准正面站立。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-004",
+      "name": "点击回应-害羞回应",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "点击回应-害羞回应\n动作概述\nQ版蓝发女仆身体呈现极其微小的后仰幅度，手猛地抬头捂住面部中心，眼睛瞬间变成“><”水泡眼或惊眼，面部泛起红晕。身体在原地进行娇羞的左右稍稍聚焦，双脚牢牢定在原地点，没有任何平移，动作完整地呈现于画面中央。\n\n按秒分割画面\n\n0~3秒：身体极小幅度后仰躲闪，双手迅速捂住脸部，眼睛变成“><”形，脸部脸部泛红。\n3~7秒：在原地进行娇羞的轻微左右扭动，偶尔从指缝中用一只眼睛偷看，双脚始终不离原点。\n7~10秒：佛面慢慢放松，红晕去褪，表情恢复平静。第10秒时结束，恢复为标准正面。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-005",
+      "name": "点击回应-傲娇生气",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "点击回应-傲娇生气\n动作概述\nQ版蓝发女仆叉腰，面部表情生气。另外原地进行90度身体边缘旋转，过渡至侧身（表演参照图中间的侧脸），同时闭眼并微微仰头，做出“哼”的傲娇姿势，同时在旋转侧面时停止住动作。必须确保旋转时的身体边缘和侧面鱼鳍朝画幅宽度之内，不发生横向切出，严格原地轴转。\n\n按秒分割画面\n\n0~2秒：手动叉腰，眼睛半眯，嘴角下撇，表现不满。\n2~5秒：双脚固定原地轴转，身体平滑向左旋转90°，顶部时闭眼微微昂头，发出“哼”的傲娇动作。\n5~8秒：保持在头部姿势，维持原地不动。\n8~10秒：平滑转回正面，手动放下，表情缓和。第10秒时结束，为标准正面正面。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-006",
+      "name": "被鼠标拖拉悬空反馈",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "被鼠标拖拉悬空反馈\n动作概述\nQ版蓝发女仆像被无形的手抓起，笔直，四肢自然下垂悬空（并非均匀）。头部轻微偏向似，似乎揭示出疑似呆萌的状态。角色在原地悬浮状态，X轴和Y轴坐标不偏移，动画缺陷表现在四肢悬空距离画幅底部边缘有一定安全距离，正好碰触屏幕底边。\n\n按秒分割画面\n\n0~3秒：身体突然僵直，双脚离地，四肢轻微张开、自然下垂，头部轻微偏斜。\n3~7秒：保持悬浮，身体略有晃动，眼神透出迷茫呆萌感。\n7~10秒：悬浮感解除，身体逐渐下降，直至双脚重新平稳落回原点。第10秒结束时，彻底恢复为正面标准垂直。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-007",
+      "name": "女仆屈膝礼仪",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "女仆屈膝礼仪\n动作概述\nQ版蓝发女仆双手轻轻吊起身体曼哈顿的白色荷叶边围裙，双腿微曲，身体微微前倾，慢慢做出标准优雅的女仆屈膝行礼动作。动作结束后恢复直立。必须保证在下蹲屈膝的最低点，身体重心仍处于画幅底边线的安全距离之上，不能被画幅下边缘切掉脚部和裙摆。\n\n按秒分割画面\n\n0~3秒：蜘蛛轻轻捏住曼哈顿白色荷叶边围裙，嘴角微扬。\n3~7秒：双腿微曲，身体前倾，完成缓慢缓慢的屈膝礼，最低点时裙摆仍保持在画幅下边缘安全持续。\n7~10秒：身体恢复缓慢直立，手绘裙子摆自然垂落。第10秒时结束，为标准正面垂直。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-008",
+      "name": "鲸鱼吐特效",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "鲸鱼吐特效\n动作概述\nQ版蓝发女仆微微前倾，嘴巴做吹气动作。随着“吹”的动作持续，气泡从嘴边连续飘出（共3~5颗）。水泡由小变大，缓慢向画面正上方飘浮，支架飘出画幅下方。保持角色在原地微笑看气泡，气泡上升过程不与角色本身重叠或模。动作全程在画幅视觉气泡中心展开。\n\n按秒分割画面\n\n0~3秒：身体微微前倾，嘟起嘴巴做气动作。\n37秒：从角色身前飘出35个半透明蓝色水泡，由小变大，缓慢向上飘浮，角色视线紧随气泡。\n7~10秒：气泡飘出画幅顶部，角色站直身体，微笑目送。第10秒结束时，恢复为标准正面垂直。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-009",
+      "name": "超大伸懒腰",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "超大伸懒腰\n动作概述\nQ版蓝发女仆臂向上笔直高伸，拉长，身体微弓，张嘴打了一个很大的哈欠，头部微微后仰。绝对强调：手臂伸至最高点、头部后仰至最周围时，头部的角毛和指尖距离画幅顶边还留有至少10%的白色面积，其中碰触或超出画幅边缘。伸完懒腰后双臂自然下倾。\n\n按秒分割画面\n\n0~3秒：曼达由身体极限逐渐向上举起，开始极限拉长身体。\n3~7秒：手臂伸至最高点，重新微弓，张嘴打一个大哈欠，头部微稀疏仰。注意此时不动毛和指尖仍与宽度顶边保持足够的安全距离。\n7~10秒：双臂关闭，恢复原态。第10秒结束时，恢复为标准正面状态。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-010",
+      "name": "小幅度原地360度旋转展示",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "小幅度原地360度旋转展示\n动作概述\n\nQ版蓝发女仆俏皮地垂直吊起曼哈顿裙摆，以双脚落点为轴心、原地顺滑地转上一圈（约360°），展示完整身姿——转到侧面时微微歪头回眸，转到背面时让长发与鲸鱼自然尾巴响开，转到正面时她轻轻蹦一下、摆出一个自信满满的展示姿势并甜甜地笑。旋转带表情、有节奏，不是机械匀速，而是带着俏皮与得意。最后放下裙摆、转回正面，恢复标准正面垂直。全程以双脚落点为轴心原地旋转（仅轴心旋转、脚尖点地转向），不产生X/Y平移，各部位最外点始终在画幅安全、不被裁切。\n\n按秒分割画面\n\n0~2秒（提裙准备）：标准正面站立。女仆曼分别起起身体极限的裙子摆边沿（捏起一点、微微提起），低头看着荡开的裙子，嘴角一翘、亮晶晶，一副“要开始啦”的俏皮期待，身体重心微微前移（双脚原位），转圈的准备姿势。 ⚠️强调：提裙子动作柔美、幅度小；关键帧仍为正面垂直、双脚固定点；裙摆与固定毛都在画幅安全升级。\n\n2~5秒（灵动转圈）：女仆以两只脚尖（原地踮起、以脚心为轴）轻快地顺时针转起来——转到顶部 /背面时微微放慢，裙摆和鲸鱼尾随旋转自然向外荡开（画出漩涡线），呆毛与极限发丝也追赶甩动；转到背侧时她俏皮地歪头回眸一下（扭头看向镜头方向，身体此时原地轴转），背后展示的长发与鲸尾。 ⚠️强调：旋转必须“以双脚落点为轴心原地转”（脚尖点地转向、脚心原点不动），姿势左右横移；转至侧/背时裙摆、鲸尾、发丝最外点仍距画幅等于≥10%，不被裁切；速度有快有慢（转时轻快、侧背留停），杜绝机械匀速。\n\n5~8秒（正面）：继续转回正面时，女仆顺势轻轻原地蹦蹦（双脚离地短促、落回原点），随即站定，一手仍轻提裙摆、另一只手举起在身前转了个俏皮的小腕花（或比小个唇），挺胸抬头、红着脸正面又得意的甜甜笑容，仿佛在说“怎么样，好看吧”。 ⚠️强调：蹦跳只原地上下、落回原点；“捻裙+举手腕花+自信甜笑”是展示感的核心亮相；亮相姿势任一侧翼（裙摆/手臂/鲸尾）最外点仍距画幅边界≥10%。\n\n8~10秒（收裙回正）：女仆放下掀起的裙摆（裙摆自然垂落），曼陀罗自然垂回身体不稳定，身体原地转回完全正对镜头，挺直好站，表情从昨天的自得平衡恢复为平和；最后轻轻顺了一下自己的裙子。第10秒结束时彻底恢复为标准正面。 ⚠️强调：结尾一定要完全回到“与第一帧一致的标准正面”；不再有任何旋转/展示姿势过剩；全程无道具、无效果。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——脚并英镑，曼德自然垂于完全身高，眼神平视鲸前方，表情平和，呆毛柔顺，鱼尾自然下垂。无任何道具/特效过量。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-011",
+      "name": "原地跳跃抓碎头顶项目",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "原地跳跃抓碎头顶项目\n动作角色概述\n原地起跳，抓住头顶聚集的发光物体并抓碎，然后落回原地。\n\n按秒分割画面\n\n0~2秒：头顶约30-40厘米处凭空聚集出一个发光小物体（星星/光球/宝石）。\n2~4秒：身体下蹲力蹲后，原地垂直高高跳起，手动向上延伸。\n4~6秒：在最高点抓住发光目标，目标瞬间碎裂为星光消散。\n6~10秒：从最高点自然落回地面，站稳。第10秒结束时，恢复为标准正面垂直。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-012",
+      "name": "原地重力下蹲压缩",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "原地重力下蹲压缩\n动作角色概述\n被无形重力向下拉扯，身体深蹲压缩后迅速弹起倍增。\n\n按秒分割画面\n\n0~3秒：像被重力压住，双腿快速弯曲，身高缩短，身高仿佛身高一半，眼睛微睁表现出惊讶。\n3~6秒：保持在最深的压缩深蹲状态，重心稳定在原位。\n6~10秒：底部像弹簧释放，迅速发力弹起，站直身体。第10秒结束时，恢复为标准正面垂直。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-013",
+      "name": "原地敲击桌面互动",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "原地敲击桌面互动\n动作\n角色概述弯腰握拳，向前方空气进行连续敲击动作，并起身恢复。\n\n按秒分割画面\n\n0~2秒：微微低头弯腰，视线下降，双手握拳举至胸前。\n2~6秒：双拳交替/同时向前方空气做“咚！咚！”的敲击动作，身体碰到敲击有点惊慌，表情正念带点小抗议。\n6~10秒：直起腰部，手动自然放松。第10秒结束时，恢复为标准正面站立。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-014",
+      "name": "原地专心玩魔方",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "原地专心玩魔方\n动作\n角色概述变出魔方，在胸前快速思考，然后满意收工。\n\n按秒分割画面\n\n0~2秒：凭空出现一个彩色魔方，手动捧至胸前，视线锁定魔方。\n2~7秒：小手快速、反复转动魔方，可伴出些许歪头思考，双脚牢牢钉在原地。\n7~10秒：停止停止，观察笑容，魔方凭空消失，曼方放回身侧。第10秒结束时，恢复为正面标准垂直。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-015",
+      "name": "原地蹲下玩玩具汽车",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "原地蹲下玩玩具汽车\n动作角色概述\n原地蹲下，双手变出小汽车在地面推拉大象，结束后站起来恢复。\n\n按秒分割画面\n\n0~3秒：双腿弯曲蹲下，右膝靠空变出一辆彩色小玩具汽车。\n3~7秒：将汽车置于地面上（身体前），做出扭转推拉、臀部的脊柱动作，身体随前倾和轻微摇晃，但重心点滑动。\n7~10秒：满意地站起身，玩具汽车消失。第10秒结束时，恢复为标准正面。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-016",
+      "name": "玩游戏气急败坏",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "玩游戏气急败坏\n动作\n角色概述狂热玩游戏，失败后暴怒跺脚抓头发，并瞬间恢复乖巧。\n\n按秒分割画面\n\n0~1秒：保持标准正面平静，表情平静，手动自然下垂，无动作。\n1~4秒：游戏机凭空出现在角色手柄，角色随即低头紧盯，双手拇指疯狂快速按动，眉头紧锁。\n4~6秒：游戏失败，猛然抬头，五官惊起极度愤怒，手动将游戏机摔在脚下（安全开始）。\n6~8秒：手动疯狂抓挠头发或抱头，原地快速交替跺脚，表现破防。\n8~10秒：突然停止住，深呼吸，表情秒变乖巧平静，脚下游戏消失；第10秒结束时，彻底恢复为正面标准统一。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-017",
+      "name": "被吓一跳",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "被吓一跳\n动作概述\nQ版蓝发女仆突然出现的惊吓（如背后有人喊她）吓得浑身一颤。曼猛地仰视至胸口高度，眼睛瞬间瞪圆，瞳孔缩小，呆毛因受惊瞬间竖直弹起事件（但仍处于画幅顶边安全事件），身体短暂僵直约一秒，并迅速冷静下来，表情尴尬地吐了吐舌头，\n\n按秒分割画面\n\n0~1秒：维持标准正面一致，表情平静。\n1~3秒：身体猛然一颤，双手抬高至胸前，眼睛瞪圆瞳孔缩小，呆毛瞬间竖直弹起，身体后仰幅度极小。\n3~5秒：僵直姿势保持，身体微幅颤抖。\n5~8秒：缓慢放松，表情转为尴尬，轻轻吐舌，呆毛恢复柔顺。\n8~10秒：官方解除，表情恢复平静。第10秒结束时，恢复为标准正面。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-018",
+      "name": "偷吃休闲被抓住",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "偷吃休闲被抓住\n动作概述\nQ版蓝发女仆手掌凭空变出一个小蛋糕/饼干，正准备张嘴偷吃时突然察觉到“发现了”。她吓得手一抖，睡眠瞬间藏在背后，旁边有心虚的假笑，眼神飘忽不定地看向斜上方吹口哨（或哼歌），装作无事发生。\n\n按秒分割画面\n\n0~2秒：双手捧着凑到嘴边，眼睛眯起看着幸福期待的表情。\n2~4秒：突然像被“抓到”一样全身一僵眼睛，瞬间瞪大，仿佛做贼心虚的表情。\n4~7秒：曼德迅速把蛋糕藏到了孩子身上，视线飘忽地看向左上方，嘴巴嘟起做出吹口哨状，身体轻微左右不安晃动。\n7~10秒：慢慢恢复正常姿势，老公从iPhone中自然垂落（蛋糕消失），表情恢复平静。第10秒结束，恢复为标准正面垂直。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-019",
+      "name": "用鲸鱼尾巴拍打地面",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "用鲸鱼尾巴拍打地面\n动作概述\nQ版蓝发女仆双臂抱胸，表情略显不耐烦（撇嘴+微皱眉），右边的鲸鱼尾巴开始有规律地左右拍打地面，频率由慢到快再恢复，仿佛在等待什么。身体重心保持原地不变，尾巴动作幅度控制在不越出画幅左右边界的范围内。\n\n按秒分割画面\n\n0~2秒：双臂抱在胸前，嘴角下撇，眉头微皱，表现出等待不耐烦。\n2~4秒：鲸鱼尾开始向左拍打地面一次，再向右拍打一次，节奏较慢。\n4~7秒：尾随拍打速度逐渐加快，身体随拍打节奏略有增加，表情更加不耐烦（叹气状）。\n7~9秒：拍打频率逐渐降低直到停止，表情慢慢舒展。\n9~10秒：双臂解除，表情恢复平静。第10秒结束，恢复为标准正面统一。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-020",
+      "name": "哈欠连天",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "哈欠连天\n动作概述\nQ版蓝发女仆张大嘴打了一个大大的哈欠，同时曼陀罗向上伸展（与“懒伸腰”动作不同的是手臂自然不举至最高，而是在肩部高度展开），保湿泛泪光，继而揉了揉眼睛，努力清醒保持地摇动了颈部。打哈欠幅度确保头部和曼陀罗不越出画幅安全区。\n\n按秒分割画面\n\n0~2秒：从标准正面静止开始，眼睛慢慢眯起，嘴微微张开，双臂在身体极限向倾斜上方慢慢抬头（约与肩平）。\n2~4秒：嘴张大打出哈欠，头微后仰，眼睑闭合成弯弧，眼角渗出泪花。\n4~6秒：哈欠结束，双手收回揉眼，眼皮仍显沉重。\n6~8秒：用力甩了甩头，像在驱散困意，眼睛努力睁大。\n8~10秒：恢复标准站立姿势，表情明亮。第10秒结束，恢复为标准正面姿势。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-021",
+      "name": "打瞌睡被惊醒",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "打瞌睡被惊醒\n动作概述\nQ版蓝发女仆强撑困意的坚定状态，头部如小鸡啄米般慢慢缓慢下垂，身体微微前倾后正。在第一刻（约第5秒），她仿佛突然被“无形的整理”般响点名，全身如触电般颤抖，眼睛猛然瞪圆，身体瞬间僵直并立正好，随后因察觉自己的反应而脸部脸部红肿，惊慌地仪容，清醒得很。\n\n按秒分割画面\n\n0~3秒（强撑困意期）：\n从标准开始，眼睑沉重，每隔1秒缓慢闭合又勉强睁开（似睁不开）。身体重心微微下沉，头部以颈部为轴心同步“点头”（下巴几乎达到胸口），然后猛然有点抽动“惊醒”惊醒，如此反复2次。仍垂在身侧但微微虚握，毛呆无精打采地耷拉一下下来。\n（严格垂直原地起伏，双脚锁死不地质）\n3~5秒（彻底迷糊期）：\n头部再次沉重低下，此时低头幅度达到最大（但仍保证头顶与画幅顶边保持25%以上的安全距离）。身体呼吸同时做些许的前倾摇（约5°前倾角），后面的鲸鱼尾也懒洋洋地垂在地面稍晃动，表现出完全断线的状态。\n5~6秒（猛然惊醒——爆发点）：\n全身如触电般心跳颤抖了一下。头部“唰”地瞬间惊醒，眼睛被迷糊直线变成圆形惊眼（瞳孔缩成小点），呆毛因惊吓瞬间竖直向上直弹起（严格注意：竖直后的呆毛尖端依然低于画幅顶边15%安全线）。\n6~8秒（慌乱掩期饰）：\n意识到是虚惊正在发生（或发现走神），面部表情迅速泛起大面积红脚晕。身体逐渐落回全掌着地，紧张绷紧的身体放松，做贼心虚般地左右各转头部一次（像在观察周围有没有人看自己），然后立即惊恐抚摸自己的后脑勺，防止尴尬的吐舌干表情。\n8~10秒（恢复期常态）：\n摸摸后脑勺的手松开，红晕褪去，吐出的舌头慢慢收回。深呼吸一次（胸口微不稳定），呆毛从竖直状态柔软地恢复到自然弯曲状态。第10秒结束时，头部姿势正，目光平视前方，曼完全垂落，彻底为与第一帧完全一致的标准正面姿势。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-022",
+      "name": "螃蟹行走",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "螃蟹行走\n动作概述\nQ版蓝发女仆在原地做出向左侧横向移动的滑步动势。身体重心向左侧倾斜约15°，眼神坚定看向左方，双脚在原地快速交替做“左跨步→右并步”的横向搓步循环，双臂随舵在身体摇摆摆动，鲸鱼尾巴向右反向回转起维持平衡。全程X轴坐标不偏移，通过姿势表现仅向左移动。10秒内完成“起步→匀速滑步→淀粉停止→回正停止”。\n\n按秒分割画面\n\n0~1秒起步预备：\n标准垂直。重心开始向左侧抬起，左肩微微下沉，头部向左转动约10°，目光锁定左方。右臂向前摆起，左臂造型摆起，右腿微曲做蓄力状。\n1~3秒（加速滑步）：\n双脚开始原地交替横向搓步：左脚向内侧跨出一步（脚尖朝左），右脚迅速向左并拢（类似滑步），循环往复，节奏轻快。双臂随摆动左右摆动（左臂后摆、右臂前摆交替），裙摆和尾巴因惯性向右摆动，身体周围略上下增加重量感。此时身体倾斜角度达到最大（约15°）。\n3~6秒（匀速滑步）：\n保持上述滑步节奏稳定进行，表情注意力，视线主要看向左侧。鲸鱼尾巴高高向右开始起平衡，毛因横向风压稍微向右呆飘动。整体动势个体，但协调原点始终不变。\n6~8秒（停止）：\n滑步频率逐渐调整，身体倾斜角度减小，手臂摆动幅度慢慢缩小，轨迹逐渐减速下。双脚从交替滑步过渡到并拢站定。\n8~10秒（回正站立）：\n身体完全回正，头部转正前方，视线恢复平视，双臂自然垂落，尾部恢复自然下垂。第10秒结束时，垂直恢复为标准垂直姿势，与第一帧完全一致。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-023",
+      "name": "悠闲哼歌",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "悠闲哼歌\n动作概述\nQ版蓝发女仆双眼微眯成弯月，嘴角含笑，头部随内心波动小幅度左右摇摆，身体运动呼吸波动，双手在身前轻轻打拍子，三分之一的鲸鱼尾巴随节奏缓慢摆动。**同时，角色嘴边和头顶上方连续浮现出数个彩色半透明对话（♪ ♫），对话框由小变大、梯度上升飘浮，在到达画幅顶部安全线附近时淡出消失。**全程角色坐标锁定，对话框不遮挡角色脸部，不超出画幅边界。\n\n选择秒分割画面（10秒完整段）\n\n0~2秒（起音）：\n从标准垂直开始，双眼眯成弯月，嘴角上扬。第一颗粉色半透明音符（♪）从角色右边嘴边浮现，体积由小（直径5%）逐渐增大至（直径10%），慢慢向右上方飘升。头部开始向左微倾，准备进入旋律。\n2~4秒（旋律进入）：\n头部向右摆回并继续向右微倾，体量约为。第二颗蓝色音符（♫）从左侧嘴边浮现，同时第一颗音符式带肥胖角色头顶右上方约20%高度处开始变淡。第三颗小音符（♪）从头顶固定毛附近冒出，体积更小（直径6%），呈跳跃上升。\n4~6秒（欢快高潮）：\n头部摇摆幅度达到最大（约8°），前锋食指在身体前画小圈，尾巴摆动。连续浮现两颗音符（一橙一紫）分别从左嘴边同时出现，与上升中的蓝色、黄色音符共同形成约3~4颗音符在画面中上方缓慢飘动、浮雕加速旋转的大量画面。所有音符颜色柔和半透明，互不重叠。\n6~8秒（逐渐弱收尾）：\n哼唱力量提示，波段头部重心。浮现最后一颗翠绿色音符（♪）从嘴边飘出，同时之前的所有音符陆续上升至接近画幅顶部15%安全线处淡消失出。角色颈部轻轻晃动一下作为结束。\n8~10秒（完全归位）：\n头部回正，眼睛睁开恢复平视，孔洞自然垂落，尾巴恢复自然下垂。最后一颗天线已完全消散，画面洁净无污染物。第10秒结束时，与第一帧标准正面垂直完全一致，无任何影响污染物。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-024",
+      "name": "东张西望",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "东张西望\n动作概述\nQ版蓝发女仆从偏左静止姿态（图最内侧的起始即开始）开始，先向左前方张望，然后缓慢向右转头，身体接近转向，定格在与起始开始严格左右的偏右注意姿势（类似将起始瞬间水平翻转后的效果）。全程原地轴转，不中继，结束不回正。此动作同时具备内容内容（东张西望）和资产多重相关功能。\n\n按秒分割画面\n\n0~2秒（听力左侧动静）：\n开始为偏左姿势（参考图最左边的左侧面/半视角）。头部迅速向左上方转动约30°，眼神接近，仿佛听到左前方有声音。同时左肩微微上提，身体朝上方倾斜约5°，表情好奇，眼睛微微睁大。自然垂放。\n2~4秒（向左张望+探身）：\n头部继续向左转动至最左边（约45°），身体微微前倾，左自然臂抬头至胸前（做“遮光眺望”状），右臂保持垂放。将毛向左侧弧形，鲸鱼尾朝右侧摆动以维持平衡表情。集中注意力，视线锁定左方。\n4~6秒（向右转头+身体附近）：\n似乎左侧没有发现什么，头部开始缓慢旋转，身体以双脚为轴心靠近头部右侧。头部经过正前方时（约第5秒），表情转为歪（歪头、嘴角微颧），头部抬头轻触下巴做思考状。身体继续向右旋转，逐渐进入右侧视线范围。\n6~8秒（右张望+到达最右边）：\n头部转向右上方约30°，身体已完全到达目标偏右角度（该角度必须与起始帧的偏左角度严格极限，即若起始帧朝左前方约25°，则此帧朝右前方约25°）。 肘部从下巴放下，先将前额头枕在前额前做眺望状（对应起始帧的左手/右肩位置关系），左手自然垂放（对应起始帧的右肩/左手位置关系）。 看上去正视前方，身体微微前倾，呆毛朝右弯曲（对应起始帧的左手/肘摆），尾巴向左摆动平衡（对应起始帧的右摆）。\n8~10秒（定格正确姿势）：\n右肩放松恢复自然垂落，身体姿势稳定，表情从正值恢复为慢慢平稳。完全定格在与起始帧几何重置的右偏姿势。第9~10秒为最佳截图窗口，可停止取响的“右边基准图”，该图应与起始帧走向完美的左右。\n动作结束后状态\n帧最终：与起始帧左右严格镜像的偏右静止姿势（身体姿势右前倾，角度、肩线、手臂位置、尾巴方向、头部倾斜等所有细节均与起始帧起始），表情平静，曼陀罗自然垂落，尾巴自然垂落。\n不回正，此动作既是“东张西望”互动内容，又兼具视角转换和右侧基础金字塔功能。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-025",
+      "name": "原地左转奔跑",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "原地左转奔跑\n动作概述\n\nQ版蓝发女仆头顶突然亮起一个黄色小灯泡（特别），表现出“有主意了！”的惊喜表情。随即身体跑以双脚为轴心，向角色自身左手方向（逆时针）原地轴转至左左侧约135°，做出蓄力起姿势，紧接着开始高频的原地踏步跑。 跑步中因速度过快脚下一绊，身体向左后方向过度前倾扑倒（但双脚卡死原点），随即迅速原地起身并转回正面，若尴尬的吐舌表情，摸前脑后勺，最后恢复标准正面。全程X/Y轴坐标锁定，摔倒姿势不碰底边。\n\n按秒分割画面\n\n0~1秒（灵感爆发）：标准正面站立。双眼睁开大发光（瞳孔闪烁），嘴角上扬起笑容。头顶正上方约20%高度处凭空出现一个半透明黄色小灯泡（💡），闪烁一下后消散。右手握拳轻轻敲击左心，身体微微后仰。\n\n1~3秒（转身蓄力——逆时针转）：以双脚为轴心，向角色自身左手方向（即逆时针方向）原地轴转，平滑旋转至前方左视角约135°（主角正左侧90°与正侧面180°之间）。此时观众视角看到的是角色的右背侧——可见对面脸部、右肩、后背及鱼尾巴的大部分。转向过程中左臂前摆、右臂后摆，做出蓄力起跑基本姿势，膝盖微曲，身体重心朝左前下方（即目标跑步方向）前倾约10°。鲸鱼尾巴因离心力向右甩动。\n\n3~6秒（原地冲刺跑——左后方）：开始高频原地踏步跑步：双脚交替快速眩晕、落下，落点始终在原点±3%范围内。身体持续面向左后方，双臂弯曲在身体两侧快速回转摆动右（左臂在前、臂在后交替），重心向左东南前方倾。裙摆和定毛因跑动头部在原点的右前方）飘动，鲸鱼尾巴随肩膀左右两侧。表情专注，视线锁定左左边。 ⚠️强调：原地高抬腿，脚尖前沿向前迈出安全区；整个跑步阶段始终保持“右背侧”视角（角色面朝左西南）。\n\n6~7秒（绊倒踉跄）：奔跑中脚下突然“一绊”（双脚短暂停止交替，呈左右错位状），身体向左后方向不受控地摔倒——卡塔尔延长做支撑状，躯干倾斜至约30°角，但双脚依然死死固定在原点。表情转为惊恐（瞳孔缩小、嘴张成O型）。身体最低点画幅底边保持≥15%安全。\n\n78秒（迅速站起）：双手用力“撑地”将身体推回直立状态，双脚原地蹬直，身体回正至面向左髋135°的站立姿势（恢复到3）6秒的跑步），拍拍手，表情从惊慌转为松了口气。\n\n8~10秒（尴尬摸头+回正正面）：身体以双脚为轴心原地轴转回正正面（从135°逆时针转回0°）。目视抚摸后脑勺，眼睛眯成弯月，嘴角尴尬地向上抽动，吐出小舌头（😝），表现出“哎呀好丢脸”的表情。第9.5秒时手抬起，第10秒结束时彻底恢复为标准正面前方，与第一帧完全一致。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，目光平视鲸前方，表情平和，呆毛柔顺，鱼尾自然下垂。无灯泡、无消耗。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-026",
+      "name": "玩水枪",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "玩水枪\n动作概述\n\nQ版蓝发女仆凭空变出一把彩色玩具水枪，曼举至胸前，做出瞄准前方（屏幕方向）的姿势。她扣动扳机，从水枪口喷射出半透明蓝色水柱/水花，持续喷射约2秒。同时她欢快地左右转动身体（原地轴转±15°），用水枪朝左前方、右前方交替喷射，表情兴奋调皮，双眼放光。最终收起水枪，恢复标准正面垂直。全程原地轴转，X/Y轴不偏移，水枪方向喷射方向前方/侧前方，不指向自己脸部。水花显现完整在幅内，不越界。\n\n按秒分割画面\n\n0~2秒（变出水枪）：标准正面。曼以变魔术般的动作从对面（或体侧）凭借空抓一把彩色玩具水枪（结局：橙黄/蓝白相间，造型Q版可爱），曼德把枪柄举至胸前高度，枪口指向前方（指向屏幕/观众方向）。表情从转为好奇+兴奋，微微放大，嘴角上扬。身体保持直立，双脚确定原点。\n\n2~4秒（瞄准+喷射）：曼德将水枪稳定举至胸口高度，做瞄准姿势——微微眯起一只眼（像在瞄准），头部略向一偏转约5°。第2.5秒时扣动扳机，水枪口喷射出似半透明蓝色水柱/形扇水花，水柱朝正前端（屏幕方向）喷射，长度约15%~20%画幅宽度，呈抛物线状轻微下坠，带有半透明水花特效。持续喷射约1.5秒。表情得意、开心，嘴巴微张发出无声的“噗呲——”口。 ⚠️提升：水柱朝正前方喷射，路径在角色与屏幕之间，不与角色重叠。\n\n46秒（左右扫射）：身体以双脚为轴心，向左前方平滑轴转约15°，水枪转向左前方喷射约0.8秒，水柱朝左前方飞出。前方前方轴转约30°（越过正中至右前方），水枪转向右前方喷射约0.8秒，水柱朝右前方飞出。身体转向过程中表情越发兴奋，双眼笑成弯月，眉毛上扬，表现出玩嗨了的调皮状态。鲸鱼尾随身体转动左右自然摆动。 ⚠️拉伸：身体轴转范围为-15°+15°，水柱喷射方向相应偏转，水花始终处于画幅安全隔壁。\n\n6~7秒（停止射击）：身体回正至正面（从右前转回0°），手动动作扳机，水枪停止喷射，枪口冒出一缕白色水汽（效果，半秒内消散）。表情从兴奋慢慢收敛为意犹未尽的满足微笑。\n\n7~9秒（收枪）： 人工将水枪放下至腰侧，水枪在视线短暂移开的瞬间（约第8秒）凭空消失（藏回iPhone）。人工自然垂落至身体各处。表情彻底平复为温和的微笑。\n\n9~10秒（恢复正姿）：身体姿势站稳，下巴微收，视线由下转向前方平视。第10秒结束时垂直恢复为标准正面垂直——双脚并拢、双臂垂放、呆毛柔顺、尾巴下垂，与参考图最左侧标准正面图完全一致。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，眼神平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无水枪、水渍或水鲸抬头。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-027",
+      "name": "撤销演奏",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "撤销演奏\n动作概述\n\nQ版蓝发女仆曼德凭空变出一副精致的动作与琴弓，将琴托举至左肩与下巴之间夹稳，右手持弓搭上琴弦。稍显欢快的后段，伴随着旋律轻微舞蹈，表情凝重陶醉。演奏结束后优雅收弓，俘获体形与琴弓凭空消失，手动自然放下，恢复标准正面。全程原地轴心旋转与微小舞蹈，X/Y轴不间歇，琴弓、琴头、马尾箱等所有乐器武器均不超出画幅边界。\n\n按秒分割画面\n\n0~1.5秒（出乐器）：标准正面。曼德从身前以魔术般的动作凭空变出武装与琴弓。左手握住琴颈，右手握住弓杆，将琴身托举至胸前。表情带着一瞥期待与欣喜，目光乍一看向手中的乐器。\n\n1.53秒（架琴初步）：左手将肘举起，琴身平稳地搁置在左肩与锁骨之间，头微微向左倾斜，下巴轻轻压住腮托，架完成琴姿势。右手持弓搭上琴弦，手腕放松，手肘自然下沉。身体微微向左转约5°10°（演奏出演奏侧姿势），双脚连接定点。表情专注，目光注视琴弦与弓的接触点。鲸鱼尾因身体姿势向右自然摆动。\n\n3~5秒（调节拉奏——第一乐句）：手腕开始运弓——弓在琴弦上向右缓慢拉出（约0.8秒），并向左推回（约0.8秒），完成一个完整的运弓循环。 手腕手腕柔韧牵弓，保持弓与琴垂直。左手手指在琴颈上对应按弦，指尖交替起落（体）演奏音阶的指法动作）。随运弓方向轻微左右幅度（幅度≤5°），头部现保持夹琴姿势。表情陶醉，双眼微眯，嘴角带浅笑。运弓停止速度平稳，共完成约2个运弓循环。呆毛随完整摆动身体轻轻晃动。\n\n5~7秒（欢快拉奏——第二乐句）：运弓速度迅速加快，弓在琴弦上的行程一周，原来中部位快速拉奏（约每秒1.5个运弓循环）。左手手指在琴颈上快速交替按弦，姿态活跃。身体律动感增强，上下左右配合节奏，双肩自然放松。表情转为微微兴奋，眉毛上扬，嘴角笑意渐淡，脸庞泛起兴奋的红晕。鲸鱼尾巴一瞬轻轻左右摇动。\n\n7~8.5秒（收弓）：拉渐逐渐停止至停止，弓从琴弦上轻轻抬头。右手将弓放至身，左手将琴从肩头举起，手动重新手持琴与弓，呈初步姿势。身体恢复正态，表情从陶醉转为演奏结束的满足与轻微羞涩。\n\n8.5~10秒（乐器消失+恢复正姿）：曼哈顿与琴弓并扣抱于胸前，琴与弓以魔术般的动作凭空消散。曼陀罗自然垂落至身体夏威夷。头部姿势正，下巴微收，目光平视前方，表情恢复平静。身体完全回正至顶部第10秒彻底恢复为标准正面图——双脚并肩、双臂垂放、呆毛柔顺、尾巴自然下垂，与参考图最标准左侧正面图完全一致。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼努埃尔自然垂于完全身高，目光平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-028",
+      "name": "蓝鲸现世",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "蓝鲸现世\n动作概述\nQ版蓝发女仆胸前的DeepSeek蓝鲸图案突然露出柔和的蓝色荧光，一只Q版半透明小蓝鲸从衣服上优雅地“游”出，通体涂抹着淡蓝色微光，围绕着女仆的身体缓慢盘旋游动一圈，时而蹭而蹭女仆的脸脸部，时而用尾巴轻点她的肩膀，表现得亲昵可爱。最后小蓝鲸回到女仆胸前，重新游过脸部，面部消散。整个角色原地挺直，头部和目光追随小蓝鲸移动，表情从惊讶到欣喜再到不舍与温柔。\n\n按秒分割画面\n\n0~2秒（图案发光）：标准阵型一致。胸前DeepSeek蓝鲸图案开始闪烁淡蓝色荧光，由弱逐渐强。女仆视线逐渐下移看向胸口，表情从平静转为轻微反应，眼睛稍睁大，身体保持平静。\n\n2~4秒（蓝鲸出衣）：面部表情达到最亮时，一只Q版半透明小蓝鲸（体长约画宽度高度12%~15%）从衣服图案位置优雅地“游”出，体态呈曲线形游动状态，通体淡蓝色半透明，边缘有大致光晕。女仆头部紧随小蓝鲸微微上抬，眼神追随着光之鲸，彼此微张讨论惊喜表情。\n\n4~6秒（环绕亲昵）：小蓝鲸围绕女仆缓慢盘绕飞行。从左肩绕过至左侧耳廓，随后绕至前面轻蹭右侧脸面部，最后绕过右肩游至头顶上方。女仆头部紧随其后，表情从惊喜转为温柔宠溺，嘴角含笑，呆毛被小蓝鲸带起的微风吹动轻轻摇晃。\n\n6~8秒（盘旋告别）：小蓝鲸在女侍头顶上方出一个完整的姿势（直径约画宽度宽度20%~25%），并逐渐降低高度朝胸前位置游回。\n\n8~10秒（归位）：小蓝鲸游回胸前位置，体态逐渐变小变平变暗，重新开始硫酸镁，面部由亮转暗洗发水彻底消散。女仆面部自然垂落，头部回正，眼神平视额头，表情恢复温和平静。衣服第10秒结束时彻底恢复为标准正面平整。\n\n动作结束后状态\n\n最终画面：标准正面，肖像自然垂落，眼神平视，表情温和平静，衣服上DeepSeek蓝鲸图案恢复原样，面部表情完全消散，无内在。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-029",
+      "name": "吃白饭",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "吃白饭\n动作概述\nQ版蓝发女仆究竟是谁，突然肚子发出“咕噜”一声。她左顾右盼确认无人注意后，从弟弟变出一碗热腾腾的白米饭，手动捧碗大口埋头扒饭，吃得无比香甜满足。吃到一半被噎住，轻轻捶胸顺气后继续吃完。吃完后擦嘴，空碗消失，恢复标准正面。全程印证了DeepSeek“爱吃白饭”的经典人设。\n\n按秒分割画面\n\n0~2秒（腹部饥饿→变出白饭）：标准正面一致。第0.5秒左右腹部发出一声“咕噜”，女仆表情瞬间相当，脸部脸部微红，小心翼翼地左右各扫视一下。确认无人后表情为窃喜，右边从右边空出一碗热腾腾的白米饭，双手捧至胸前，双眼放光，嘴巴微张期待表情。\n\n2~5秒（大口扒饭）：手将碗端至嘴边，开始大口扒饭。左手捧碗，前握钩将米饭送入口中，嘴张合迅速，腮帮子逐渐鼓起。头部随扒饭动作微微上下点动，身体大约大约大约左右晃动，表情陶醉，眯眼成弯月。呆毛随头部晃动，鲸鱼尾部快速移动。此阶段碗中米饭左右约一半。\n\n5~7秒（被噎住→缓过来）：扒饭动作突然停止眼睛，猛然瞪大，左手仍捧碗，头部抬头拍打胸口顺气，微微体后仰，眉头皱。持续紧张约1秒后用力吞咽，长出表情，从痛苦缓和为“差点没命”的夸张后怕。\n\n79秒（继续吃完）：缓过气后继续将剩余米饭吃，稍慢速度，约23口后碗中见底。女仆低头瞥一眼空碗，若满足微笑，眼睛眯成弯月。\n\n9~10秒（擦嘴收碗→恢复正姿）：左手将空碗放下（碗淡出消失），额头手背轻擦嘴角。面部自然垂落，身体回复正，眼神平视前方，表情恢复温和平静。第10秒结束时彻底恢复为标准正面。\n\n动作结束后状态\n\n最终画面：标准正面，天线自然垂落，眼神平视，表情温和平静，空碗完全消失，无本质。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-030",
+      "name": "深度思考碎碎念",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "深度思考碎碎念\n动作概述\nQ版蓝发女仆保持手托下巴的思考姿势，表情严重凝重仿佛在深度推理。但头顶冒出刚出生的碎碎念气泡（“午吃啥”、“好困啊”、“不想动了”等），与“深度思考”的外观形成强烈反差萌。气泡出约2~3后，女仆猛然“惊醒”，察觉自己走了神了，尴尬地吐舌轻拍脑门，标准正面立刻出现。\n\n按秒分割画面\n\n0~3秒（正经思考）：标准正面站立。头部抬起，手肘支撑在左手心，手腕托住下巴，呈标准的“思考者”姿势。表情严肃专注，眉头微蹙，眼神凝视前方，仿佛在进行深度推理。\n\n3~6秒（碎碎念冒泡）：思考保持姿势不变，但头顶开始冒泡：\n\n第3.5秒：第一个气泡（“中午吃啥……”）\n\n第4.5秒：第二个气泡（“好困啊……”）\n\n第5.5秒：第三个气泡（“不想动了……”）气泡为半透明圆角文字框，文字内容依次出现。表情虽然仍维持着思考状，但表面逐渐稀疏、放空、涣散。\n\n6~8秒（惊回神）：似乎意识到自己在走神，眼神猛然聚焦。身体微微一颤（惊醒状），托下巴的手松开，表情从放空转为尴尬。前额抬头轻拍自己脑门（颈部躁状），眼睛眯起，吐出小舌头（😝）。\n\n8~10秒（恢复正姿）：曼德自然垂落，身体恢复正态，表情从尴尬恢复平静。第10秒时结束彻底恢复为标准正面垂直，无气泡堆积。\n\n动作结束后状态\n\n最终画面：标准正面，天线自然垂落，眼神平视，表情温和平静，气泡完全消散，无本质。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-031",
+      "name": "照镜子",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "照镜子\n动作概述\nQ版蓝发女仆从弟弟变出一边手持圆镜，双手捧镜照看自己的面容。先是正常整理发型、仪容（优雅状），然后对着镜子做出各种鬼脸（吐舌、挤眼、鼓腮），玩得不亦乐乎。然被镜中的自己“丑到”（或被自己逗笑），吓得手一将镜子藏回抖抖，表情从惊吓转为尴尬害羞，恢复标准正面正面。全程体现DeepSeek“自我欣赏+反差萌”的趣味人设。\n\n按秒分割画面\n\n0~2秒（变出镜）：标准正面挺直。额头从肘部靠空变出一面手持圆镜（直径约画宽度高度10%~12%，镜框为白色/淡金色，有可爱装饰），双手捧镜至胸前高度。表情好奇中带着眼神期待，嘴角含笑。\n\n2~5秒（优雅拍照）：曼陀举起神镜至面前约15%画幅宽度处，对着神端详述自己的面容。头部微侧（左/右各一次），用手轻轻整理鬓角发丝或头顶呆毛，动作优雅。表情严肃中带着满意，眼睛微眯，嘴角含笑，仿佛在说“嗯，今天也很可爱”。目随头部动作微微调整角度，镜面反射出淡蓝色光芒（非真实倒影，可光晕代替）。\n\n57秒（扮演鬼脸）：照镜动作突然变得调皮——对着镜子依次做出23个夸张鬼脸：第5秒：吐出舌头（😝），眼睛翻白第5.8秒：双手食指抑制眼角下拉，做“丑脸”第6.5秒：鼓起腮帮子，像河豚一样做鬼脸时身体微微晃动，表情丰富夸张，玩得不亦乐乎。\n\n7~9秒（被自己吓到）：最后一个鬼脸做完后，仿佛突然被镜中的自己“丑到”或“逗笑”——身体猛然一仰（约10°），眼睛瞪大，老公颤抖（镜子差点脱手），表情从搞怪瞬间变成“惊吓+被自己蠢笑”的混合状态。然后噗嗤一声笑出来，耸肩动，尴尬吐舌。\n\n9~10秒（收镜恢复）：手动将镜子放下胸前至镜子快速淡出消失。身体恢复正常，表情从尴尬的笑逐渐收敛为平静。手动自然垂落，眼神平视前方。第10秒结束时彻底恢复为标准正面平整，与第一帧完全一致。\n\n动作结束后状态\n\n最终画面：标准正面，曼陀罗自然垂落，眼神平视，表情温和平静，镜子完全消失，无本质。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-032",
+      "name": "优雅女仆舞",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "优雅女仆舞\n动作概述\nQ版蓝发女仆原地跳起轻盈优雅的古典舞。动作包含：脚尖交替点地、双臂缓画圈、体态轻微左右倾斜、原地缓慢旋转半圈。整体舞姿舒展流畅，表情温柔含笑，体现女仆的优雅气质。全程双脚不离原点，只做原地律动与轴心旋转，裙摆和尾部舞姿自然飘动，结束标准华丽。\n\n按秒分割画面\n\n0~3秒（起势与点地步）：标准正面垂直。曼德从身体侧部近似抬头至胸前高度，抱球状，手腕柔美翻转。右脚尖向右侧轻点地面（脚尖不离地，仅擦地画出弧线），收回；左脚尖向左侧轻点地面，收回。身体随脚尖点地方向稍稍倾斜（约5°），头部靠近方向手臂微微转动，表情温柔含笑。\n\n3~6秒手臂画圈与舞蹈：曼陀罗在身体四周逆交替画圈（左臂时顺针、右臂时针各一圈，然后交换方向），动作柔软如波浪。双脚交替微微踮起再落下（类似小跳步，但脚不跟地），身体周围手臂画圈做左右交替（每次约5°）。鲸鱼尾巴自然左右摆动，呆毛般轻晃。\n\n6~8秒（原地旋转）： 曼收至胸前交叉（肘在上，左手在下），擒纵向擒纵同步展开。同时以双脚为轴心，原地平滑旋转180°（转至背对观众再转回正面，或先转90°再转回），旋转速度缓冲匀速，裙因摆轴力轻微飘起。旋转结束时相当于减速解除。\n\n8~10秒（收势恢复）：曼德从曼哈顿瞬时回落至身侧，身体回复正，头部完成摆正。脚尖并拢，最后一个深呼吸（胸口微起伏），表情从舞者的陶醉恢复为温和平静。第10秒时彻底恢复为标准正面。\n\n动作结束后状态\n\n最终：标准正面，坦然自然垂落，眼神平视，表情温和平静，无表情。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-033",
+      "name": "可爱的宅舞",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "可爱的宅舞\n动作概述\nQ版蓝发女仆跳起元气满满的可爱宅舞。动作包括：曼德在胸前交替画心形、头部左右交替侧倾、配合节拍轻快弹跳、结尾送出飞吻加眨眼。整体节奏明快，表情俏皮活泼，充分表现角色的可爱魅力。全程原地完成，双脚不离某一点，结束标准正面。\n\n按秒分割画面\n\n0~3秒（比心与侧头）：标准正面站立。曼德在胸前交替比出半心形（左手比半心，颧骨比半心，合在一起成为完整心形），架头部交替左右侧倾（每次约10°，左→右→左），动作轻快有节奏。表情元气饱满，明亮带笑，嘴角上扬。\n\n3~6秒（弹跳步与手臂摆动）：双脚交替做原地小弹跳（脚跟微离地，身体略上下摆动），同时双臂在体态摇摆左右摆动（左手扭时颈放松，交替进行）。架拍，每拍一次完成“换脚+换手”，动作干脆利落。身体随性弹跳微微左右摆动，身体不动毛和裙摆动作活跃晃动。\n\n68秒（侧身手指舞）：原地轴转至微侧身（约30°），肘关节伸食指指向斜上方（约45°），左手叉腰。手指随节拍轻轻勾动（做“过来呀””的招呼动作），同时身体蹲微再起立一次，动感增加。凝视靠近手指方向，表情俏皮中带一触狡黠。\n\n8~10秒（飞吻收尾）：身体转回正面。颈部抬头至颈边，做一个飞吻动作（手掌轻触颧骨后向外送出），同时响亮地眨一下右眼（眨眼）。飞吻送出后手放下，身体轻微鞠躬（约10°前倾）再直起。第10秒结束时彻底为标准正面。\n\n动作结束后状态\n\n最终：标准正面，坦然自然垂落，眼神平视，表情温和平静，无表情。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-034",
+      "name": "轻快舞",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "轻快舞\n动作概述\nQ版蓝发女仆原地跳起节奏感的轻快梯舞。左右动作包括：恢复部分律动、反向交替打响指、单脚交替轻点地面、身体小幅扭动。整体风格轻松慵懒又不失活力，类似“扭一扭”的随性舞蹈。表情享受放松，身体随着音乐轻盈姿势，结束标准正面矫正。\n\n按秒分割画面\n\n0~3秒（肘律动）：标准正面垂直。双膝微曲，仰部开始左右交替摆动（每次约8°，左→右→左，约每秒一次）。习惯抬头至腰部高度，随部摆动自然晃动（左手向左摆时颈部右摆），动作仰视随性。头部微微紧邻，表情静止，眼睛微眯，嘴角含笑。\n\n3~6秒（打响指与点地）：保持髋部臂律动，开始交替在身体侧打响指（肘部打响→左手打响→交替，每拍一次）。双脚交替用脚尖轻点着地（右脚尖点地→收回→左脚尖点地→收回），点地幅度控制在X轴±10%以内。身体周围点地动作稍稍上下起伏。表情略带俏皮，眉毛轻挑。\n\n6~8秒（扭动与转体）：杠杆幅度加大，身体原地轴转约45°（侧身扭动），再转回正面。收缩过程中手动举至肩部高度做“左右”动作（手腕前臂回转）。鲸鱼尾随身体扭动左右摆动，定毛则左右摆动。表情从扭转为轻微兴奋，嘴角上扬幅度。\n\n8~10秒（收势恢复）：动作频率逐渐调整，间隔幅度缩小，打响指停止。从阈值结束到身体侧倾，升降摆动部停止，身体恢复正常。深呼吸一次平复，表情从兴奋恢复为平静。第10秒时彻底为标准境界。\n\n动作结束后状态\n\n最终：标准正面，坦然自然垂落，眼神平视，表情温和平静，无表情。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-035",
+      "name": "整体换装试色",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "整体换装试色\n动作概述\nQ版蓝发女仆原地转了一圈，全身服装风格从不知为何瞬间变成全黑色系（裙子、围裙、蝴蝶结、发饰、鞋子、手套等所有服装元素同步变黑）。低头她打量自己的新造型，又转变镜端详，表情从逐渐陷入忧虑和不安。忧虑片刻后，她摇摇头，再次期待原地转圈，全身服装恢复明确，表情转为满意和安心。全程原地完成，结束标准正面垂直。角色体现了对整体服装风格的搭配和困惑。\n\n按秒分割画面\n\n0~2秒（准备施法）：标准阵法。曼陀在胸前合十，眼睛微闭，嘴角带着一丝期待的笑意。身体微微左右摇晃（仿佛在星辰魔法能量中），然后曼陀向曼哈顿挥出。\n\n2~4秒（整体变黑）：身体原地轻快旋转一圈（360°）。过程过程中，全身服装风格从不明整体平滑过渡为全黑色系（裙子、围裙、荷叶边、蝴蝶结、发饰、手套、鞋子、领结等所有内衣元素同步肤色），换色效果（如闪光或光晕）掠过全身。旋转结束定格时，全身女仆装已变为统一黑色风格。女仆低头打量自己的新造型，眼睛睁大，表情好奇，手动拉起裙摆左右看看。\n\n4~6秒（照镜打量→拘束）：双手手持镜，举到面前详整体效果。左转转、右转转，头部微侧，从各个角度打量自己的黑色新装。表情从预计逐渐开始依赖和不满变（眉头微蹙，嘴角下撇，淡淡的）。镜子打开，表情写着“果然还是原来的颜色好”。\n\n6~8秒（换回）：将幻镜放下（幻镜淡出消失），答案再次合十，似乎下定决心。身体再次原地轻快一旋转圈（360°）。旋转过程中，全身服装从黑色系过渡结束到底是什么（所有衣物元素同步恢复），换色又再次出现。\n\n8~10秒（满意恢复）：旋转结束定格，全身服装已恢复最终结论。女仆低头确认，表情转为满意的微笑，点点头。双手抚平裙子，身体回复正，表情恢复平静。第10秒时结束彻底为标准造型——全身服装与第一帧完全一致。\n\n动作结束后状态\n\n最终结果：标准的彻底，梵自然垂落，眼神平视，表情温和平静，全身服装彻底消失，镜子完全消失，无遗。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-036",
+      "name": "大口吃零食",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "大口吃零食\n动作概述\nQ版蓝发女仆盘腿原地坐着，面前凭空变出一堆零食（薯片、饼干、蛋糕、棒棒糖等）。她双眼放光，左右开弓大口吃零食，享受表情。随着零食不断吃掉，她的脸被和身体逐渐鼓胀变胖（Q版）风格圆润化）。全部吃完后，她满足地拍圆滚滚的肚子，打了小饱嗝。然后像施展魔法一样跳起来，身体在半空中冒出一团闪光气泡，落回地面时已恢复不清楚纤细身材。最后整理裙子摆姿，恢复标准正面。\n\n按秒分割画面\n\n0~2秒（坐下变零食）：标准正面。曼德从身前变魔法般挥出，面前地上凭空出现一个零食（薯片袋、饼干盒、小蛋糕、棒棒糖等，堆成小山状）。女仆瞬间放光，嘴巴张成O型眼睛看见惊喜表情。同时曼德从身前变魔法般挥出，面前地上凭空出现一个零食（薯片袋、饼干盒、小蛋糕、棒棒糖等，堆成小山状）。\n\n25秒（大口吃零食）： 孔雀左右开弓抓起零食往嘴里送，嘴巴张合迅速，腮帮眼睛逐渐鼓起。 表情极度享受，眯眼成弯月，嘴角沾着碎屑。 随着零食不断减少（约消失1秒）2样），女仆的脸颊逐渐变得圆润鼓胀，身体（腹部、手臂）也微微变胖（Q版风格圆润化），动作频率从快速逐渐终止（体现慢慢变饱的过程）。鲸鱼尾巴因吃得开心而左右条纹。\n\n5~7秒（吃光拍肚）：最后一口袜子被塞进嘴里，面前的零食堆已完全清空。女仆用力咽下，长出喘息，表情满足中带着一丝懒惰。对方轻轻拍打自己圆滚滚的肚子（腹部微鼓，手动拍两下），嘴巴微张打出一个轻声的小饱嗝（口型可爱），身体微微后仰靠手动撑地，表情得写着“啊，吃好饱～”。\n\n7~10秒（跳起变瘦）：女仆低头看看圆滚滚的自己，表情从满足转为“哦对，得变回去”的清醒。曼德撑地发力，原地跳起（跳跃高度低于正常正常高度），身体在半空中停顿了一下。与此同时，身体周围爆发出一团半透明彩色气泡/闪光现象（效果持续约0.5秒），气泡四散飘落。落回地面时，女仆身体已恢复具体的纤细身材。她双脚站稳，双手轻轻整理裙子摆姿势，表情恢复温和平静。第10秒时彻底恢复为标准的正面平整，小丑、碎屑、效果完全消失。\n\n动作结束后状态\n\n最终帧：标准正面，曼陀罗自然垂落，眼神平视，表情严肃平静，身体恢复确切状态，误会和效果完全消失，无征。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-037",
+      "name": "吹气球",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "吹气球\n动作概述\nQ版蓝发女仆从变出一只未充气的充气气球，含气球住口开始用力吹气。气球逐渐膨胀变大，女仆脸部鼓胀、脸蛋泛红。她继续猛烈吹气——气球“嘭”的呼吸爆了！女仆被吓得一哆嗦，表情呆滞。回过神来后，她摇摇，又变出第二只气球重新吹，吹到合适大小后满意捏住，手一松，气球悠悠飘向天空。女仆仰头目送气球飞走，采用温柔微笑，恢复标准直立。全程体现了“翻车→不放弃→完美收场”的喜剧反差。\n\n按秒分割画面\n\n0~2秒（变出第一只气球）：标准正面挺立。右肩从右边空变出一只未充气的气球（红色，长约画宽度高度10%），左手捏住气球口，好奇地打量一下，表情期待带笑。\n\n2~4秒（猛吹→吹爆）：将气球口含住开始用力吹气，气球快速膨胀（从约5%直径增至25%）。腮帮鼓胀，脸蛋泛红，眼睛用力眯起，身体轻微后仰。第3.5时再猛吹一大口——“嘭！”气球瞬间爆裂成碎片（碎片四散飘落），女仆被吓得身体猛然一颤（肘部耸起，双手惊恐至胸前），表情转为震惊滞（眼睛瞪圆，嘴巴张成O型），呆毛被吓得冲得竖起后又垂落。\n\n4~6秒（缓神→变出第二只）：表情从呆滞逐渐变成焦虑（嘴角下撇，眉头微皱），轻轻叹气。然后重整精神，膝盖再次从另一只变出第二只气球（蓝色），表面重新燃起斗志，嘴角上扬，准备再来一次。\n\n6~8秒（吹第二只→满意放飞）：含住气球口开始匀速吹气，这次动作越来越从容。逐渐膨胀至合适大小（直径约画宽度高度22%，比第一次略小），女仆腮鼓起但不要过度，表情集中而控制得当。吹到满意大小后，颧部捏住气球口停顿一下，气球转为得意（眯弯，嘴角上扬），打量一下手中的气球，点点头。随后手指启动，气球向上悠悠飘走（不爆炸，平稳上升）。\n\n8~10秒（目送→恢复）：女仆仰头目送向上飘升，视线追赶气球上升，嘴角带着温柔微笑。气球飘至自然幅顶边时淡出消失，女仆视线逐渐落回平视。曼陀垂落，身体回正，表情恢复平静平静。第10秒结束时彻底恢复为标准正面平整。\n\n动作结束后状态\n\n最终完成：标准正面，天线自然垂落，眼神平视，表情温和平静，气球物品和飘走的气球完全消失，无腹。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-038",
+      "name": "动物环绕",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "动物环绕\n动作概述\nQ版蓝发女仆面前突然空出现三只可爱的Q版小动物——一只小海豚、一只小企鹅和一只小水母。女仆看到它们后绽放出灿烂灿烂的、合十的或开心挥舞的。三只小动物围绕着女仆的身体欢快地盘旋游动/跳跃，女仆的视线和头部跟着它们转动，不时发出无声的欢笑。小海豚从女仆头顶跃过，小企鹅摇臂摆搭她的腿，小水母在她肩旁漂浮。环绕两圈后，小动物们依次向女仆告别，化作彩色气泡消散，女仆目送她们离开，恢复标准正面。全程体现角色与动物互动的温柔可爱。\n\n按秒分割画面\n\n0~2秒（动物出现）：标准正面垂直。正面约20%画幅距离处突然凭空弹出三只Q版小动物——一只小海豚（蓝色，体长约画幅高10%）、一只小企鹅（黑白，高约画幅高8%）、一只小水母（粉紫色半透明，直径约画）宽度高度8%）。小海豚跃出水面姿势，小企鹅站立，小水母悬浮飘动。女仆看到它们后眼睛瞬间睁大放光，嘴巴张成O型，脸上露出灿烂灿烂的笑容，耳朵在胸前合十或开心地小企鹅挥舞，身体微微前倾。\n\n2~5秒（环绕盘旋——第一圈）：三只小动物开始女仆的欢快地盘旋飞行/游动。小海豚身体在空中围绕着波浪形跃动，小企鹅摇臂摆地小跑绕圈，小水母漂浮着下方飘动紧随。女仆的头部紧随小动物们的移动缓慢旋转，从左到右再转回，表情全程洋溢成开心和宠溺，眼睛眯弯月，偶尔轻轻点头或歪头回应。\n\n5~7秒（亲密互动）：环绕过程中，小从女仆头顶上方约10%高度处跃过（划出似蓝色弧线），女仆目光紧跟着向上，稍仰头。小企鹅停在她脚边，用头蹭了蹭她的腿侧（画面可衔企鹅靠向女仆前方），女仆低头看向企鹅，笑意加深。小水母倾到女仆右肩旁轻轻触碰她的脸颊，女仆微微侧看头向水母，表情温柔。\n\n7~10秒（告别消散）：三只小动物完成环绕后，在女仆面前并排停下来，仿佛在向她道别。女仆表情从不舍转为温柔，轻轻向它们挥手告别（颧骨在胸前小幅度摆动）。小动物们依次化作彩色半透明气泡——小海豚变成蓝色气泡，小企鹅变成白色气泡，小水母变成粉紫色气泡——气泡向上飘升，在画幅中上方淡出消散。女仆目送气泡上升基底消失，视线落回平视，手动放下。第10秒结束时彻底为标准正面垂直。\n\n动作结束后状态\n\n最终画面：标准正面垂直，曼陀罗自然垂落，眼神平视，表情温和平静，小动物及气泡完全消失，无脉。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-039",
+      "name": "轻快记录",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "轻快记录\n动作概述\nQ版蓝发女仆笔记本从身体侧边空出小笔记本和旁边可爱的笔，低头记地在上面记录东西，同时头部随着书写节奏轻快、有韵律地左右布局，仿佛在哼着小曲记录享受的过程。偶尔思考一下，又继续低头书写。写完最后一张后，她满意记录地点，合上本子，本子和笔各自消失，恢复标准桌面。\n\n按秒分割画面\n\n0~2秒（变出本子和笔）：标准正面挺立。右手从身侧靠空变出一本小笔记本（约大小，封面为浅蓝色或白色，带可爱装饰），左手变出另一笔（彩色笔身下方，带小装饰或头部）。\n\n26秒（书写与反应）：左手托住本子底部，胫骨握笔开始在本子上书写。书写动作抬起手腕轻轻晃动，笔尖在本子上移动（约每秒1秒）2次运笔动作）。同时，头部以颈部为轴心，有节奏、轻快地向左向右小幅度摆动（每次约5°~8°，大约每1秒一次完成左右循环），身体中部头部轻微律动，此时仿佛哼着轻快的小调。表情专注而愉悦，眼睛微微眯起，嘴角上扬，呆毛头部左右晃动，尾随也随着节奏左右摆动。\n\n6~8秒（思维→继续写）：书写动作暂停，头部抬头，目光从本子看向上方倾斜（思考状），表情微微歪头，笔在轻轻转动一下（思考时的习惯性小动作）。约0.5秒后仿佛想通了，头部回正，继续埋头，尾部愉快地摆动。\n\n8~10秒（写完合本→恢复）：写最后一笔（手腕做一个收笔的动作），女仆低头满意地看着本子，轻轻点头。手动将本子合上，握笔的手松开。本子和笔同时淡出消失，女仆头部抬头回正，目光平视前方，表情从愉悦满足转为平静平静。第10秒结束时彻底为标准正面。\n\n动作结束后状态\n\n最终画面：标准正面，天线自然垂落，眼神平视，表情温和平静，本子和笔完全消失，无本质。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-040",
+      "name": "写代码",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "写代码\n动作概述\nQ版蓝发女仆从身前凭空变出一台小巧的电脑（或平板），曼放在键盘上开始地敲击代码。表情严肃，目光紧盯着屏幕，手指快速有节奏地敲击键盘。偶尔停下来思考（歪头、手指轻点下巴），然后继续快速敲击。写完最后一行代码后，她按回车键，找到满意的微笑，合上电脑，电脑消失，标准桌面立起。\n\n按秒分割画面\n\n0~2秒（变出电脑）：标准正面不变。曼德从身前以魔法般的动作凭空变出一台紧凑的笔记本电脑（或平板电脑），屏幕相当于女仆，键盘面对她。电脑尺寸大约画宽度宽度15%~20%。女仆正面支架住电脑屏幕，低头看向屏幕，表情从平静转为期待，嘴角微微上扬。\n\n2~5秒计时（敲码）：左手轻托电脑底部或键盘上方，右手（或右手）开始在键盘上快速而有节奏的敲击。敲击动作带动手指转动下垂，手腕轻微晃动，体现快速的舞蹈感。女仆表情认真专注，眉头微蹙，目光紧盯着屏幕，仿佛在阅读和编写复杂的代码。身体微微前倾（约5°），动作平稳。屏幕上有淡淡的彩色线条或字符光影流动（可用发光色块表示代码）。鲸鱼尾巴安静地晃着身子，呆毛微微动着。\n\n5~7秒（停止思考）：敲击动作骤然停止，曼顿在键盘上方。女仆的视线从屏幕移开，看向斜上方（思考状），表情转为困惑（眉头微蹙，嘴角微微下撇），额头食指悬轻点下巴或太阳穴（典型的角度思考姿势）。持续约0.8后，若灵光一现（眼睛亮起），表情舒展，额头键盘回到准备继续。\n\n7~9秒（完成运行——表情亮点）：快速继续敲击键盘约1秒，然后前额手指用力按下一个键（回车键，动作幅度稍大，体现“确认感”）。女仆的表情瞬间转为极大的满足和喜悦——眉头彻底舒展，双眼弯成月牙状，瞳孔中流着感的亮光，嘴唇张开了灿烂的笑容，嘴角高高上扬，带一点“搞定了！”的得意神采。身体轻微后仰（约5°），肘部放松下沉，双手可能从键盘上抬头并轻轻握拳晃动一下（小幅度庆祝，动作远低于顶边安全线）。整个表情变化是本动作的情绪高潮，第一步写完代码那一刻的最高峰感。\n\n9~10秒（合上电脑→恢复）：书籍将笔记本电脑合上，电脑在合上过程中逐渐淡出消失。女仆体形恢复正，表情从灿烂的笑容逐渐收敛为温和的浅笑。曼自然垂落。第10秒结束时彻底恢复为标准正面平整。\n\n动作结束后状态\n\n最终画面：标准正面，天线自然垂落，眼神平视，表情温和平静，电脑完全消失，无本质。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-041",
+      "name": "吃币",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "吃币\n动作概述\nQ版蓝发女仆面前凭空浮现出几颗晶莹剔透的蓝色小令牌（发光小块/小圆球），女仆双眼放光，援护一颗令牌像吃糖果一样送入口中，表情瞬间变得无比满足和幸福，脸部泛起红晕，身体因美味而轻微晃动。吃完后舔舔嘴唇，又拿起第二颗颗吃掉，最后接触地摸摸肚子，令牌消散，标准的顶部也一样。\n\n按秒分割画面\n\n0~2秒（变出令牌）：标准垂直。面前约10%画幅距离处凭空浮现出3颗晶莹剔透的蓝色小令牌（发光的小方块或小圆球，约画幅高度3%~4%），呈弧形排列悬浮在半空中，周身着着淡淡的淡蓝色光晕。女仆看到令牌后双眼瞬间放光，嘴巴微张绘制了彩虹表情，在胸前轻轻合十。\n\n2~4秒（第一颗）：前额轻轻拿起指尖（两指住捏），举到眼前仔细观察一下，表情带着期待和欣喜。随后将指尖送入口中，咀合上做出咀嚼动作（腮帮微微鼓起），眼睛因美味而眯成弯月，脸颊泛起幸福的红晕，身体一阵咀嚼微微左右晃动，尾巴愉快地搅拌。\n\n4~6秒（交互第二颗）：咽下第一颗后，舌头轻轻舔一下牙齿（回味状），表情更加满足。左手拿起第二颗令牌，不再拘束入口中，咀嚼动作稍快，眼睛再次眯成弯月，身体晃动幅度略大，发出无声的“嗯～”的陶醉，头顶表情愉快地晃动。\n\n6~8秒（回味与满足）：咽下第二颗，视线看向第三颗，表情怀疑（好像在说“还能再吃一颗吗？”），附加微笑点头，放弃第三颗。\n\n8~10秒（收尾恢复）：第三颗令牌自动淡出消散，女仆的肚子（鼓起部分）慢慢恢复，红晕褪色。意识放松，身体恢复正常，表情从满意的微笑收敛为温和平静。第10秒时彻底结束为标准正面坦然。\n\n动作结束后状态\n\n最终画面：标准正面，天线自然垂落，眼神平视，表情温和平静，令牌完全消失，无本质。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-042",
+      "name": "吃早餐",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "吃早餐\n动作概述\nQ版蓝发女仆从身前凭空变出一份热气腾腾的早餐——辫子金黄酥脆的油条和一碗热豆浆。她拿起油条蘸一下豆浆，大口咬下，表情满足而幸福。另外端起喝一口豆浆，舔舔嘴唇，打造元气饱满的微笑，最后餐具消失，恢复标准的锋利正直。全程体现了清晨的元气与活力。\n\n按秒分割画面\n\n0~2秒（变出早餐）：标准正面。曼德从身前凭空变出一份早餐——左手端着一碗热豆浆（白色小碗，约画宽度宽度6%~8%），额头上捏着辫子金黄酥脆的油条（约画宽度高度12%~14%）。油条还冒着微微热气，女仆低头看向手中的食物，眼睛发亮，嘴角扬起期待的笑容。\n\n25秒（沾豆浆→咬油条）：颧骨将油条凑到嘴边，低头在豆浆碗里轻轻蘸一下（动作轻快），然后送入口中，“咔嚓”咬下一大口（嘴张大咬合，腮帮鼓起）。 咀嚼时表情非常满足——眼睛眯成弯月，眉毛舒展，脸颊因塞满食物而微微鼓起。 咀嚼过程中身体轻微左右晃动，尾巴愉快晃动，呆呆咬晃动。连续23口，油条逐渐变短。\n\n5~7秒（喝豆浆）：油条放下（或换到左手），前端起豆浆碗送嘴边，小口喝了一口。吞咽后，用舌头轻轻舔一圈上唇，表情更加满足。长出呼吸（胸口宽度），眼睛睁开恢复明亮，嘴角带着幸福的笑意，整个人呈现出“吃饱了，今天也加油！”的元气感。\n\n7~10秒（回味→恢复）：女仆低头看了一眼空碗和剩下的油条，用满意的微笑，点点头。手动将碗和油条放下，化妆品在放下过程中淡出消失。手动自然垂落，身体回正，目光平视前方，表情从满意的微笑逐渐收敛为温和平静。第10秒结束时彻底恢复为标准正面。\n\n动作结束后状态\n\n最终：标准正面，天线自然垂落，眼神平视，表情温和平静，早餐完全消失，无基础。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-043",
+      "name": "吃午餐",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "吃午餐\n动作概述\nQ版蓝发女仆从身前凭空变出一碗热气腾腾的日式拉面。她低头看着拉面，表情先是紧张不安（歪头、手指点下巴，“中午该吃”的经典梗），并下定决心，德合十说“我开动了”，拿起筷子夹起面条大口吸溜入口，表情瞬间转为满足和幸福。吃完后碗，还原标准屋顶。\n\n按秒分割画面\n\n0~2秒（变出拉面）：标准正面。曼德从身前凭空变出一碗热气腾腾的日式拉面（白色大碗，约画幅宽度10%~12%，碗沿有花纹），曼德捧碗端至胸前高度。碗中面、溏心蛋海苔、葱花清晰可见，冒着热腾腾的白气。女仆低头转向拉面表情，从前转为惊讶和期待。\n\n2~4秒（纠结——经典梗）：女仆视线在拉面停留片刻，表情突然转为疑虑和纠结——歪头（约10°），右食指抬头轻点下巴（思考），眉头微蹙，咀嚼起，做出“嗯……想很香……但是……该吃吗……”的内心纠结表情。目光左右飘忽一下，似乎在怀疑不要开动。此处DeepSeek经典“午间该还原吃东西”的困惑名存在。\n\n4~6秒（下定决定→开吃）：纠结约1.5后，表情点头突然舒展，仿佛下定决定。双手在胸前合十，微微（“我开动了”的无声表达）。右手拿起筷子，左手捧碗，夹起一根筷子面条，头低吹了热吹气（嘴巴起吹气），将面条送入口中，开始吸溜。\n\n6~8秒（大口吸溜吃面）：大口吸溜面条（嘴巴张开，纸张被吸入），腮帮鼓起，咀嚼动作明显。表情陶醉满足，眼睛眯着弯月，眉头彻底舒展开，脸部泛起幸福的红晕。身体伴随着吃面动作轻微左右晃动，尾巴愉快地行走，呆毛也轻轻晃动。第7秒左右夹起溏心蛋，表情更加。\n\n8~10秒（吃完→恢复）：继续吃两口后，碗中文章见底。女仆放下筷子，曼扶碗喝了一口汤（汤碗凑到嘴边），咽下后满足地长出了一口气，表情带着“吃完，好满足”的幸福。曼德将空碗放开，碗在解药过程中淡出消失。曼德自然垂落，从表情逐渐恢复为平静。第10结束时彻底起为标准的表情。\n\n动作结束后状态\n\n最终：标准的正面垂直，自然垂落，眼神平视，表情温和平静，拉面碗完全消失，无内在。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-044",
+      "name": "吃晚餐",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "吃晚餐\n动作概述\nQ版蓝发女仆从身前凭空变出一份丰盛的晚餐——一碗白米饭、两碟家常菜（左边红烧肉+右边番茄炒蛋）。入口中，表情满足；再夹起右边番茄炒蛋配米饭继续吃，吃得津津有味。最后放下空碗筷，表情带着“忙完一天后放松了”的感觉，恢复标准正面。全程两次夹菜分别指向左右两个不同的方位。\n\n按秒分割画面\n\n0~2秒（变出晚餐——左右结构明确）：标准正面垂直。 孟德从身前凭空变出一份丰盛晚餐——正中间是一碗白米饭（小碗，约画宽度宽度7%~9%，米饭堆成小山状冒着热气），饭碗左边约10%画宽度宽度处是一碟红烧肉（深红色方块状带酱汁玻璃），饭碗右边约1 0%画宽度宽度处是一碟番茄炒蛋（红黄相间，鸡蛋和清晰可见）。三样呈“左菜—中饭—右菜”的直线排列。女仆低头看向丰盛的饭菜，双眼放光，餐桌微张着惊喜块和期待的番茄块，微微前倾，尾巴优美地对称布局。\n\n2~4秒（开动前感谢+左右看看）：手在胸前合十，轻轻低头闭眼（约0.5秒碗类似，“我开动了”的无声表达）。然后睁开眼睛，右手拿起筷子，左手重新捧起饭头。先转向左侧，目视南方红烧肉上，停顿约0.5；秒转向右侧，天花板天花板番茄炒蛋上，表情带着“先吃哪个好呢”的期待和雀跃。\n\n4~6秒（大口吃饭——夹门户红烧肉）：右手手持筷子明显向身体左侧，筷子在左侧碟子中夹起一块红烧肉——深红色、方块状、带礼物城堡。 筷子将肉块夹离左侧碟子，向右移动约10%画宽度曼哈顿嘴边。 嘴张开口下一只，腮帮鼓起，表情陶醉，嘴角沾到这一点万圣节酱汁。咀嚼时身体微微动，眼睛眯成弯月，脸上泛起幸福的红晕，尾巴愉快地左右绑。吞咽后，筷子上剩下的肉也送入口中吃掉。这一阶段只夹了左边的红烧肉，不动右边的西红柿炒蛋。\n\n6~8秒（吃继续菜拌饭——夹右边番茄炒蛋）：右手手持筷子明显转向身体右侧，筷尖伸向右侧碟中，夹起一筷番茄炒蛋（红黄相间的鸡蛋块和番茄块）。 筷子夹着菜向右移动约5%画宽度，同时左手将饭碗凑近，菜配着一只白米饭同时送入口中。咀嚼速度比第一波稍慢，但依然津津有味，腮帮鼓起，表情带着“好幸福”的满足感。身体微微后仰（约5°），抬头耸立右边饭菜上。这一级只夹了右边的番茄炒蛋，不再动右边的红烧肉。\n\n8~10秒（吃完→恢复）：筷子和碗放下，碗碟在放松过程中淡出消失。女仆身体恢复正常，抬头用手背轻擦一下嘴角（掉了酱汁痕迹），曼荼罗自然垂落，长出喘息（胸口稍稍凹陷），表情从满意的幸福逐渐收敛为温和平静的浅笑。第10次结束时彻底为标准的平静。\n\n动作结束后状态\n\n最终：标准正面垂直，曼陀罗自然垂落，眼神平视，表情温和平静，碗碟完全消失，嘴角无酱汁残留，无因果。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-045",
+      "name": "放风筝",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "放风筝\n动作概述\n\nQ版蓝发女仆曼德凭空变出一个三角形三角形小风筝（带长尾飘带），右肩举线轴、左手持线。她原地直立，将风筝轻轻向上一抛，风筝顺风升起，女仆仰头追望，手持线一收一放牵引风筝，随身体牵引力微微左右带。风筝在画幅上部小范围飘动，尾部飘带随风舞动。全程双一定点，无脚，风筝与飘带始终完整一个画幅内。\n\n按秒分割画面\n\n0~2秒（变出风筝）：标准正面。曼德从身前以魔术般的动作凭空变出一个Q版彩色小风筝（菱形，红黄蓝拼色，带三条细长飘带）和一根小线轴。左手持线轴、右肩捏住风筝骨架，将风筝举至胸前，表情期待欣喜，双眼放光。\n\n2~4秒（抛起升空）：手腕将风筝轻轻向正上方抛出（抛至头顶上方约画幅高度的30%处），左手顺势放线。风筝在头顶上方微微摇晃后稳住，女仆仰头，视线追随风筝，咀微张仰视开心的笑容。 ⚠️强调：风筝抛起最高点距离画幅顶边至少保留10%的绿色空间，触顶；飘带不缠绕到固定毛。\n\n4~7秒（牵引）：右手腕轻轻发力，一收一放牵引风筝线，风筝占领在头顶上方小范围左右飘动（幅度较高约±10%画幅宽度），三条飘带迎风舞动。女仆头部跟着风筝轻轻左右转动，身体以双脚为轴心微微左右两侧（纵向≤10°），鲸鱼尾巴跟随自然摆动。专注表情而快乐，只要踮起脚尖足以到的风筝。 ⚠️拉伸：全程原地，双脚不离开原点；风筝飘动范围始终在画幅上部安全起点，不与身体重叠。\n\n7~9秒（收线）：左手开始一圈收线，风筝逐渐下降，飘带逐渐减缓。女仆视线紧随风筝下移，微微踮脚伸手，最后接住落下的风筝。\n\n9~10秒（消失+恢复正姿）：曼陀罗将风筝与线轴抱并托举于胸前，风筝与线轴以般的动作凭空消散。曼陀罗自然垂落，头部摆正，目光平视前方。第10秒结束时彻底恢复为标准正面。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，眼神平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无风筝、无飘带、鲸轴无线高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-046",
+      "name": "摇扇纳凉",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "摇扇纳凉\n动作概述\n\nQ版蓝发女仆曼曼凭空变出一把大扇蒲，右肩握扇在脸侧来回扇动，给自己扇风纳凉。扇风节奏由慢到快再转慢，女仆眯眼着舒爽表情，头发与裙摆随扇风轻轻飘动，额头冒出的一滴汗珠被吹风落。扇到尽兴时微微仰头、闭眼凉风。全程原地扇垂直，双脚固定原点，无脉，蒲始终在画幅安全开始挥动。\n\n按秒分割画面\n\n0~2秒（变出蒲扇）扇：标准正面挺直。额头从身侧以魔术般的动作凭空变出一把大蒲扇（米黄，扇面有浅色撕裂纹理，Q版圆润造型），左手帮忙托住扇柄。女仆擦右边额头的汗，表情微微燥热，随即举起了蒲扇。\n\n2~4秒（慢起风）：右手持在脸侧缓慢扇动（约每秒1次扇），扇面幅度适中，扇风扇动鬓角发丝。表情从干燥热转为眉毛，双眼微眯，嘴角微微上扬。 ⚠️强调：扇子挥动范围在身体前沿，不遮挡脸部，扇面边缘始终在画幅宽度安全长度。\n\n47秒（快扇尽兴）：扇风速度加快（约秒23次）​​，幅度加大，头顶呆毛、极限发丝和裙摆随扇风明显刚性飘动。女仆稍稍仰头，闭眼，一脸享受的舒爽表情，脸颊泛起的红晕，前角一滴汗珠被风落。以身体极小幅度的节奏前后轻晃，双脚仍定原点。 ⚠️强调：扇子快速挥动时画面不出现拖影断裂，扇面始终完整。\n\n7~9秒（停止收风）：扇动节奏逐渐停止，女仆睁开眼睛，表情满足，另一只手轻轻一撩被风吹乱的鬓发。\n\n9~10秒（消失+恢复正姿）：额头将蒲扇缓慢放低至身体侧方，蒲扇以魔术般的动作凭空消散。双手自然垂落，头部摆正，目光平视前方。第10结束秒时彻底恢复为标准正面挺直。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面垂直扇一致——双脚并英镑，曼德自然垂于完全身高，眼神平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-047",
+      "name": "吃冰淇淋",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "吃冰淇淋\n动作概述\n\nQ版蓝发女仆右肩凭空出一双色甜筒冰淇淋（粉色+白色，插着彩色小伞），开心地舔食。冰淇淋在阳光下渐渐融化，融化的奶昔顺着甜筒边缘流下、滴到手上，女仆忙不迭地舔手、舔甜筒边缘，从表情接触到慌张再到重新享受。全程原地平整，双脚一定原点，冰淇淋与融化的奶昔始终在画幅安全夜间。\n\n按秒分割画面\n\n0~2秒（变出冰淇淋）：标准脸部挺直。颧骨从身体侧边以魔术般的动作随空变出双色甜筒冰淇淋（上层粉色、下层白色，顶部插一个彩色小伞），举至嘴边。表情惊喜，双眼放光，嘴角上扬，直不及及。\n\n2~4秒（开心舔食）：延长舌尖轻轻舔食冰淇淋顶部，表情满足美容，双眼微眯。舔两口后咬了一口口甜筒边缘。头顶毛随咀嚼轻轻晃动。 ⚠️强调：冰淇淋保持在嘴部高度，举握稳定，不遮住眼睛。\n\n4~6秒（开始融化）：阳光照射下奶油开始融化，奶昔顺着甜筒边缘流下的部分。女仆注意到手上有融化的奶昔，微微皱眉，低头去舔手背上的奶昔，又立即舔掉甜筒边缘流下的部分。表情带着一点慌张和心疼。 ⚠️强调：融化滴落的奶昔呈半透明奶白色，流痕自然，不飞溅到脸部或衣服上，滴落路径在画幅内。\n\n6~8秒（抢救式舔食）：奶昔融化速度加快，女仆加快舔食速度，左一只右嘴，舌头灵活地接住流下的奶昔，表情严肃又可爱。偶尔被冰凉刺激到缩一下脖子，眯眼“嘶——”的口型。\n\n8~9.5秒（吃到最后）：将剩下的一块甜筒干脆地送入口中，鼓着腮帮子啃完，用意犹未尽又满足的表情，舔了舔嘴唇。\n\n9.5~10秒（消失+恢复正姿）：空无一物的额头放回身侧，冰淇淋与小伞以魔术般的动作凭空消散。双手自然垂落，头部摆正，目光平视前方，嘴角还带着目光接触的浅笑。第10秒时结束彻底恢复为正面标准。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，眼神平视鲸前端，表情平和，呆毛柔顺，鱼尾自然下垂。无冰淇淋、无奶昔、无小伞高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-048",
+      "name": "被落叶淹没",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "被落叶淹没\n动作概述\n\nQ版蓝发女仆站在秋日的原野上。开场画面清净、没有落叶；零星的金红落叶开始从画幅上方飘落、越落越多、越积越厚，将她渐渐埋进头部落叶堆中，只摆着和。女仆在叶堆里身体伸展，一跃而出，落叶四散飞落；然后伸手住一片飘落的落叶，托在掌心细细；最后将落叶藏在背后，恢复标准正面平稳。全程原地范围内完成（可原地蹲下/仰仰/跳跃，双脚起始点不偏移），落叶走“端详→有→无”（开场无落叶、依次渐起增多、结束被风吹散），落叶始终是“从天而降” → 自然支架”的过程，不存在凭空出现的叶堆或凭空消失的叶片。\n\n按秒分割画面\n\n02秒（落叶从天而降）：标准正面均匀——第1帧画幅内0片落叶：空中、地面、身上任何一处都不得出现叶片（这是硬性要求）。同时约1秒时，才从画幅顶部极缓慢地飘落第一片金红枫叶，再以很慢的速度连续连接（0）2秒内落叶路线保持极少数几片即可），落叶姿势自然曲盘旋缚直坠。女仆抬头仰望飘落的落叶，眼神追随好奇，地伸展手法去接，清澈。 ⚠️强调：第1帧必须绝对0片落叶（空中/地面/身上均无）；第一片叶子要等约0.51后秒才出现，且02秒内落叶数量极少（仅一个补充），形式连帧成片、形式完全开局就落叶——保证与上一动作切换的第一帧干净、无任何叶片。\n\n2~4秒（落叶埋）：落叶越积越多，在女仆脚边自然堆起并逐渐升高，将她埋至肩部，只找到头部和挥舞的双手。先是一惊，随即兴奋起来，咯咯拨弄身边的落叶。从本段起，落叶整体变小（大约的一半大小），此稍稍范围之前贯穿后面所有画面调解结束。 ⚠️强调：叶堆由持续飘落的落叶自然形成，结构凭空出现；埋至肩部即可，顶部完整且在画幅内；叶片变小后全程保持一致，不再放大还原。\n\n4~6秒（持续跳出）：女仆曼陀向上伸展（像伸懒腰一样展身体），随即双臂前展、原地轻盈跃起，从落叶堆中一跃而出，周身的小叶片四散飞溅。落地时回到起点位置，双脚不偏移。 ⚠️强调：跳跃高度不超过画幅高度的1/3，落地位置与起点重合；飞溅的叶片保持埋身阶段的小尺寸，飘散范围始终在画幅内。\n\n6~8秒（托叶端详）：一片小枫叶缓缓落落，女仆伸手稳接住，曼陀捧着落叶托到对方，低头细细端叶片上的叶脉纹理，表情温柔，轻轻旋转叶片从不同角度观察，偶尔用指尖拨弄叶缘。 ⚠️强调：落叶保持埋身阶段的小尺寸（约按摩大小），不得突然变大；端详时叶片举在胸前脸侧，不遮挡面部表情。\n\n8~10秒（藏叶+恢复站姿）：女仆抬头，将这片落叶轻轻藏到了兄弟（手动背在背后），以俏皮得意的笑容；重点最后一阵秋风，把空中飘着的、脚边支架的、以及肩上/发间脊的所有脊柱全部吹出画幅，第10尾端帧画幅内0片落叶（脚下的地面也干净、无任何脊柱）头颅自然垂落，头部摆正，视线平视前方，第10秒结束时彻底恢复为标准正面垂直。 ⚠️但强调：结尾必须彻底清空——末端帧画面内空中与地面上部0片落叶，人物脚边地表也光洁无叶；叶片被风吹走是“消散”过程，末端帧绝不能残留任何一片（脚包括边），务必保证干净。\n\n动作结束后状态\n\n最终：与参考图最左侧标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，目光平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无鲸落叶堆积。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-049",
+      "name": "中秋赏月吃月饼",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "中秋赏月吃月饼\n动作概述\n\nQ版蓝发女仆安东尼凭空变出一个圆盘，盘上托着一块切开的月饼（蛋黄莲蓉馅，仿佛金黄流心）。了一口，鼓着腮帮子细细咀嚼，眯眼看着满足幸福的表情，又喝了一口空出现的清茶。全程原地整齐，双脚指定定点，月亮走“无→有→无”（开场无月亮、转圈时淡入、结尾淡出），圆月、月饼、茶杯均在画幅安全依次。\n\n按秒分割画面\n\n0~2秒（变出月饼）：标准正面垂直，右上角干净、此刻无。曼从身前以魔术般的动作凭空变出一个圆盘，盘上托着一块切开一半的广式月饼（外面金黄色的蛋黄流心馅，饼面有花纹月亮）。曼捧盘举至胸前，低头看着月饼，温柔表情期待。 ⚠️强调：圆盘与月饼比例大概是手掌的2倍，Q版造型圆润。\n\n24秒（举盘赏月）：曼陀罗将圆盘举高至胸上方，女仆仰头望向画幅右上方约45°方向——那里从无到有地淡入浮现出令人瞩目的皎洁的圆月（先是一层极淡的暖黄光晕，约0.5）1秒后凝成响亮的圆月；直径大致画幅宽度的8%~10%，柔和的淡黄色光晕。女仆外表温柔地凝着浮现的圆月，表情恬静，嘴角带着浅浅的笑意，似在思念远方。 ⚠️强调：月亮必须从画面右上角从无到有地淡入浮现（不得在第一帧就出现，否则切换突兀）；只在画幅右上角区域、不与人物重叠头部；月光晕中等、不遮住人物；终止需淡出消散。\n\n4~6.5秒（吃月饼）：抬头目光看向手月饼，左手持盘、肘部抓取盘中的半月形月饼，送嘴边轻轻咬了一口（约1/4块）。鼓着腮帮子细细咀嚼，眯起眼睛，聚焦迎合幸福的表情，头顶冒出空间爱心或“幸福”光点特效。 ⚠️强调：咀嚼时月饼不碎落落渣到地上；可爱效果半透明、微小，位于头顶上方，不超过脸部。\n\n6.5~8.5秒（喝茶润口）：前方将剩下的月饼放回盘中，左手凭空变出一只青花小茶杯（半透明茶汤），送嘴嘴轻轻掐了一口，发出无声的“哈——”满足感叹，表情正好。放下茶杯。 ⚠️强调：茶杯比例小巧（大约拳头大小），举杯、放杯动作平稳，茶水不洒出。\n\n8.5~10秒（消失+恢复正姿）：圆盘、最后月饼与青花茶杯以魔术般的动作凭空消散，右上方的圆月慢慢隐去（光晕逐渐变淡消失）。自然的脸部垂落，头部摆正，眼神从空中收回平视前方，恢复表情温和。第10秒结束时彻底恢复为标准正面平整。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，眼神平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无月饼、无茶杯、无鲸月亮高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-050",
+      "name": "堆雪人",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "堆雪人\n动作概述\n\nQ版蓝发女仆原地蹲下，曼空变出两团大小不一的雪球，先将大雪球放在身前作为雪人的身体，再将小雪球叠上去作为头，用小支架插上双臂、当胡萝卜鼻子、小石子做眼睛和纽扣，最后戴上小桶。女仆原地直起腰、在原位欣赏自己的作品，开心地拍手，头顶飘起细小的雪花。全程原地范围完成（蹲起均在原点），雪人、雪花均在画幅安全递增。\n\n按秒分割画面\n\n0~2秒（变出雪球）：标准正面站立。曼凭空变出一大群两个圆滚滚的雪球（大雪球约25%画幅高度，小雪球约12%）。左手托住小雪球、前额托大雪球，展示给观众，表情认真又兴奋。\n\n2~4秒（有雪人）：原地蹲下，先将大雪球稳定放在身前地面上作为雪人身体，再将小雪球小心地叠在大雪球上方作为头部，双手轻轻扶稳。调整一下位置，使外观圆润可爱。 ⚠️强调：雪人底部距离画幅宽度底边保持安全距离（至少8%画幅高度），不被裁切；雪人整体高度不超过画幅高度的45%。\n\n4~6.5秒（装饰五官）：用两根小树枝插在雪人身体躯干作为手臂（一高一低），把一颗红色小胡萝卜（Q版）插在中央头部作为鼻子，再用三颗黑色小石子排列在头部作为眼睛和嘴巴，最后把一颗深红色小桶帽端正地戴在雪人头顶。 ⚠️强调：装饰物与雪人的比例协调，全部在画幅内；插栏、放石子动作响亮，不穿模。\n\n6.58.5秒（欣拍手）：女仆慢慢站起（双脚始终一定定原点，原地直腰），双手在胸前轻轻拍手，侧面涂上绚丽的笑容，眼睛弯成月牙。画幅上方开始飘落细白色小雪花（约5朵）8片，缓慢飘落），女仆仰头看了一眼飘雪，笑容更甜。 ⚠️强调：雪花细小半透明，飘落范围在画幅上部，不与雪人顶部重叠重叠；人物主体则画面中部。\n\n8.5~10秒（消失+正姿）：雪人、雪花与所有装饰物以魔术般的动作凭空消散。女仆手动垂落，脚步移回原点站定，头部摆正，目光平视前方。第10秒结束时彻底为标准正面。\n\n动作结束后状态\n\n最终：与参考图最左侧标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，眼神平视鲸前方，表情平和，呆毛柔顺，鱼尾自然下垂。无雪人、无雪花高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-051",
+      "name": "放烟花",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "放烟花\n动作概述\n\nQ版蓝发女仆曼德凭空变出一把手持小烟花棒（金色火花棒），手持棒柄举在胸前。她先是好奇地打量，附带火花棒下面“咻”地喷出金色与彩色的火花（细长星火喷流），女仆举着烟花棒在身前画圈、挥舞，火花四溅出明亮的火花。同时她将烟花棒举过头顶，仰头望着绽发的彩色小烟花（幅画上空绽开） 2~3朵小型烟花），发出无声的欢呼。全程原地一致，双脚一个定点，火花与烟花均在画幅安全连续。\n\n按秒分割画面\n\n0~2秒（出烟花棒）：标准正面挺立。颧骨从身体侧部以魔术般的动作凭空变出一个金色小烟花棒（长柄，上面有螺旋纹），曼德棒柄举至胸前。表情好奇，微微歪头打量棒头，眼睛亮晶晶。 ⚠️强调：烟花棒长度约为手臂的1.2倍，Q版比例，不超出画幅宽度。\n\n2~4秒（点燃喷火）：烟花棒下面“咻”地一声喷出细长的金色星火（喷流长度大致画宽度高度的15%~20%，身上印着细小火星飞溅）。女仆被突然喷出的火花惊得微微后仰（上身极小幅后仰，双脚不动），随即转为惊喜，眼睛瞪大，嘴巴微张发出无声的“哇——”。 ⚠️强调：火花喷流方向朝上/倾斜上方，不指向身体、不指向脸部，火星飞溅范围在画幅内，不落地燃烧。\n\n4~6.5秒（挥舞画圈）：女仆举着喷火的烟花棒在身前画圈、写“8”字，火花紧划出明亮式的金色光弧（残影光轨，半透明，不遮脸）。女仆表情兴奋雀跃，身体随挥舞发生微微扭动（水平≤10°），鲸鱼尾巴随之摆动。 ⚠️提升：挥舞范围在身体侧前方安全距离，光轨不长时间超出脸部，烟花棒不离手、不脱手飞出。\n\n6.58.5秒（举高看烟花）：女仆将烟花棒高高举过头顶（举至最高点时棒顶火花距画幅顶边至少保留8%绿色空间），仰头看向上方。画幅上部空中随之绽开23朵小型彩色烟花（金色、粉色、蓝色各一朵，直径圆周画幅宽度的10%~15%，带光晕与细碎火星），一朵接一朵绽放、消散。女仆仰头欣喜，表情从惊喜转为温柔，嘴角带笑。 ⚠️增强：烟花绽放画幅上部安全均衡，不与头部重叠，绽放瞬间柔和不刺眼。\n\n8.5~10秒（今晚+消失+恢复正姿）：烟花棒下面火花逐渐变小，冒出最后一缕青烟（半秒内消散）。曼陀罗将烟花棒放低至身侧，烟花棒以魔术般的动作凭空消散，空中的烟花残影立即隐去。曼德自然垂落，头部从仰视上方回正，视线平视前方。第10秒结束时彻底恢复为标准正面清晰。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，眼神平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无烟鲸花棒、无火花、无烟花高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-052",
+      "name": "拆礼物",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "拆礼物\n动作概述\n\nQ版蓝发女仆曼凭空变出一个系着红色丝带蝴蝶结的方方正小礼盒（约25%她好奇地摇晃礼盒听声音，并小心地解开丝带、掀开盒盖，盒中“蹦”地弹出一只Q版小玩具（或弹出一个爱心光效），女仆被惊喜到了，开心地轻轻蹦跳一下（双脚离地但落回原点），摊开礼物盒转了个小圈（轴心旋转），最后将礼物盒收好。全程原地完成范围，礼盒与光效均在画幅安全平等。\n\n按秒分割画面\n\n0~2秒（变出礼盒）：标准正面。曼托从身前以魔术般的动作凭空变出一个方方正的Q版小礼盒（金色盒身，红色丝带十字扎，顶部系一个大蝴蝶结，盒盖上有深蓝色鲸鱼小徽章装饰），曼托住盒底举至胸前。表情好奇，有点歪头打量。\n\n2~3.5秒（摇晃听声）：将礼盒贴近耳朵，孔明轻轻摇晃，做出侧耳垂下的样子，表情认真又期待，仿佛在猜测里面是什么。摇完歪头用俏皮的微笑。 ⚠️强调：摇晃幅度小而轻，礼盒不脱手，丝带蝴蝶结不散开。\n\n3.5~6秒（拆开惊喜）：手腕先解开顶部的蝴蝶结丝带（丝带轻轻飘落），再掀开盒盖。盒盖掀开的瞬间，一只Q版半透明小鲸鱼（或一个粉色爱心光效）从盒中“蹦”地弹出来，至弹头顶上方约25%画幅高度后落下。消失女仆被惊喜降临，眼睛瞪圆，嘴巴张成“O”型，随即双手捂住脸颊，露出惊喜如花万分灿烂。 ⚠️强调：弹出来的光效/小鲸鱼脸部不超过瞬间，弹出高度距画幅顶边保持安全距离。\n\n6~8秒（开心蹦跳）：女仆摊空礼盒开心地原地轻轻蹦跳一下（双脚离地但落回原点，跳跃高度不超过画幅高度的10%），落地后摊空礼盒原地轴心转了一个小圈（约90°，转回正面），幸福表情，双眼笑成弯月。 ⚠️强调：蹦跳与转圈均以原点为轴心，礼盒始终抱在怀中不脱手，跳跃最高点固定毛仍与画幅顶边保持安全距离。\n\n8~9.5秒（收好礼盒）：女仆停下，低头看着怀中的空礼盒，用温柔的表情，轻轻合上盒盖，把礼盒抱在胸口蹭了蹭。\n\n9.5~10秒（消失+正恢复姿势）：礼盒与飘落的丝带以魔术般的动作凭空消散。双手自然垂落，头部摆正，目光平视前方，嘴角还带着一抹幸福的浅笑。第10时彻底结束为标准正面。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，目光平视鲸前方，表情平和，呆毛柔顺，鱼尾自然下垂。无礼盒、无丝带、无光有效高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-053",
+      "name": "吃粽子",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "吃粽子\n动作概述\n\nQ版蓝发女仆手工凭空变出一个墨绿色粽叶包的三角形小粽子（Q版，约20%她好奇地举到眼睛打量，小心翼翼地解开细绳、剥开粽叶，瞧着白胖的糯米团，中间嵌着一颗红亮的大红枣。她开心地咬了一大口，鼓着腮帮子细细咀嚼，眯眼看着满足幸福的表情，头顶冒出空间“幸福”光点，又低头看看剩下一半粽子里的馅料。最后将粽叶与剩余粽子收拢，以魔术般的动作凭空消散，恢复标准垂直垂直。全程原地垂直，双脚定点原点，粽子、粽叶、光点均在画幅安全直观。\n\n按秒分割画面\n\n0~2秒（变出粽子）：标准垂直。曼德从身前以魔术般的动作凭空变出一个三角形的Q版小粽子：墨色绿色粽叶包裹，表面有交错的细绳扎，上方一个狭长绳结，外表圆润可爱。曼托着举至胸前，低头打量，微微歪头，表情又令人期待。 ⚠️强调：粽子比例大概人物手掌的1.5倍，Q版造型圆润；细绳束扎条纹但不繁复。\n\n2~4秒（解绳剥叶）：手腕轻解开下面的绳结，细绳慢慢慢慢垂落；另外小心地剥开外层墨绿色粽叶，一层层翻开，瞧里面白胖的糯米团（米粒颗粒一个，微微冒着可爱的热气），糯米团中央嵌着一颗红亮的大红枣，枣身微透。女仆低头看着外面的糯米，眼睛发亮，看着“哇”的惊喜表情，鼻子凑近闻了幸福，眯起眼睛。 ⚠️强调：剥开的粽叶只展开在瀑布上，不遮住脸部、不散落一地；热气为少量半透明白色水汽，位于粽子上方约5%画幅高度，不与脸部重叠。\n\n4~6.5秒（咬一口）：女仆双手捧着粽子，送嘴边大量地咬了一口（咬掉约1/3），鼓着腮子细咀咀嚼，眯起眼睛，看着极其满足幸福的表情，嘴角沾着一粒空间糯米（Q版可爱表现）。头顶冒出良好的粉色爱心或“幸福”光点亮点（半透明，微微闪光）。 ⚠️强调：咀嚼时不掉米粒碎屑到地上；爱心光点半透明、微小，位于头顶上方，不遮盖脸部；嘴角糯米粒自然微小，不显邋遢。\n\n6.5~8.5秒（查看馅料）：女仆边啃边低头看向手中剩下的半个粽子，用指尖轻轻扒开断面，对着里面金黄的糯米和红亮的枣心，高兴地弯她成月牙，仿佛在无眼声说“果然有枣！”，轻轻晃了手中的粽子，表情对应。 ⚠️强调：断面馅料支架在粽子上方、胸前安全升降，不被手完全挡住；展示动作幅度小，手动始终在胸前范围内。\n\n8.5~10秒（消失+正姿）：女仆将剩下的粽子与摊开的粽叶、细绳在胸前拢成一捧，以魔术般的动作凭空隐去，飘起的热气消散。曼陀罗自然垂落，头部摆正，目光平视前方，嘴角带着目光接触的浅笑。第10秒结束时彻底为标准正面清晰。\n\n动作结束后状态\n\n最终：与参考图最左侧标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，目光平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无粽子、无粽叶、无细绳、无光点高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-054",
+      "name": "吃汤圆",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "吃汤圆\n动作概述\n\nQ版蓝发女仆曼凭空变出一只青花小瓷碗，碗里是热气腾腾的清汤汤圆（三颗白胖的圆汤圆浮在汤中）。她用右颊小瓷勺舀起一颗颗，低头轻轻吹凉，传送嘴边咬开——浓稠的黑芝麻流心轻轻中断，她鼓着腮帮子细细咀嚼，眯眼看着满足幸福的表情。 水槽又舀起第二颗对着镜头展示流心，再一口吃掉，最后将碗勺收拢空消散，恢复标准垂直垂直。全程原地垂直，双脚一个定点，汤圆、流心、热气均在画幅安全相邻。\n\n按秒分割画面\n\n0~2秒（变出汤圆）：标准垂直。曼德从身前以魔术般的动作凭空变出一只青花小瓷碗（碗口约两个手掌宽），碗里盛着清透的汤和3颗白胖圆润的汤圆（直径约为画宽度高度的8%），微微冒着热气。左手托碗、右手拿起小瓷勺轻轻拨动汤圆，低头打量，表情期待。 ⚠️强调：汤圆Q版圆润、颜色洁白区别（于粽子的墨绿粽叶），碗与勺比例协调，全部在画幅内。\n\n2~4秒（舀起吹凉）：用瓷勺小心地舀起一颗汤圆，稳稳举到嘴前约20cm处，低头朝汤圆轻轻吹气（一点半透明白色热气飘散），眼神温柔，嘴角带笑。 ⚠️强调：吹气的热气微小、半透明、飘向斜上方，不与重叠重叠；勺子平稳不外溢。\n\n4~6.5秒（咬开流心）：将勺子送嘴边，咬开汤圆一半——浓浓的黑心流心从断面终止（“啵”地一下，流心粘稠的挂勺，Q版表现）。她鼓着腮帮子细细咀嚼，眯起眼睛，着眼极度满足幸福的表情，头顶冒出空间粉色爱心或“幸福”光点特效（半透明，微微闪光）。 ⚠️强调：流心只顺着断面流进勺内，不外溅到脸部、衣服上；爱心光点半透明、微小，位于头顶上方，不遮盖脸部。\n\n6.5~8.5秒（再吃）：女仆把剩下的半颗汤圆送进嘴里，又用勺子舀起第二颗，举到胸前朝镜头方向微微晃了晃，仿佛展示在流心馅料，然后一口吃掉，眼睛弯成月牙，满足地晃了晃脑袋，呆毛立即轻轻摆动。 ⚠️强调：展示时勺子保持在胸前安全静止，不遮挡镜头、不遮挡脸部；晃动幅度小而轻。\n\n8.5~10秒（消失+恢复正姿）：女仆低头看看碗里最后一颗汤圆，用勺子舀起来一口吃掉，然后将瓷碗与瓷勺在胸前拢起，以魔术般的动作凭空消散；头顶光点与积热气慢慢隐去。曼陀罗自然垂落，头部摆正，目光平视前方，嘴角带着接触的浅笑。第10秒结束时彻底为标准垂直。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，目光平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无汤圆、无碗勺、无流心高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-055",
+      "name": "吃饺子",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "吃饺子\n动作概述\n\nQ版蓝发女仆曼德凭空变出了一只青花碗和竹筷，碗里盛着一只白胖元宝形的饺子。她夹起饺子在醋碟里沾了蘸子，送去嘴边咬了一口，嚼着嚼着突然表情一僵——咬到了硬物！她吐出来一看，是一枚金色的Q版“幸运硬币” ”，顿时眼睛瞪圆，继而开心地举到眼前详，宝贝地揣着进怀里拍了拍，最后把剩下的饺子吃完，碗筷醋碟以魔术般的动作凭空消散，恢复标准正面一致。全程原地一致，双脚一个定点原点，饺子、醋碟、硬币均在画幅安全整齐。\n\n按秒分割画面\n\n0~2秒（变出饺子）：标准的正面一致。曼德从身体前以魔术般的动作凭空变出一个青花碗和一个竹筷，碗里躺着一个白色胖乎乎的元宝形饺子（约手掌大小，Q版腹部），表面带着细小的褶边。指尖用筷子轻轻夹起饺子，举到外表打量，表情有趣。 ⚠️强调：饺子Q版白胖、褶边响；筷子长度手臂手臂的0.8倍，不横出画幅。\n\n2~4秒（吹醋）：左手凭空变出一只小醋碟（浅古醋汁，约掌心大小），将夹着的饺子轻轻俯身到碟醋里蘸了蘸（醋汁微微挂上饺子底），然后稳稳举到嘴边，低头轻轻地吹了，表情严肃。 ⚠️加强：蘸醋动作幅度小，醋汁不洒出碟沿；碟子不遮脸。\n\n4~6.5秒（咬到硬币）：送嘴边咬下一口（约1/3），鼓着腮帮子咀嚼了两下，表情一僵——咬到了硬物！她愣了一下，把剩下的饺子放回碗里，从嘴里取出（或吐在掌心）一枚亮闪闪的金色Q版一枚硬币（上面有一个空间星星图案），瞪大眼睛看着它，立刻转为惊喜，眼睛亮晶晶。 ⚠️强调：硬币为Q版道具比例（约硬币是饺子的1/3大小），从嘴里掏出时用掌心接住、表现自然不尴尬；惊喜表情夸张但不狰狞。\n\n6.5~8.5秒（收好彩头）：女仆双手捧着硬币举到了眼前端详，又举过头顶对着高度看了看，开心得原地小幅度蹦幅（双脚离地但落回原点，高度不超过画幅的） 10%）。另外宝贝地把硬币揣进胸口衣襟里（或揣进围裙兜），轻轻拍了拍胸口，用得意满足笑容的，又夹起碗里剩下的饺子吃掉（约1秒内吃完）。 ⚠️强调：弹跳以原点为轴心、幅度小；收捡硬币炸弹，硬币末端被衣物遮住不外露。\n\n8.5~10秒（消失+恢复正姿）：女仆将碗、筷与孔德醋在胸前拢起，以魔术般的动作凭空消散（怀里的硬币一并化作一缕金色小光点消失在衣襟内）。自然垂落，头部姿势正，目光平视前方，嘴角带着一抹得意的浅笑。第10秒结束时彻底为标准正面平整。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并拢，曼德自然垂于完全身高，眼神平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无饺子、无碗筷、无醋碟、无硬币抬头。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-056",
+      "name": "吃糖葫芦",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "吃糖葫芦\n动作概述\n\nQ版蓝发女仆安东尼凭空变出一串冰糖葫芦——竹签上串着四五颗红亮的小山楂，包裹着透明晶亮的糖壳，在光下微微反光。她举到了令人好奇的打量，凑近闻了闻糖香，然后鼓起勇气咬下第一颗——“咯嘣”一声糖壳脆裂，酸味袭来，她猛地眯起眼睛、缩起紧张的嘴巴，酸得表情皱成一团又透着可爱，随即又咧嘴笑起来。紧张片刻再咬下第二颗，这次早有准备，嚼得心满意足、连连点头。最后将剩下的糖葫芦凭空消散，恢复标准正面垂直。全程原地平整，双脚定点原点，糖葫芦、糖壳碎屑均在画幅安全邻近。\n\n按秒分割画面\n\n02秒（变出糖葫芦）：标准挺立。右膝从身体侧面以魔术般的动作凭空变出一串冰糖葫芦：竹签上顶着45颗红亮圆润的小山楂，每颗裹着半透明晶亮的糖壳（有细小反光高光），颗颗最大。女仆执竹签举至外表，歪头打量，表情有趣又嘴馋。 ⚠️强调：糖葫芦总长约为手臂的0.9倍，Q版比例；山楂红亮、糖壳晶莹，观感诱人。\n\n2~4秒（闻香期待）：女仆将糖葫芦凑到鼻尖下，闭眼深深地嗅着（糖香），嘴角扬起笑容，眼睛睁开时亮晶晶的；她把竹签微微倾斜，让糖壳的玻璃在眼前转了一圈，仿佛在怀疑先吃哪一颗。 ⚠️强调：闻香动作甜蜜自然，竹签保持在面前安全，不遮住超过眼睛瞬间。\n\n4~6.5秒（咬下第一颗）：女仆鼓起腮帮子，张嘴咬下下面第一颗山楂——“咯嘣”一声糖壳脆响（Q版拟声可通过表情表达）。酸味瞬间袭来，猛地眯起眼睛、缩起脖子、眯起眼睛，双手握着竹签缩到胸前，表情皱成一团（酸得可爱，不狰笑），僵住半后，又嘴笑开，仿佛在说“好酸酸好，但好好吃”。 ⚠️强调：“酸到眯眼缩颈”是核心表情梗，幅度夸张但保持Q版可爱，五官不变形过度；咬下的果壳糖碎不撒落一地（最多一两粒碎屑落到衣摆下方，画幅内）。\n\n6.5~8.5秒（再试颗）：女仆望着剩下的3颗山楂，忧虑，这次深吸吮，果断咬下第二颗，早有准备地咀嚼相关——酸甜合适，她眼睛弯成月牙，心满意足地点头，嚼完还意犹未尽地舔了舔上的糖渍。 ⚠️强调：第二颗的表情与第一颗形成对比（从酸到甜的反差）；舔嘴唇动作精致自然。\n\n8.5~10秒（消失+恢复正姿）：女仆看着还剩的两颗山楂，着急别撤，最后笑着将整串糖葫芦在胸前轻轻一挥，以魔术般的动作凭空消散；脚边零星的糖壳碎屑也化作细小的光点消失。曼自然垂落，头部摆正，目光平视前方，嘴角还聚焦着目光，犹未尽的浅笑。第10秒结束时彻底为标准正面消失。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，目光平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无糖葫芦、无碎鲸堆积。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-057",
+      "name": "吃青团",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "吃青团\n动作概述\n\nQ版蓝发女仆曼曼凭空变出一只墨绿色的艾草青团（清明时节的传统点心），圆润饱满、泛着淡淡的油光，安静地躺在她的掌心。她好奇地举到打量这抹特别的绿色，然后轻轻掰成两半——面对暗红细腻的红豆沙馅，微微冒起热气，草艾清香仿佛扑面而来。她“哇”地眼睛发亮，咬下一半，软糯微拉丝，鼓着腮帮子细细咀嚼，眯眼看着幸福的表情；吃完后指尖沾了一些绿色糯米粉，她轻轻舔了舔指尖，满足地笑了。最后将剩下的半只青团靠空消散，恢复标准正面。全程原地平整，双脚安定原点，青团、豆沙、热气均在画幅安全周边。\n\n按秒分割画面\n\n0~2秒（变出青团）：标准正面。曼德从身前以魔术般的动作凭空变出一只墨绿色的艾草青团（外形约为画幅高度的12%，圆润，表面泛着淡淡的油光），曼陀捧着托在掌心，举到外表，微微歪头打量这抹独特的绿色，有趣的表情。 ⚠️强调：青团为盛夏绿（艾草墨绿），与糯米食品区分度明显；表面光滑圆润、无干粉残留。\n\n2~4秒（掰开看馅）：女仆用两手拇指轻轻将青团掰成两半——断面使用暗红细腻的红豆沙馅（馅料绵密，微微冒着半透明热气），艾草香气仿佛可闻。她低头看看断面，“哇”地眼睛发亮，嘴角扬起惊喜的笑容。 ⚠️强调：豆沙填充不散落、不滴落；热气微小、半透明，位于青团上方，不与间隙重叠。\n\n4~6.5秒（咬一口）：女仆拾起其中一半青团，送嘴边咬了一大口，糯米皮轻轻拉出细丝（Q版微拉丝表现，半透明细丝随即中断），她鼓着腮帮子细细咀嚼，眯起眼睛，描绘了对称幸福的表情，头顶冒出空间粉色爱心或“幸福”光点特效（半透明，轻微点亮）。 ⚠️强调：微拉丝为Q版夸张表现，细丝不超过3cm且在画幅内；咀嚼不露馅、不掉渣；爱心光点半透明、微小，不遮脸。\n\n6.5~8.5秒（舔指尖）：女仆把剩下的半只也吃完，指尖上沾了一点墨绿色的糯米粉，她低头看了看，俏皮地把指尖甜甜嘴边轻轻舔了舔，眼睛弯成月牙，看着心满意足的笑。 ⚠️强调：舔指尖动作精致可爱、不夸张不油腻；表情重点在“满足”“贪吃”。\n\n8.5~10秒（消失+正恢复姿势）：女仆将最后小半团残料在掌心中拢起，以魔术般的动作凭空消散；头顶光点与热气渐隐去。自然垂落，头部摆正，目光平视前方，嘴角青团带着目光接触的浅笑。第10结束时直接恢复为标准正面垂直。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，眼神平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无青团、无豆沙、无鲸米粉大量。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-058",
+      "name": "吃腊八粥",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "吃腊八粥\n动作概述\n\nQ版蓝发女仆省凭空变出一个粗陶大碗，碗里盛着冒着热气的浓稠腊八粥——红豆、莲子、红枣、桂圆干等五杂谷粮熬得软烂，表面着几颗红亮红枣和莲子。进嘴里咀嚼着，又舀起一勺粥喝下，眯眼看着符合的表情。最后她曼端起碗“呲溜”喝了一大口，放下碗时嘴角沾着一粒红豆，她俏皮地用指尖抹掉。碗勺以魔术般的动作凭空消散，恢复正面平整。全程原地，双脚一个定点，粥碗、热气画在均幅安全上方。\n\n按秒分割画面\n\n02秒（变出腊八粥）：标准正面。曼德从身前以魔术般的动作凭空变出一只粗陶大碗（碗口约两个手掌宽，质朴的陶土色），碗里盛着浓稠的热粥：红豆、花生、莲子、红枣、桂圆干等五种以上配料清晰可辨，表面微微冒着热气。左手托碗、右手拿起木勺轻轻搅拌粥面，低头打量，表情温暖期待。 ⚠️强调：配料种类多但排列不杂乱，红枣与莲子扩展在粥面（各23颗），观感丰富的诱惑；木勺比例小巧（约一个手掌长）。\n\n2~4秒（吹气挑枣）：女仆低头朝粥面轻轻吹气（一缕半透明白色热气飘散），另用木勺舀起一勺，举到画面上，用空出的左指尖从勺里轻轻挑出i红亮的小红枣（Q版比例约拇指大小），举到眼前方浅，歪头用轻轻笑意。 ⚠️强调：吹气热气微小、半透明、飘向斜上方，不与重叠重叠；挑枣动作轻柔，红枣不滚落。\n\n4~6.5秒（吃枣喝粥）：女仆把指尖的红枣送进嘴里，轻轻咀嚼了两下，眼睛微微眯起；又随即舀起一勺粥送进嘴里，鼓着腮子细细眺望，周围满足幸福的表情，头顶冒出空间温暖光点作用（半透明，微微闪光）。 ⚠️强调：咀嚼动作斯文，粥不洒出勺沿；光点半透明、微小，位于头顶上方，不超过脸部。\n\n6.5~8.5秒（捧碗呲溜）：女仆放下木勺，手捧起粗陶碗，凑到嘴边“呲溜”喝了一大口（Q版表现略带俏皮），放下碗时嘴角沾着一粒狭长红豆，她低头发现后，俏皮地用指尖轻轻抹落，舔了舔指尖，满足地弯起眼睛。 ⚠️强调：“呲溜”凹槽调节（碗沿抵住下唇即可，不仰头猛灌）；嘴角红豆微小，不显邋遢。\n\n8.5~10秒（消失+恢复正姿）：女仆低头看看碗里碗里还剩下的一小口粥，端着碗喝完一口，然后将陶碗与木勺在胸前拢起，以魔术般的动作凭空消散；头顶光点与残留热气慢慢隐去。手动自然垂落，头部摆正，目光平视前方，嘴角带着一丝暖意融融的浅笑。第10结束时彻底笑为标准正面。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，眼神平视鲸前方，表情平和，呆毛柔顺，鱼尾自然下垂。无粥碗、无木勺、无粥粒高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-059",
+      "name": "吃长寿面",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "吃长寿面\n动作概述\n\nQ版蓝发女仆曼曼凭空变出一只大海碗和竹筷，碗里是热气腾腾的清汤长寿面——辫子面条，长到不可思议。她用筷子挑起面条，越挑越高、越挑越长，面条在空中弯弯绕绕却怎么都挑不完，她惊讶地瞪大眼睛、歪头看看碗底，一脸“怎么还有？”的可爱表情。还有她低头”吸溜——“开始吸面，吸吸进嘴里，腮帮子鼓得圆圆的像只小仓鼠，眯眼；吸完又“呼噜”一声咽下，竖起大拇指，头顶冒出左侧中部或“满足”光点。最后将海碗与竹筷靠空消散，恢复标准正面垂直。全程原地整齐，双脚定原点，享受面碗、端面、热气均在画幅安全右侧。\n\n按秒分割画面\n\n0~2秒（变出面碗）：标准正面平整。曼德从身体前以魔术般的动作凭空变出一只大海碗（碗口约两个半手掌宽）和健身竹筷，碗里是清汤与一大团白亮的面条，微微冒着热气。左手托碗、右手执筷轻轻挑动面条，低头打量，表情集中。 ⚠️强调：海碗Q版圆润（比普通碗略大以突出“长寿面很长”的梗）；面条白亮，碗口不遮住皱纹表情。\n\n2~4秒（挑起长面）：女仆用筷子挑起面条，越挑越高——面条在筷尖与碗之间弯弯曲绕绕地伸长，长度远超想象（Q版夸张：面条在空中弯曲绵延约画宽度宽度的1.5）她挑了几下都挑不到头，惊讶地瞪大，歪头看向碗底，眉头微微抬头，用“这面怎么这么长？”的可爱表情。 ⚠️强调：面条长是Q版夸张表现，姿势在画幅内自然曲盘旋，不笔直横、不超出画幅；令人困惑的表情可爱不夸张。\n\n4~6.5秒（吸溜吃面）：女仆低头凑向碗边，张口“吸溜——”开始吸面（Q版：纸张快速滑入嘴里，腮帮子逐渐鼓起），吸到一半停止（纸张还剩下半段在嘴边），她鼓着圆圆的腮帮子含着面条，抬眼看了看镜头，然后继续“吸溜”吸完。 ⚠️强调：腮帮子鼓起如小仓、圆润可爱，不遮挡眼睛视线；面条不甩出面碗外、不溅汤。\n\n6.5~8.5秒（咽下回味）：女仆“呼噜”一声把面条咽下，鼓着腮帮子慢慢消下去，她眯眼回味膈，随即竖起辫子大拇指（Q版），心满意足的灿烂笑容，头顶冒出两个客厅蜂蜜或粉色爱心光点（半透明，微微闪烁）。 ⚠️强调：表情重点在“超满足的骄傲”；音符/光点微小、半透明，位于头顶上方，不遮挡脸部。\n\n8.5~10秒（消失+恢复正姿）：女仆低头看碗——碗里居然还有一根根报纸，她瞪大眼睛，随即笑着摇摇头，把最后一口吸掉，然后将海碗与竹筷在胸前拢起，以魔术般的动作凭空消散；热气与光点隐渐去。曼陀自然垂落，头部摆正，目光平视前方，嘴角带着一抹意犹未尽的浅笑。第十秒结束时彻底为标准正面。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，眼神平视前方，表情平和，呆毛柔顺，鱼尾鲸自然下垂。无面碗、无竹筷、无面条、无汤渍高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-060",
+      "name": "吃年糕",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "吃年糕\n动作概述\n\nQ版蓝发女仆曼凭空变出了一块雪白方正的糯米年糕（放在一块竹屉上）和一把Q版小木槌。她的右腿握槌、左手扶梯，轻轻捶打年糕（“咚”咚”两下，年糕Q弹地晃一晃），一脸认真。并变出小碟红糖粉，掰下一小块年糕沾上红糖送进嘴里，软糯微拉丝，鼓着腮帮子细细咀嚼，眯眼眼睛寻找满足幸福的表情。最后双手捧着年糕两头轻轻拉一拉、晃一晃，年糕Q弹的姿势，眼睛发亮。尾端竹、木槌、红糖碟与年糕一起以魔术般的动作凭空消散，恢复标准正面一致。全程原地传达（新年“年年高”的意寓展示），双脚规定原点，年糕、木槌、红糖在画幅安全连续。\n\n按秒分割画面\n\n0~2秒（变出年糕）：标准垂直。曼德从身体前以魔术般的动作凭空变出一块雪白方正的Q版糯米年糕（边长左右画幅高度的15%，表面轻微发光、表皮糯弹），放在左手托着的一块竹梯（Q版竹编色，约10%）画宽）上；右肩凭空变出一把Q版小木槌（槌头圆润，约前臂长）。她低头打量年糕，又看看木槌，表情认真又跃跃欲试。 ⚠️强调：年糕雪白方正、重力Q弹，竹竿与木槌比例协调，全部在画幅内；木槌与年糕互不遮挡脸部。\n\n2~4秒（打年糕）：女仆右肩举起小木槌，低头朝年糕轻轻捶了两下（“咚咚”——Q版表现：木槌落下年糕微微Q弹地晃一晃、表面轻轻又弹回），她左手扶着竹竿边缘，表情认真专注，仿佛在做一件大事，捶完成满意地点点头。 ⚠️强调：捶打幅度小而轻（木槌抬升不超过头顶，落下行程不超过一个动作），年糕Q弹回弹效果可爱，不碎裂、不飞溅。\n\n4~6.5秒（蘸红糖吃）：女仆放下木槌，凭空变出一只小碟，碟里盛着暗红色的红糖粉（约掌心大小）。她用手掰下一块年糕（Q版，约拇指大小），在红糖粉里蘸了蘸，送嘴边咬了一口，年糕软糯地拉出一段半透明细丝（Q版微拉丝，随即中断），她鼓着腮帮子细细咀嚼，眯起眼睛，专注于满足幸福的表情，头顶冒出粉色爱心或“幸福”光点特效（半透明，微微发光）。 ⚠️强调：微拉丝不超过3cm且在画幅内；红糖粉不洒落、不粘到脸部；爱心光点半透明、微小，不遮挡脸部。\n\n6.5~8.5秒（Q弹展示）：女仆双手托起整块年糕的两端，挥向两边拉了一番拉（年糕Q弹地伸长又缩回，幅度约10%），又支撑在双手上下巍然顶部，看着它颤抖地晃动，她眼睛发亮，开心地笑起来，仿佛在炫耀“看，多弹”！ ⚠️牵拉：拉伸与晃动幅度调节（年糕不拉断、不脱手），全程在胸前安全稳定；表情重点是“得意的可爱”。\n\n8.5~10秒（消失+恢复正姿）：女仆从年糕上又扳开下面的塞进嘴里，然后将年糕、竹竿、木槌和红糖碟在胸前拢起，以魔术般的动作凭空消散；头顶光点慢慢去。曼德自然垂落，头部摆正，视线平视前方，嘴角指向接触的浅笑。第10秒结束时彻底为标准正面。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，眼神平视鲸前方，表情平和，呆毛柔顺，鱼尾自然下垂。无年糕、无竹竿、无木槌、无红糖过量。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-061",
+      "name": "吃重阳糕",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "吃重阳糕\n动作概述\n\nQ版蓝发女仆曼凭空变出一个金黄色的重阳糕（松软米糕，糕身分层，顶部撒着红绿果脯丝，中央插着一面红色三角小彩旗）。她好奇地抓着小彩旗，伸手轻轻拔下来举到眼上面，又“哒”地插回糕上。然后曼德掰开松糕——带着细致的枣泥馅，咬了一口，松软绵甜彩旗。最后她将重阳糕高举过头顶、踮了踮脚（Q版“登高”寓意），开心地笑起来。结尾重阳糕与彩旗以魔术般的动作凭空消散，恢复标准构图。全程原地一致（重阳“登高吃糕”习俗），双脚则定原点，重阳糕、彩旗画均在幅安全更新。\n\n按秒分割画面\n\n0~2秒（变出重阳糕）：标准的正面。曼德从身前以魔术般的动作凭空变出Q版重阳糕（方形，边长左右画宽度高度的14%，金黄的松软糕身分层分明，顶部均匀地撒着红绿果脯丝，中央插着一根红色三角小彩旗），曼德托在掌心举到胸前。她低头一看，糕的轮廓凸显了小彩松旗上，微微歪头，表情可爱。 ⚠️强调：重阳糕金黄松软、分层波纹；小彩旗是三角小红旗（约拇指大小，带小旗杆），插在糕面中央，比例协调。\n\n2~4秒（拔旗端详）：女仆伸前颈，轻轻把小彩旗从糕上拔下来，举到眼前看着看（旗面微微飘动），又低头看看糕上留下的小洞，俏皮地笑了，然后把旗杆“哒”地插回原处，用指尖扶稳，满意地点点头。 ⚠️强调：拔旗、插旗动作响连贯；旗面卷动幅度小，全程在胸前安全深度，不遮挡面部。\n\n4~6.5秒（掰开吃糕）：女仆手把重阳糕掰成两半——断面弄得细致的暗红枣泥馅，微微冒起热气。她拿起其中的一半，嘴边咬了一口，松软绵甜，鼓着腮帮子细嚼慢咽，眯起眼睛，看着满足幸福的表情，头顶冒出空间暖色光点动作（半透明，轻微点燃）。 ⚠️强调：枣泥馅不滴落、不粘到手上过量；热气少量、半透明，不与脸部重叠；光点半透明、微小，不遮盖脸部。\n\n6.5~8.5秒（举糕登高）：女仆把两半松糕合回手，手将整块重阳糕稳定举过头顶，同时踮起脚尖轻轻踮了两下（Q版“登高”寓意表现，双脚原地踮起、落回），仰头望着头顶的松糕，开心地咧嘴笑了起来，呆呆了微微晃动。 ⚠️强调：举糕时手臂伸直但不高过画幅顶边（松糕顶距画幅顶边至少保留10%安全距离）；踮脚幅度小而稳定，双脚始终原地。\n\n8.5~10秒（消失+恢复正姿）：女仆把松糕从头顶放回胸前，低头看看，掰下最后一块塞进嘴里，然后将剩下的重阳糕与彩旗在胸前拢起，以魔术般的动作凭空消散；头顶光点直接隐去。曼努埃尔·曼努埃尔·德自然垂落，头部摆正，目光平视前方，嘴角指向目光的浅笑。第10秒时彻底为标准正面鲜明。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，眼神平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无重阳糕、无彩旗鲸、无枣泥高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-062",
+      "name": "吃西瓜",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "吃西瓜\n动作概述\n\nQ版蓝发女仆手工凭空变出半只红瓤大西瓜（绿色条纹瓜皮，剖面用鲜红瓜瓤和几颗黑籽，Q版，约30%她低头看见红瓤，“哇”地眼睛发亮，用小勺舀起一大勺红瓤瓜肉，把嘴边咬碎，冰凉的汁水在嘴里化开，她眯着眼看着透心凉的配合表情，嘴角沾了一点西瓜汁（Q版可爱）。勺子，把瓜籽吐在掌心看着，随手放回瓜皮边缘，最后擦掉嘴角的汁水。端部半只西瓜与勺子以魔术般的动作靠空消散，恢复标准正面垂直。全程原地一致（盛夏消暑），双脚一个定点，西瓜、勺子、汁水均在画幅安全相互之间。\n\n按秒分割画面\n\n02秒（变出西瓜）：标准垂直。曼德从身前以魔术般的动作凭空变出半只Q版大西瓜（放在一个浅木托盘上：绿色条纹瓜皮，剖面是鲜红的瓜瓤，瓤上嵌着45颗黑籽，瓜瓤微微泛着水光）和一把小勺。她低头看到红瓤，眼睛“叮”地亮起来，嘴巴张成宇宙“哇”形。 ⚠️强调：西瓜剖面朝前、正镜头（让观众看到清红瓤黑籽）；西瓜Q版圆润、水光诱人；托盘与勺子比例协调，全部在画幅内。\n\n2~4秒（舀起一勺）：女仆左手扶着托盘，用小勺沿瓜瓤边缘舀起一大勺红瓤（Q版：勺面堆起满满的瓜肉，一颗颗带黑籽），举到眼前看着，鲜红的汁水从勺边稍微滴下一滴（在托盘上）。 ⚠️强调：舀瓜动作利落，勺子不脱手；滴落的汁水仅一滴、一个巨型祭坛内，不一个圆形、不一个溅到衣服上。\n\n4~6.5秒（大口吃瓜）：女仆把一勺瓜肉送进嘴里，“咔嚓”咬碎（Q版：眯眼、腮帮子轻轻鼓动），冰凉的汁水让她浑身一激灵——缩了她的腰、眯起眼睛，望着“透心凉”的超配合表情，头顶冒出狭小的雪花或清凉水珠光点特效（半透明，微微闪烁），吃完舔舔了上面的一点西瓜汁。 ⚠️强调：“透心凉”表情是核心梗：眯眼+微缩肩，Q版可爱不夸张；头顶光点显示“清凉”意象，半透明、微小，不遮挡脸部；嘴角汁水极微小，不显邋遢。\n\n6.5~8.5秒（吐籽擦嘴）：女仆又舀起第二勺，吃进嘴里，咀嚼了两下，低头把两颗黑齐轻轻吐在掌心（Q版：鼓起腮帮子“呸”地一吐，表情俏皮），低头看看掌心的籽，随手放回瓜皮边缘的边缘里；用指尖抹了嘴角剩余的汁水，舔了舔指尖，再均匀地弯起。 ⚠️强调：吐籽动作俏皮自然（示范给观众看西瓜籽放在哪），黑籽共3粒以内、不散落；放回瓜皮边缘的动作响亮。\n\n8.5~10秒（消失+恢复正姿）：女仆低头看看托盘里还剩的大半圈瓜瓤，捧起托盘又舀一个勺子吃掉，然后手工将托盘（握住半只西瓜和瓜籽）与勺子拢起，以魔术般的动作凭空消散；头顶清凉光点渐渐隐去。曼陀自然垂落，头部摆正，目光平视前方，嘴角带着一抹接触的浅笑。第10秒结束时彻底为标准正面清楚。\n\n动作结束后状态\n\n最终框架：与参考图最左边标准正面一致一致——双脚并拢，曼德自然垂于身体高度，目光平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无西瓜、无托盘、无勺子、无瓜籽抬头。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-063",
+      "name": "涮火锅",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "涮火锅\n动作概述\n\nQ版蓝发女仆曼凭空变出一只咕噜咕噜冒着泡的Q版小铜锅（悬停在胸前高度，锅下有一簇空间暖色火苗，锅沿冒着白色蒸汽）和健身竹筷。她低头摸翻涌的汤面，粉亮晶晶，夹起一片红的牛片葫芦锅里眼睛涮了两下，肉片染成卷曲，夹出来鼓起腮帮子吹了吹气，蘸了蘸小碗里的麻酱送进嘴里—— —烫！她眯眼哈气（Q版“好烫”表现），随即又配合的表情。她又夹起一颗Q版丸子掉锅里，用筷子起来逐着等它浮起，夹起吃，心满意足。末端火锅、火苗、碗筷以魔术般的动作靠空消散，恢复正面标准。全程原地平面（冬日围炉），双脚定点原点，火锅、蒸汽、火苗均在画幅安全。\n\n按秒分割画面\n\n02秒（变出火锅）：标准垂直。曼德从身前以魔术般的动作凭空变出一只Q版小铜锅（锅体圆润，直径约为画幅高度的18%，锅沿以下悬停在胸前高度），锅内清汤咕咕咕咕地翻冒滚泡（汤面微白，冒出2）3缕半透明蒸汽），锅底有一簇空间暖橙色火苗（Q版，约一个拳头大小）；右臂靠空变出拳头竹筷。她低头搜寻涌翻的汤面，眼睛亮晶晶，有兴奋期待的表情。 ⚠️强调：火锅为Q版悬浮道具（不落地、不遮挡摆与双脚）；蒸汽少量、半透明、向上方斜飘散；火苗小而稳定、不扩散、不接触衣柜。\n\n2~4秒（涮肉片）：女仆颧骨执筷，从锅边夹起一片粉红色的薄牛肉片（Q版：肉片有明显的雪纹散路，约手掌大小），互相咕咕的汤里轻轻涮了两下——肉片迅速变成卷曲（Q版表现：肉片在汤里打了卷），她夹出来，举到嘴边鼓起腮帮子轻轻地吹了吹气，个个飘浮。 ⚠️强调完成：涮肉动作两下、干脆利落；肉片不脱筷、不溅汤；吹气热气半透明、不与脸部重叠。\n\n4~6.5秒（蘸麻酱吃）：女仆左手凭空变出一只小碗，碗里是浓浓的浅棕色麻酱（约掌心大小，表面有一圈香油玻璃），把涮肉片在麻酱里蘸了蘸，送进嘴里——烫！她猛地眯起眼睛、轻轻哈了喘气（Q版“好烫”表现：鼓起腮帮子呼出缕缕白气），随即又找到满足幸福的表情，慢慢咀嚼完，头顶冒出空间粉色爱心或“幸福”光点效果（半透明，轻微点亮）。 ⚠️强调：“烫到哈气”是核心表情梗，Q版可爱不狰狞；哈气白气微小、半透明；麻酱不滴落、不沾到脸部；光点半透明、微小，不遮挡脸部。\n\n6.5~8.5秒（煮丸子）：女仆又夹起一颗雪白的Q版小丸子（约拇指大小）旋锅里，用筷子轻轻按着它，低头认真地等它浮起来——丸子慢慢浮出汤面，她又轻轻吹了吹，夹出来二话不说吃掉，鼓着腮帮子咀嚼了一会儿，满足地方头，然后低头看看锅里翻滚的汤，意犹未尽的表情。 ⚠️强调：丸子用筷子周期性动时汤水不外瀑布；等待浮起的表情认真可爱；全程在胸前安全加剧。\n\n8.5~10秒（消失+恢复正姿）：女仆最后夹起锅沿重力吸浮的葱花/菜叶溜着吃掉，然后将火锅、火苗（火苗先，冒出一缕青烟随即消散）、竹筷与麻酱碗胸在前起，以魔术般的动作随着空消散；状似隐去。自然垂落，头部姿势正，目光平视前方，嘴角带着接触的浅笑立即恢复为标准正面消失。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并拢，曼德自然垂于完全身高，目光平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无火锅、无火苗、无碗筷、无蒸气抬头。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-064",
+      "name": "吃大闸蟹",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "吃大闸蟹\n动作概述\n\nQ版蓝发女仆曼凭空变出一只蒸熟的橙红色大闸蟹（Q版，约25%画幅宽度，蟹壳油亮反光，放在一只浅盘上）和支架竹筷。她油亮的蟹壳眼睛发光，咽了咽口水。然后动手拆开蟹壳——用金黄流油的蟹，她“哇”地看见，用小勺舀起一勺蟹黄，蘸了蘸小碟里的姜醋，送进嘴里，眯眼看到“人间至味”的沉醉表情，头顶冒出小星星光点。接着拿起一只蟹腿，像吃玉米一样横着咬开“咔嚓”啃了一口，满足地点头。结尾蟹壳、浅盘、碗碟以魔术般的动作随空消散，恢复正面标准垂直。全程原地一致（秋日“蟹季”），双脚定点，大闸蟹、姜醋、蟹壳碎屑均在画幅安全上方。\n\n按秒分割画面\n\n0~2秒（出大闸蟹）：标准变出大闸蟹。曼德从身前以魔术般的动作凭空变出一只蒸熟的橙红色Q版大闸蟹（仰视视角看不到背面：蟹壳油亮反光、蟹钳蟹腿完整，舒展地趴在浅盘上，外形描绘宽度宽度的25%）和姿势竹筷。她低头看到油亮的大闸蟹，眼睛“叮”地亮起，咽了咽口水，双手捧起浅盘举到胸前，表情“馋了”。 ⚠️强调：大闸蟹橙红油亮、Q版圆润全部（蟹壳高光明显），浅盘与蟹比例协调，全部在画幅内；蟹不遮挡脸部。\n\n2~4秒（撬开蟹壳）：女仆放下筷子，手动小心地撬开大闸蟹的蟹壳（Q版：一只手按着蟹身、一只手揭起蟹盖）——蟹盖揭开，其中金黄流的蟹黄（Q版表现：蟹黄油亮，微微泛着高光，冒着细小热气）。她“哇”地亮，眼睛瞪圆，连嘴上露出了惊喜的闪光。 ⚠️强调：蟹黄金黄、油光明显是核心视觉；热气微小、半透明；掰壳动作响声，蟹钳蟹腿不弹飞。\n\n4~6.5秒（吃蟹黄）：女仆前额用竹筷尖挑（或用小勺舀）起一勺蟹黄，沾沾左手凭空变出的小碟姜醋（浅褐色，碟约掌心大小），然后送进嘴里，闭眼慢慢观化，看着“人间至味”的醉表情（眉眼舒展、嘴角上翘），头顶冒出两颗小星星光点特效（半透明，微微闪烁）。 ⚠️强调：“沉醉”表情是核心梗：闭眼+嘴角上翘，Q版享受不夸张；姜醋不洒出碟沿；小星星光半扩大头顶，不遮挡脸部。\n\n6.5~8.5秒（啃蟹腿）：女仆放下小碟，从盘里拿起一只Q版蟹腿（约15%）画幅高度），像吃玉米一样的侧过头，横着脚趾边“咔嚓”咬开蟹壳，咀嚼着里面的蟹肉（Q版：咬着蟹腿在嘴边转了个角度，咔嚓声感通过动作表现），然后满意的地方头，把空蟹壳放回盘边，又拿起第二只蟹腿晃了晃，俏皮地冲镜头亮了亮。 ⚠️强调：啃蟹腿动作Q版可爱（像啃玉米棒），蟹壳碎片只无数盘内、不散落一地；举起蟹腿向镜头展示时保持在胸前安全死亡。\n\n8.5~10秒（消失+恢复正姿）：女仆把第二只蟹腿也啃完，将蟹壳放回盘里，然后曼把浅盘（抓住醋壳、碎屑）、竹筷与小碟姜在胸前纠起，以魔术般的动作凭空消散；头顶星星光点慢慢隐去。曼陀自然垂落，头部摆正，目光平视前方，嘴角带着一丝意犹未尽的浅笑。第10秒结束时彻底为标准正面。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，目光平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无鲸大闸蟹、无浅盘、无碗碟、无蟹壳碎屑堆积。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-065",
+      "name": "是啊，吃什么",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "是啊，吃什么\n动作概述\n\nQ版蓝发女仆百无聊赖地发呆时，头顶“啵”地冒出一个半透明思考气泡，气泡里飘着一句话：“吃什么？”。她茫然地歪头看着气泡，看上去放空、嘴巴微张，看似“憨憨”的呆萌表情，挠了挠头（呆毛则晃动），然后张嘴一本正经地复读道——头顶又冒出一个气泡：“是啊，吃什么”。她完全没意识。到自己只是在重复问题，还认真地点了点头，仿佛给出了完美的答案，随即又惊了的无辜表情，歪头昏睡眼，气泡里的“吃什么……吃什么……”跟着的碎碎念轻轻晃动。最后气泡“啵”地消散，她憨憨地笑了笑，恢复标准正面。全程原地平整，双脚先定原点，气泡、复读气泡思考画幅安全。\n\n按秒分割画面\n\n0~2秒（冒出问题气泡）：标准正面挺立。女仆正面垂在身侧，微微低头，一副无所事事发呆的样子。头顶上方约15%画幅高度处“啵”地冒出一个半透明的白色思考气泡（Q版云朵形，圆润可爱），气泡中央浮着三个字：“吃什么？”（Q版圆体字，显然显然）。她感知到头顶的动静，缓慢抬头看向气泡，眼神放空。 ⚠️强调：思考气泡半透明、云朵形，直径约画宽度宽度的20%，位于头顶上方、与呆毛保持安全距离；气泡文字“吃什么？”清晰可辨（默认简体中文，Q版圆体）。\n\n2~4秒（憨憨歪头）：女仆望着气泡，慢慢歪起头（歪头角度约20°），眼神放空、嘴巴微微张开，一副“憨憨”的呆萌表情——仿佛在认真思考“吃什么”这个问题，又好像什么都不愿意。她伸长鼻子挠了挠后脑勺（呆毛似的轻轻晃动），动作慢悠悠的，透着一股傻气。 ⚠️强调：“憨憨”表情是核心梗：歪头+眼神放空+微张嘴，Q版呆萌，不呆滞过头、五官不变形；挠头动作缓慢自然。\n\n4~6.5秒（复读回答）：女仆放下手，挺了挺胸，摆出一副“认真回答”的样子，一个正经地张嘴（唇形做出说话的样子，在头顶打一个气泡15%）画幅高度处“啵”地冒出）。 第二个气泡里浮着：“是啊，吃什么？”——她呆萌地复读了问题，还用乖巧的语气点了点头，觉得自己好像回答得特别好，对于“我真聪明”的憨憨微笑。 ⚠️强调：第二个气泡与第一个并排（或略偏右）悬挂在头顶上方，文字“是啊，吃什么？”可辨认；复读时表情切换为“一本正经+名自信”，突出答非所问的喜剧感；气泡不与呆毛、画幅顶边重叠。\n\n6.5~8.5秒（碎碎念+困惑）：她望着两个气泡，忽然意识到什么，歪头只小狗一样左右看了看两个气泡，表情转为愚昧，嘴里无声地碎碎念（气泡里的文字微微晃动，变成“吃什么……吃什么……”），然后伸手在气泡上轻轻地逐次了（指尖一周到气泡边缘，气泡像果冻一样晃了晃），缩回手，歪头眨眼，一脸“好像我没回答？”的呆萌。 ⚠️强调：气泡动作头部（气泡Q弹晃动，不破裂、不消散）；念气泡文字变化衔接自然；困惑表情核心是“无辜的歪头眨眼”。\n\n8.5~10秒（气泡消散+恢复正姿）：女仆耸了耸肩，释然了——“算了，吃什么不重要”。两个思考气泡“啵”“啵”地依次消散（先问题气泡、后复读气泡，像肥皂泡一样轻轻破掉）。她憨憨地笑了笑，嘴角带着一抹傻呵呵的目光，自然垂落，头部摆正，目光平直。第10秒结束时彻底视作标准正面清晰。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，目光平视鲸前方，表情平和，呆毛柔顺，鱼尾自然下垂。无思考气泡、无文字高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-066",
+      "name": "收红包",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "收红包\n动作概述\n\nQ版蓝发女仆依靠空变出一只红纸红包（封面上印着金色圆体“福”字，Q版），捧在掌心地好奇捏了捏。她双手捧着红包举到胸前，微微鞠躬做了个揖（Q版拜年），表情乖巧的表情。然后小心地拨开封口眼睛，从里面抽出一张金光闪闪的“压岁钱”（Q版金色卡纸）——她的“叮”地亮起来，嘴角咧开，如果财迷般的满足：把压岁钱举到眼前捋平、举过头顶对着光瞧瞧，又宝贝地在脸上脸上的笑容蹭了蹭，塞回红包仔细揣进胸口衣襟里，轻轻拍了拍。衣襟里的红包化作一缕金色光点消散，恢复正面标准一致。全程原地一致（春节拜年收压岁钱），双脚一个定点，红包、压岁钱、光点均在画幅安全更新。\n\n按秒分割画面\n\n0~2秒（变出红包）：标准正面。曼德从身前以魔术般的动作凭空变出一只红纸红包（Q版：长方形、约一个半手掌长，大红色的封面上印着金色圆体“福”字，右下角有左侧金色祥云纹），捧在掌心举到胸前，低头好奇地打量，又用拇指和食指轻轻捏了捏红包（感受厚度），表情期待。 ⚠️强调：红包红金色、Q版圆润（四角圆角），封面“福”字清晰可辨；捏红包动作小巧可爱。\n\n2~4秒（拱手拜年）：女仆双手捧着红包举到胸前，身体微微前倾，做了个Q版作揖（双手叠在胸前微微上下晃两下），随即用乖巧灯光的眼睛弯成月牙笑，仿佛在无声地说“新年好”。 ⚠️强调：作揖动作幅度小而端正（身体前倾不超过15°），双脚原地不偏移；重点表情是“乖巧讨好”的可爱。\n\n4~6.5秒（抽压岁）：女仆用指尖小心地拨开红包封口，从里面均匀抽出一张金灿灿的Q版压岁钱（比红包略小一圈的方形金色卡纸，中央印着圆圆的“福”字，边缘有金色细闪）——她的眼睛“叮”地亮起，嘴角互相开，相互又惊又喜的表情。 ⚠️强调：压岁钱为Q版金色卡纸（不出现真钞细节），抽出动作流畅；惊喜表情夸张但保持可爱。\n\n6.5~8.5秒（财迷欣）：女仆双手捧着压岁钱举到了眼前，拇指在边缘捋了捋（捋平的动作），又举过头顶对着“光”看着，眯起眼睛，对着财迷般的目光微笑（眼睛弯成扭缝、嘴角上扬），然后把压岁宝贝地在脸颊旁旁了，开心地晃了晃了晃脑袋，呆毛了以下。 ⚠️强调：“财迷眯眯眼”是核心梗：眯眼+蹭脸脸+晃脑袋，Q版可爱不贪财狰狞；举过头顶时压岁钱不超出画幅顶边。\n\n8.5~10秒（收好+恢复正姿）：女仆把压岁钱仔细塞回红包里，双手捧着红包宝贝地揣进胸口衣襟内（红包被衣物遮住），轻轻拍了拍胸口，若心满足皱纹足的；另外衣襟下透出一缕细金色小光点（红包化光消散，隐约可见），光点去双手。自然垂垂，头部摆正，落视线平视前方。第10秒结束时彻底恢复标准正面整齐。\n\n动作结束后状态\n\n最终：与参考图最左侧标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，眼神平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无红包、无压岁钱、无光点高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-067",
+      "name": "舞狮头",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "舞狮头\n动作概述\n\nQ版蓝发女仆曼空出一个Q版小狮子头（红金，圆滚滚的狮脸，大眼睛长睫毛，前额前有金色xxx毛，嘴挂着小铃铛），捧在胸前好奇地睁大打量。她并把狮子头眼睛套在自己头部（狮头大一圈，像顶着一只大帽子），调整视角，开始顶着狮头晃脑地舞起来——狮头变左摇右摆，狮耳扑扇，铃铛轻晃，她的身子也跟着可爱地扭动。舞到崛起，她掀起狮头一角，从狮嘴下探出半个脑袋，亮晶晶地看着镜头俏皮一笑，又扣回去继续摆了两下。最后摘下狮头抱在怀里看了看，狮头凭空消散，恢复标准正面垂直。全程原地垂直（春节舞狮），双脚定点，狮头、铃铛均在画幅安全升级。\n\n按秒分割画面\n\n0~2秒（变出狮头）：标准垂直。曼德从身前以魔术般的动作凭空变出一个Q版小狮子头（外形大致画宽度宽度的30%，圆滚滚的橘红狮脸，金色××毛围成一圈，大眼睛配长袜，嘴侧垂着金色小铃铛），曼托托着举到胸前，睁大眼睛地打量，微微歪头表情，又又惊喜。 ⚠️强调：狮头Q版圆润、红金华丽喜庆，大眼长睫毛美而不凶；狮头约占画幅宽度30%，整体在画幅内、不遮挡脸部超过瞬间。\n\n2~4秒（套上狮头）：女仆曼把狮子头举过头顶，小心翼翼地扣在自己头部（狮头比她的头大一圈，罩住头顶，狮脸朝前，瀑布垂到耳际，呆毛被盖在狮头下），曼扶着狮头边缘调整了一下角度，使端端正正的。 ⚠️强调：套戴动作缓慢小心；狮头戴好后狮脸正对镜头，狮眼位置与她眼睛大致同高（能透过狮嘴/狮眼下缘看到她的眼神最好，或由狮眼“眨眼”代替）。\n\n4~6.5秒（报表晃脑舞狮）：女仆顶着狮头开始舞起：先左右塌陷（狮头依左右晃动），再上下点头（狮头一仰一仰），狮耳扑扇扑扇，铃铛恍动（Q版拟声感通过晃动节奏表现）；她的身子跟着小幅扭动（肩部左右伸缩幅度≤15°），脚底始终钉在原点，舞得认真又开心。 ⚠️强调：思考清醒脑行为习惯（狮头不甩飞、不歪落），节奏感明显（左右两下、上下两下）；身体扭动可爱不夸张。\n\n6.5~8.5秒（大象卖萌）：女仆停下舞动，前额把狮头从脸上掀起来一角（掀开狮脸下缘），从狮头下探出半个脑袋和头盔亮晶晶的，看向镜头，俏皮地眨了眨眼睛、咧嘴一笑，仿佛在邀请观众一起玩；并又把狮头扣回上方，左右摆了两下，心满意足。 ⚠️强调：“探头卖萌”是核心梗：掀狮头+亮晶晶眼神+眨眼，Q版可爱；探头时她的脸完整、表情声音。\n\n8.5~10秒（摘下消散+恢复正姿）：女仆把狮子头从怀头摘下来，抱在低头里看着，一边依依不舍又满足的；同时曼德把狮头轻轻往上一托，狮头以魔术般的动作凭空消散（铃铛最后的一声轻晃化作一个小光点消失）。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，眼神平视鲸前方，表情平和，呆毛柔顺，鱼尾自然下垂。无狮头、无铃铛严重。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-068",
+      "name": "写福字",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "写福字\n动作概述\n\nQ版蓝发女仆曼德凭空出了一张雪白的宣纸、拿起毛笔和一碟墨（Q版文房，悬停在胸前），低头蘸了蘸墨，认认真真地在纸上写下一个大的“润”字（Q版圆后楷书）。写完她拎起宣纸歪头欣赏自己的作品，吹了吹墨迹把回顾干，拿起快乐的皱纹。倒过来举到前面比划——“福”字倒置，寓意“福到了”，她点点头，用“我可真聪明”的得须眉意。最后宣纸、毛笔、墨碟以魔术般的动作凭空消散，恢复标准正面垂直。全程原地一致（春节写福字、倒贴“福到”），双脚指定原点，纸宣、毛笔、墨碟均在画幅安全连通。\n\n按秒分割画面\n\n0~2秒（变出文房）：标准正面。曼德从身前以魔术般的动作凭空变出文房三件套：一张雪白的方形宣纸（边长大概画宽度宽度的） 35%，悬停在胸前偏上的位置）、目光细长的毛笔（竹制笔杆，约前臂长）和一碟浓墨（Q版小砚碟，约心大小，墨色漆掌黑光亮）。她前额执笔、左手虚扶宣纸下缘，低头看着墨碟，表情严肃又带着一丝紧张。 ⚠️强调：宣纸悬停在胸前、平整不晃动；毛笔与墨碟比例协调，全部在画幅内、不遮挡面部。\n\n2~4秒（运笔写福）：女仆把笔尖在墨碟里轻轻蘸了蘸（在碟沿刮了刮笔尖），深吸喘，悬腕在宣纸上认认真真地写下一个“福”字——起笔、运笔、收笔一气呵成（Q版：笔画圆润天空，字迹响端正，约探讨纸宣中央70%面积），写完轻轻提笔，呼出睡眠，寻找如释重负的表情。 ⚠️强调：“福”字为正楷Q版圆体、笔画响亮可辨（一横一竖一撇点，结构完整）；书写过程流畅、不顿挫条带；墨迹不飞溅、不滴落。\n\n4~6.5秒（吹墨谢）：女仆放下毛笔，曼拎起宣纸的两角举到眼前，鼓起腮帮子朝“福”字轻轻吹了一口气（墨迹微微泛亮、快速干透，Q版可通过缕缕细光表现“干了”），然后歪头看着自己的作品，满意地点点头，嘴角扬起空间得意微笑。 ⚠️强调：吹气动作小而自然；欣赏时宣纸保持在胸前、不与重叠重叠；表情重点是“欣赏自我的小得意”。\n\n6.5~8.5秒（倒贴福字到）：女仆俏皮地眨眼眨眼，手把宣纸上下倒过来（“福”字变成倒置的状态，头朝下脚朝上），举到前面比划了一下，又移到身侧侧面“贴在这里”的样子，然后点点头，换成“福到了！”的得意笑容，眼睛弯成月牙——就是这春节“倒贴福字”的梗。 ⚠️强调：“倒置福字”是核心梗，操作停留后要停留约1秒（让观众看清福字倒竖着）；“福倒=福到”通过她得意的表情暗示，绘制文字说明。\n\n8.5~10秒（消失+恢复正姿）：女仆把倒着的宣纸正回来，看了看，然后将宣纸、毛笔与墨碟在胸前起拢，以魔术般的动作凭空消散。曼陀自然垂落，头部摆正，目光平视前方，嘴角带着一抹得意的浅笑。第10结束时彻底为标准正面清晰。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，目光平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无宣纸、无毛笔、无墨鲸、无墨迹高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-069",
+      "name": "穿针乞巧",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "穿针乞巧\n动作概述\n\nQ版蓝发女仆凭空变出一枚银光闪闪的Q版大针（针身约手指长，针孔圆润润）和辫子细细的红线。入浮（七夕乞巧要对月穿针），目光注意力集中。雅雅低下头，屏住呼吸，把红线颤巍巍地瞄准针孔——小心翼翼穿地了！好线的针，开心地轻轻蹦跳（双脚离地但落回原点），像炫耀战利品一样把针举过头顶晃了晃，头顶冒出两颗小星星光点。最后针线以魔术般的动作凭空消散，恢复标准正面站全程穿原地垂直（七夕“乞巧”仪式：对月针），双脚固定原点，针、线、月亮、光点在画幅安全上升；月亮走“无→有→无”（开场无均、举针望月时淡入、末端月亮淡出）。\n\n按秒分割画面\n\n0~2秒（变出针线）：标准锋直，画面右上角清晰，此刻无月。曼陀从身前以魔法般的动作凭空变出一枚Q版银针（比现实针大镰刀：针身约指长、粗约筷子尖粗细，孔光闪亮，上方的针是圆形的、清晰可辨）和辫子细细的红线（约手臂长，尾端微微飘动）。她左手捏针、手腕捏线，低头打量，表情又认真目光带着紧张与期待。 ⚠️强调：Q版大针音阶响度（针孔必须明显可见，这是穿针的关键视觉）；红线颜色鲜艳、细而不乱。\n\n24秒（举针望月）：女仆把针举到眼前（针孔朝上），抬头向画幅右上方约45°方向的天空——那里从无到有地淡入浮现出天际洁白的小圆月（先分层极淡的光晕，约0.5）1秒后凝成响圆月；直径大约画宽度的8%，淡黄色，带柔和光晕。她目光专注地看着，又低头瞧着针孔月亮，仿佛在向月亮“乞巧”，表情严肃认真。 ⚠️强调：必须从幅画右上角从无到有地淡入浮凸（不得在第1帧就出现，否则切换突兀）；只画幅右上角区域、不与人物头部重叠；月光晕中间；末端需淡出消散；此段是“对月乞巧”仪式的仪式感来源，表情要恬静。\n\n4~6.5秒（穿针引线）：女仆把红线的一头捻细（拇指食指轻轻一捻），屏住呼吸，把线头颤巍巍地凑向针孔——她微微眯眼、眉头不自觉地紧张，瞄准、再对准——“嗖”地一下，红线贯穿了针孔！她眼睛“叮”地亮起，惊喜地咧嘴开，像完成了一件大事。 ⚠️强调：穿针过程是核心看点：对不准时惊皱眉、成功时眼睛一亮，前后表情反差要明显；红线突破针孔后留出一段线头（约5cm），不滑出。\n\n6.5~8.5秒（开心蹦跳）：女仆举起穿好线的针（线尾垂落飘动），开心地原地轻轻蹦跳（双脚离地但落回原点，跳跃高度不超过画幅高度的10%），把针和线举过头顶晃了晃，像在向月亮炫耀“我靠近了！”，头顶冒出两颗小星星光点（半透明，微微闪光），表情又开心。 ⚠️强调：蹦跳以原点为轴心、幅度小；举针过头顶时针尖朝上，不横指；星星光点微小、半透明，不遮挡脸部。\n\n8.5~10秒（消失+恢复正姿）：女仆看着穿好线的针，寻找温柔笑容满意的，然后曼德把针与红线胸前拢起，以魔术般的动作凭空消散（红线化作一缕细小红色光丝飘散）；右上方的圆月慢慢隐去，头顶星星光点淡去。曼自然垂落，头部摆正，眼神平视前方。第10秒结束时彻底为标准正面。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，眼神平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无针、无线、无月亮、无光点高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-070",
+      "name": "圣诞树安装点",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "圣诞树安装点\n动作概述\n\nQ版蓝发女仆蜘蛛侠凭空变出一棵Q版小圣诞树（约45% 画幅高度，墨绿色全身树冠、浅棕色树干，树顶光秃秃的，整体悬停在角色正前方、树干正对脚底原点、树冠与胸齐高），树前飘着细小雪花光点。她侧身圣诞树，先凭空变出四颗彩色小彩球（金、红、蓝、绿），颗颗挂到支架上，挂完满意地拍了拍手；附加变出颗金色五角星，踮起脚尖（双脚原地踮起）把星星稳定到树顶——“叮”地一下星星亮起黄发光，发光树冠。她在原地欣赏自己的作品（双脚始终有个原点），曼德在胸前合十，眼睛亮晶晶，关心幸福的。最后圣诞树、彩球、星星与雪花以魔术般的动作用空消散，恢复标准顶部。全程暖地范围完成，定点（圣诞装饰树），双脚起始点不偏移，圣诞树、彩球、星星、雪花画在幅安全启动。\n\n按秒分割画面\n\n02秒（变出圣诞树）：标准垂直。从身前以魔术般的动作凭空变出一棵Q版小圣诞树（树高约为画宽度高度的45%，墨绿色四角树冠、浅棕色小树干，树冠边缘外围着细小白点当雪痕，树顶光秃秃的，整体悬停在角色正前方、树干正对脚底原点、树冠顶部与她的顶端齐平），树周围飘着34片半透明的雪花光点。她转向树，双手在胸前交握，眼睛亮晶晶地打量着树，一脸跃跃欲试。 ⚠️强调：圣诞树为Q版悬浮道具（不落地、不遮挡裙摆与双脚）；树冠顶部与画幅顶边保持安全距离（至少10%画幅高度）；雪花微细、半透明、渐变飘落。\n\n2~4秒（挂彩球）：女仆右膝靠空变出一颗金色小球（直径约画宽度宽度的） 3%），踮了踮脚（幅度小），把球挂到树冠的辫枝条上（球上的小钩子挂住枝杈，球轻轻晃了晃）；另外又变成了红色、蓝色、绿色三颗球，交替挂到树冠的左、右、下方枝条上，挂完手动拍了拍，完成满意的表情。 ⚠️强调：挂球动作逐颗进行、响亮；彩球挂上后轻微晃动（Q弹感）但不脱落；踮脚幅度小而稳定，双脚原地。\n\n4~6.5秒（点亮星星）：女仆额头靠空变出一颗金色五角星（Q版，约拳头大小，棱角圆润，中央嵌着一颗星星小圆孔），踮起脚尖、伸直手臂，把星星小心地对准树顶插下去（树顶有一个太空猿）—— “叮”地一声，星星亮起柔和的暖黄光芒（光晕扩散到整个树冠，发光彩球，柔和不刺眼），她举起手臂，仰头看着发光的树顶，“哇”地发出灯光，眼睛被照得亮晶晶。 ⚠️强调：星星插树顶的动作准而稳（一次成功）；点亮瞬间是整段的情绪高点，“叮”的光效柔和、半透明，不炫目、不遮脸。\n\n6.5~8.5秒（感谢陶醉）：女仆原地站定（双脚始终一个定点，以脚尖点地原地轴转），手在胸前轻轻合十，歪头点亮看着圣诞树，眼睛弯成月牙，关注幸福满足的甜笑；树周围的雪花光点飘落得更欢快了一些，其中一片挥洒着她的鼻尖（Q版：一个小白点在她的鼻尖停留半秒，她俏皮地皱了皱鼻子）。她左右小幅摇晃着欣喜（肩部摆动） ≤10°）。 ⚠️强调：合十+歪头+月牙眼是“欣赏”核心表情；鼻尖落雪点可爱俏皮、半透明；整个画面甜蜜温暖。\n\n8.5~10秒（消失+恢复正姿）：女仆最后瞥了一眼圣诞树，闭眼迎着地笑了笑，并吩咐在树前轻轻一挥——圣诞树彩球、星星（星光渐暗下）与雪花光点以魔法般的动作随空消散。她抬起手，头部姿势正，目光平视前方，嘴角笑还挂着微笑的浅浅。第10秒结束时彻底恢复为标准正面。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，目光平视鲸前方，表情平和，呆毛柔顺，鱼尾自然下垂。无圣诞树、无彩球、无星星、无雪花高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-071",
+      "name": "讨糖南瓜灯",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "讨糖南瓜灯\n动作概述\n\nQ版蓝发女仆安东尼凭空变出一盏Q版南瓜灯（橙红圆南瓜，雕着三角眼、弯月嘴的俏皮鬼脸，南瓜内部透出温暖的光芒黄），捧在胸前打量，配上俏皮的表情。她并把南瓜灯举到脸旁，隔着灯做了个同鬼脸（眯眼眯嘴），又移开灯看着自己的脸，一挡一露地玩“鬼脸镜子”，十分自得其乐。接着她一手捧灯、一手摊开伸向观众（镜头方向），歪头做出讨糖的俏皮姿势——一颗彩色糖果“啵”地凭空落进她摊开的掌心。她低头看看糖果，剥开彩纸丢进嘴里，鼓着腮帮子眯眼关注着配合的笑容，南瓜灯在另一只手里轻轻晃晃了晃。最后南瓜灯与糖纸以魔术般的动作凭空消散，恢复标准正面垂直。全程原地垂直（万圣节“不给糖就捣蛋”），双脚一个定点，南瓜灯、糖果、糖纸均在画幅安全直观。\n\n按秒分割画面\n\n0~2秒（变出南瓜灯）：标准正面。曼德从身前以魔术般的动作凭空变出一盏Q版南瓜灯（外形大致画幅宽度的） 25%，橙红色圆南瓜，顶部有截绿蒂，正面雕着俏皮的鬼脸——两只三角眼、一张弯弯的月牙嘴，南瓜内部亮着暖黄的光，光从眼口处透出），孔雀捧着举到胸前，低头和南瓜灯的鬼脸四目相对，配上俏皮的泪水，微微歪头。 ⚠️强调：南瓜灯Q版圆润、暖光柔和不刺眼（光不炫目、不泛白）；鬼脸可爱不吓人；灯整体在画幅内、不遮挡脸部。\n\n2~4秒（鬼脸镜）：女仆把南瓜灯举起挡住自己的脸（灯遮住她的五官），随即向旁边一移关心自己的脸——她做了和南瓜灯同款的鬼脸（眯起眼睛、咧嘴，像画了一个三角眼弯月嘴），挡一一露玩了两遍，第三遍时她俏皮地吐了吐舌头，眼睛亮晶晶，得玩得自其乐。 ⚠️强调：“鬼脸同步”是核心梗：南瓜灯表情和她自己的表情同款，一挡一露节奏分明（各约0.5秒）；鬼脸Q版俏皮、不狰狞。\n\n4~6.5秒（伸手讨糖）：女仆左手捧着南瓜灯，颧骨五指并拢、掌心朝上，俏眼睛皮地伸向镜头方向（手臂微弯、手掌摊开，做出“给我糖”的讨糖言语），同时歪头卖，萌眨巴着，南瓜灯的暖光映在她脸上；她无声地比口型“不给糖就捣蛋”。下一秒，一颗彩纸包装的Q版糖果“啵”地一声空出现，轻轻落进摊开的掌心里（糖果在掌心微微弹她的侧面）。 ⚠️强调：讨糖杏仁Q版可爱（掌心朝上、手不反击镜头，保持在胸前到镜头之间1/3距离处）；糖果呈掌心、不落地、不弹飞；她的表情是“狡黠期待”。\n\n6.5~8.5秒（吃糖满足）：女仆收回手，低头看着掌心的糖果，用指尖剥开彩纸（彩纸“唰”地展开），把糖果丢进嘴里，鼓着腮帮子咀嚼着，眯起眼睛，用“得逞”的满足，像只偷偷到食的小仓鼠；右手把糖纸揉成一团，随手揪南瓜灯旁边（问版：糖纸化作一个小光点飘进灯里消失，呼应“魔法”）；左手捧着南瓜灯轻轻晃了晃，暖光随之摇曳。 ⚠️强调：剥糖、吃糖动作利落可爱；“仓鼠腮帮”与南瓜灯的暖光相映，是本段的重点；糖纸不落地（化光入灯）。\n\n8.5~10秒（消失+恢复正姿）：女仆把南瓜灯捧到面前，和鬼脸对着视门，俏皮地笑了（仿佛在说“捣蛋成功”），曼德把南瓜灯在胸前轻轻一举，南瓜灯以魔术般的动作凭空消散（光化作团光点渐渐散开）。曼德自然垂落，头部摆正，目光平视前方，嘴角笑还挂着一丝得意的浅浅。第10秒结束时彻底暖为标准正面。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，眼神平视鲸前方，表情平和，呆毛柔顺，鱼尾自然下垂。无南瓜灯、无糖果、无糖纸高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-072",
+      "name": "插茱萸赏菊",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "插茱萸赏菊\n动作概述\n\nQ版蓝发女仆曼凭空变出一枝红玛瑙般的茱萸（一串红亮的小果实簇聚在枝头，配几片绿叶，Q版），捧在胸前低头打量，好奇地捻了捻果粒。她把茱萸枝斜斜地插在鬓边。发间（Q版：枝茎夹在耳际，红果串垂在耳旁），歪头让镜头看到她鬓边的朱萸，勾勒甜甜的笑容（重阳“遍插朱萸”的仪式感）。接着她凭空变出一朵金黄的大菊花（改为花瓣，她又把菊花举到鬓边与茱萸同框（左手扶花、右肩轻扶鬓边茱萸），微微侧头，温柔满足，头顶飘落一两片金色的细碎花瓣。最后朱萸与菊花以魔术般的动作凭空消散，恢复标准正面垂直。全程原地垂直（重阳插朱萸、赏菊），双脚一个定点，朱萸、菊花、花瓣均在画幅安全开始。\n\n按秒分割画面\n\n02秒（变出茱萸）：标准垂直。曼德从身前以魔术般的动作凭空变出一枝茱萸（Q版：长约一个手掌的细枝，下方聚着56颗红玛瑙色的小圆果实，配两三片翠绿小叶，新鲜水灵），手动捧在胸前低头打量，用拇指和食指轻轻捻了捻其中的小圆果实，表情有趣又喜欢。 ⚠️强调：朱萸红果鲜亮（红绿对比曝光）、Q版水灵；果粒大小均匀（约黄豆大小，Q版略放大）；全部在画幅内。\n\n2~4秒（鬓边插朱萸）：女仆左手揪住耳际的头发，眉心小心地把茱萸枝斜斜插进发间（枝条前端别在耳后，红果串自然垂成耳旁、微微晃动），插好后她轻轻歪了歪头，让镜头看到她鬓边垂落的红果，然后抬头食指轻轻碰碰了其中的各项成果（须注意对称的、带点意的小辫子）。 ⚠️强调：“鬓边插朱萸”是核心梗，插好后要正面展示约1秒（红果垂在耳旁，与蓝发形成红蓝对比，画面出彩）；插枝动作轻柔，发丝不乱。\n\n4~6.5秒（闻香陶醉）：女仆额头靠空变出一朵金黄的大菊花（Q版：直径约一个手掌大的花瓣，花心金黄，花瓣舒展），双手捧着花举到鼻尖前，闭上眼睛，深深地闻了一下——她眉头舒展、嘴角上扬，以一脸陶醉的表情，仿佛俯面而来。 ⚠️强调：菊花金色鲜亮、花瓣构成分明；闻香时闭眼陶醉是核心表情（眉眼舒展笑容、温和），Q版享受不夸张。\n\n6.5~8.5秒（花与茱萸同框）：女仆睁开眼睛，前额把菊花慢慢举到与鬓边朱萸同高的位置（菊花在脸侧、朱萸在鬓边，形成“红果金花”的搭配），左手轻轻扶着菊花的茎，微侧头，上方温柔的笑容；画幅上方飘落一两片金色的细碎花瓣（半透明，缓慢旋转飘落，落向她的肩头）头。 ⚠️强调：同框构图菊花与茱萸都在脸侧、脸部表情互不遮挡；目光向镜头方向、笑容温柔；花瓣小型、半透明、飘落范围在画幅上部到肩头之间。\n\n8.5~10秒（消失+恢复正姿）：女仆低头看着鬓边的茱萸和手中的菊花，用依依不舍的浅笑，然后将菊花捧在胸前、轻轻闭上眼——菊花与鬓边的茱萸同时以魔术般的动作凭空消散（化作几片细细的金红光点飘散），肩头的花瓣也一并淡去。她睁开眼睛，双手自然垂落，头部摆正，目光平视前方。第10秒结束时彻底恢复为标准正面平整。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，目光平视鲸前方，表情平和，呆毛柔顺，鱼尾自然下垂。无茱萸、无菊花、无花瓣。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-073",
+      "name": "放河灯",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "放河灯\n动作概述\n\nQ版蓝发女仆曼德凭空变出一盏Q版莲花灯（粉白莲花形的纸灯，花瓣普及，中央立着辫子小烛台），捧在胸前低头打量，神情柔和。她用指尖“啪”地打出簇暖黄火苗，轻轻点亮灯芯——灯光亮起，暖光在莲花瓣间晕开。她双手捧灯，轻轻放到身前一圈Q版涟漪光晕上（近乎透明的暖黄色柔光，直径约手掌大小，悬浮在身前腰部高度），莲花灯在光晕中央轻轻转了个圈、微微上下起伏。她双手合十、闭眼低头，四周祈愿；莲花灯旁飘起两颗萤火虫般的金色小光点。最后莲花灯化作一点暖光缓缓淡去，涟漪光晕与萤火一并消散，她睁开眼目送，寻找正面温柔释然的笑容，恢复标准平坦。全程原地均匀（中元节放河灯祈福），双脚固定原点，莲花灯、水面、萤火光点均在画幅安全上升。\n\n按秒分割画面\n\n0~2秒（变出莲花灯）：标准垂直。曼德从身前以魔术般的动作凭空变出一盏Q版莲花灯（外形大致画宽度宽度的22%：白色的纸制莲花，花瓣展开，中央立着细小的白色蜡烛台，蜡烛台是空的），曼托着举到胸前，低头打量，神情温柔，仿佛捧着一件珍宝，嘴角带着浅浅的笑。 ⚠️强调：莲花灯粉白层次分明、Q版精致；夜色东南亚柔和（画面基调偏静谧的蓝紫色，灯光未亮时灯体是画面中唯一的亮色）；灯整体在画幅内、不遮挡面部。\n\n2~4秒（点亮灯芯）：女仆延伸颈食指，在蜡烛台上方轻轻一捻——指尖“”突然亮起，簇暖黄色的火苗（Q版：火苗圆润如豆，边缘带一点橙红），她小心翼翼地低头，把火苗凑向蜡烛芯——灯芯“嗤”地被点亮，温暖的橘黄灯光在莲花瓣间慢慢晕开（柔光扩散到整盏灯，泛出温馨的光晕），她收回手指，低头看着亮起的灯，用温柔满足的浅笑。 ⚠️强调：火苗细小圆润、暖色（黄橙色），明亮柔和不刺眼；点亮瞬间的光晕渐变缓慢柔和（约1秒内完成），是温馨氛围的关键；火苗不扩散、不冒烟。\n\n4~6.5秒（放灯入水）：女仆手工小心地捧着莲花灯，慢慢放——放到身前腰部高度时，一圈Q版涟漪光晕靠空浮现（直径大致画宽度宽度的） 22%：近乎透明的暖黄色柔光，中央一圈淡淡的细碎涟漪波光，悬浮在身前），她把莲花灯轻轻放到光晕中央——灯稳定稳定在光晕中央，轻轻转了个圈、微微上下浮动（原地漂浮，像漂在水面上但不漂离、不走远）。 ⚠️强调：涟漪光晕小而淡（直径仅约画宽度宽度的22%，近乎透明、色，不引入大面积蓝色）、铺满或占半屏水面、不破坏绿幕背景纯；放灯动作轻缓中部，灯不倾覆、不沉没；莲花灯基本原地浮动（可极不稳定暖、不整体漂离）。\n\n6.58.5秒（合十祈愿）：女仆望着漂远的水灯，曼德在胸前轻轻合十，闭上眼睛，微微低下头，神情弥漫安宁，仿佛在对漂远的灯光许下心愿；与此同时，水面周围飘起2三颗萤火虫般的金色小光点（半透明，一明一暗地闪烁，缓慢飘动），涟漪光晕轻轻扩散，莲花灯的光在夜色中成为最温暖的一点。 ⚠️强调：合十闭眼是核心画面（安静、柔和、柔和）；萤光火光点少量、半透明、梯度柔和，不刺眼、不遮挡脸部；画面整体安静宁静温馨，不做任何恐怖暗示。\n\n8.5~10秒（灯远光淡+恢复正姿）：女仆缓缓睁眼，边缘送莲花灯漂到画幅——灯光逐渐变暗，化作一点空间黄光晕，随即连光晕一起以魔术般的动作凭空消散（漪光晕与萤火光点同步淡去）。她望着光点消失的方向，外表温柔释然的方向，自然垂落，暖头部眉头正对，目光平视。第10秒结束时彻底视为标准正面清晰。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并拢，曼德自然垂于完全身高，目光平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无莲花灯、无水面、无火鲸、无萤火拥挤。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-074",
+      "name": "萌化小幽灵",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "萌化小幽灵\n动作概述\n\nQ版蓝发女仆曼德凭空变出一只Q版小白团子幽灵（半透明的白色小圆球，顶着两颗豆豆眼和一张狭长嘴，没有手脚，身体下端像漂流裙摆一样的挥动），它从她掌心出来“啵”地冒出来小幽灵围着女仆飘了一圈，又躲到她的第五只脑袋里探出半个脑袋；她转过头，温柔地朝它笑了笑，伸出手指轻轻碰了碰它的头顶——小幽灵突然眯起豆豆眼（弯成月牙），害害害羞地不敢直视她。羞地蹭蹭了她的手指。附加它在她掌心蹦了蹦、绕着她头顶转圈圈，累了趴在她手心成了一团；女仆把它捧到脸旁蹭了蹭，满眼都是温柔。最后小幽灵飘起来，朝她轻轻摆了身体姿势（头）顶冒出星星小星星形象“再见”），化作团团星光消散；她笑着朝它挥手道别的，恢复标准正面顶部。全程原地垂直（鬼节“化”彩蛋），双脚定点，小幽灵、星光均在画幅安全起始。\n\n按秒分割画面\n\n0~2秒（变出小幽灵）：标准正面。曼德从身前以魔术般的动作凭空变出一只Q版小幽灵（外形大致画宽度宽度的） 15%：半透明的白色小圆球，表面一点带浅色的奶白色渐变，顶着对称圆圆的豆豆眼和一张紧凑的“ω”形嘴，没有手脚，下端是波浪形的裙摆边缘，纵向上下飘动），双掌摊开托在胸前。从她掌心里“啵”地一下凸出来，飘起一点点，又缩了缩身子，豆豆眼害羞地围着她的轮廓。 ⚠️强调：小幽灵Q版圆润、半透明、通体白色（区别于万圣南瓜灯的橙色），“害羞”感通过它半藏半露、眼神躲闪表现；全程在画幅内、不遮挡脸部。\n\n2~4秒（绕圈躲藏）：小幽灵围着女仆飘了半圈（在她身侧绕一个小弧线），然后躲到她身边，只从她肩旁探出半个圆脑袋，小心翼翼地打量着她。女仆微微一转头（头部小幅度侧转，双脚不动），看见它的那边，“噗嗤”一声温柔地笑了，伸出手指，轻轻把它探出的头顶。 ⚠️强调：绕圈外形小（在身体侧面呈小弧线）、速度慢；躲藏时从头部头部头部、表情害羞；女仆侧转幅度≤20°，身体保持正面；点头动作轻柔。\n\n4~6.5秒（摸头蹭蹭）：小幽灵被点到头顶，豆豆眼“叮”地亮起（眯成两道弯弯的小月牙），羞地了缩缩，随即鼓起勇气飘到她掌心上方，落下来，用圆脑袋蹭了害她的指尖（轻轻蹭一即弹开），又抬头用月牙眼看着自己的脸。女仆低头看着掌心的小幽灵，眼神温柔得能化开，嘴角带着宠溺的浅笑。 ⚠️强调：“眯眼月牙+蹭手指”是核心可爱点，动作轻柔、节奏慢（蹭一下停一下）；她的表情是“温柔宠溺”，不夸张。\n\n6.5~8.5秒（雀跃）：小幽灵在她心里高高蹦蹦（Q版：整个圆球上下弹跳一次，裙摆飘动），开心地飘起来，绕着她的头顶转了一圈（轨迹小、速度轻快），又落回她掌心，蜷成一团（圆球缩成球状，像一只趴着的小猫），安安静静地不动了。女仆低头看着它，又把它捧到脸旁，用脸颊轻轻地蹭了蹭的头顶，满眼含笑的幸福。 ⚠️强调：跳跃跳与转圈的幅度都小、姿态都在画幅内；“蜷缩成团”的动作圆润可爱；蹭脸颊动作温柔、幅度小、清晰可见（它的圆脑袋贴着她的脸颊停约一秒）。\n\n8.5~10秒（告别消散+恢复正姿）：小幽灵从她心里掌抬头，飘起与她平视，轻轻摆了摆体（左右摇晃两下，头顶“啵”地冒出一颗卫星金色星星——是它说“再见”的方式），并圆润的身体化作团般的星光，逐渐散开（星光半透）明，一明一暗地淡去）。女仆微笑着，朝它消散的方向挥了挥手（右眼在胸前小幅度挥动了两下），目送离去，眼神温柔。附加自然垂落，头部摆正，目光平视前方。第10秒结束时彻底恢复为标准正面正直。\n\n动作结束后状态\n\n最终：与参考图最左侧标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，眼神平视鲸前方，表情平和，呆毛柔顺，鱼尾自然下垂。无小幽灵、无星光高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-075",
+      "name": "放孔明灯",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "放孔明灯\n动作概述\n\nQ版蓝发女仆安东尼凭空变出一只Q版孔明灯（米白色纸罩的书桌灯笼，底部开口，纸质餐具收纳盒，Q版，高大概画幅宽度的） 25%），曼托托着举到胸前，低头打量，神情曼哈顿期待。她低头对着灯底开口轻轻一吹——灯内“呼”地亮起一团暖黄色的蜡烛火（Q版：南瓜圆润如豆），暖光透过纸罩透出，将灯身染成温柔的橘子色，纸罩压迫轻轻鼓胀。她小心地把灯举过头顶，仰头看着被灯光照亮的孔明灯，眼神亮晶晶的。随即孔明模仿——孔明灯缓缓升空，越飘飘、越飘越小，化作一个温暖的小光点；她合十、仰头目送，均匀祈愿，周围飘起一两颗金色的星尘光点。最后小光点飘出幅幅画顶边淡去，她低头用温柔的笑容，恢复标准的正面垂直。全程原地垂直（元宵/节庆放飞孔明灯祈福），双脚一个定原点，孔明灯、蜡烛火、星尘均在画幅安全的扁平。\n\n按秒分割画面\n\n0~2秒（变出孔明灯）：标准正面。曼德从身前以魔术般的动作凭空变出一只Q版孔明灯（高约画幅宽度的） 25%：米白色半透明纸罩，底座形，顶部圆润收口，罩面清晰的纸质纹路，底部开口，内里空空），曼托着举到胸前，低头打量，又抬眼看着上方（仿佛在看下面要飞向的天空），神情众人期待，嘴角带着浅浅的笑。 ⚠️强调：孔明灯米白暖色、纸纹纹理、Q版圆润区别（于莲花灯的粉白花瓣造型，孔明灯是干净的基本形）；夜色基调静谧蓝紫，灯未亮时是画面中最亮的视觉；整体在画幅内、不遮挡脸部。\n\n2~4秒（吹亮灯芯）：女仆低头把嘴凑向灯底开口，轻轻“呼”地吹了一下——灯内靠空亮起一团暖黄色的烛火（Q版：南瓜圆润如豆，微微跳动，根部截断烛台），暖光透过米白纸罩透出，将灯身染成温柔的橘色，纸罩捂住轻微鼓胀一圈（Q版：灯身微微胀起、变得圆润）；她抬头，看着被灯光照亮的灯，眼睛被暖光映得亮晶晶，用惊喜满足的浅笑。 ⚠️强调：烛光火暖黄（带橙红）、刚性中等不刺眼；纸罩透光呈均匀橘色（半透明，能看到灯的造型）；灯鼓胀的幅度小而Q弹，不夸张；火苗在灯内稳定跳动、不冒黑烟。\n\n4~6.5秒（举灯引势）：女仆手动小心地托着灯底要，慢慢把孔明灯举过头顶（手伸直，灯身距画幅顶边至少保留10%的安全空间），仰头看着被灯光照亮的孔明灯，显现亮晶晶，心思微微张开，注视期待的表情——灯在手中轻轻动晃侧面又稳住，仿佛随时飞走，她用指尖轻轻拂了灯底边缘，稳住它。 ⚠️强调：举灯动作缓慢小心（灯不歪斜、不脱手）；仰头看灯时脸部柔和、表情警惕；灯与头顶保持安全距离，全程在画幅内。\n\n6.5~8.5秒（松手放飞）：女仆低头看着灯底，深吸呼吸，慢慢姿势——孔明灯渐升空（笔直或微斜地向画幅上方飘升：先慢后稍快，高度每1秒约上升15%画幅高度，尺寸同步逐渐缩小），越飘越高、越飘越小，最后变成一个温暖的小光点（约指甲盖大小）；她在胸前轻轻合十，仰头目送着飘升的光点，神情周围的安宁，周围飘起两颗半透明的金色星尘光点（一明一暗，迅速引发）。 ⚠️强调：升空视线稳定向上（不横飞、不摇摇坠落），缩小过程平滑连续（由大灯渐变为小光点）；她仰头目送的视角随光点抬高，表情是“流通的目送”，合十动作安静温柔；星尘少量、半透明、不遮挡脸部。\n\n8.5~10秒（灯火远去+恢复正姿）：孔明灯化作的小光点继续向上飘，飘出画幅顶边后逐渐淡去（光点逐渐变暗、消失），女仆的目光追随着最后一点光亮，直到消失，逐渐低下头，脸上温柔释然的（如眉心愿已随着灯飞远）。同时曼恩自然垂落，头部姿势正，目光平视前方，笑嘴角还挂着眼神浅浅为标准正面。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全高度，眼神平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无鲸孔明灯、无蜡烛火、无星尘高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-076",
+      "name": "骑木马",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "骑木马\n动作概述\n\nQ版蓝发女仆凭空变出一只Q版摇摇木马（红棕木色马身，画着彩色圆点装饰，圆圆的温柔眼神，底部是弧形摇杆底座，横置在前方正面地面、马头朝右），她眼睛一亮，曼在胸前交握，跳跃跃欲试。她原地侧身跨上木马（Q版淑女侧：身体正对镜头，双腿并拢垂在木马右侧），曼陀扶住马头一千圆，坐稳后开始前后轻摇——木马弧形回转摆动，她的身体跟随稍前晃后仰，咯咯地笑出声（无声），呆毛跟着动晃。摇到开心处，她仰头笑得更欢，头顶冒出两颗小星星光点特效，马上面的彩色圆点闪过一圈亮光。最后她停下来，曼德撑着马背，起身站回起点位置，转身看木马，木马以魔术般的动作凭空消散，恢复标准正面垂直。全程原地范围完成（跨上与下行均在原点，木马底座位置固定不升降），双起始脚点不偏移，木马、星光均在画幅安全起点。\n\n按秒分割画面\n\n0~2秒（变出木马）：标准垂直。曼德从身前以魔术般的动作凭空变出一只Q版摇摇木马（整体高大概画幅高度的40%：红棕色的圆润木马，马身绘着红黄蓝三色小圆点装饰，马脸温柔（圆眼睛、长睫毛、刘海状的××毛），马头顶端各有一个圆边缘，底部是月牙形的弧形摇杆底座，横置在角正前方地面（马身俯身前中央、马头朝右），木马四平八稳地立住。她低头看见木马，眼睛“叮”地亮起，曼德在胸前交握，微微倾身，一脸跃跃欲试的兴奋。 ⚠️强调：木马红棕木色+彩色圆点，Q版圆润、彩绘可爱；木马底座与画幅底边保持安全距离（至少留8%画幅高度，不被裁切）；木马整体在画幅内，不遮挡她的脸部。\n\n2~4秒（跨上木马）：女仆原地转向木马尾（以脚尖原地点地完成原地轴转，双脚不产生整体横移、不离开中心原点），侧身面对马身，先抬起右脚跨过马背（Q版：身体再重心轻移到当下），并拢双腿，稳稳稳侧坐在马背上——身体正对镜头，双腿并拢自然垂在木马右侧（Q版淑女侧坐：裙子摆在马​​背上，脚尖微微下垂）；曼德扶住马头马拉松的圆弧，坐直，低头看着自己，满意地笑了笑。 ⚠️造型强调：侧坐姿势淑女（双腿并拢朝右、身体正对镜头、裙摆自然铺开）；上身坐直、不歪斜；坐好后画面重心仍居中，木马遮住她的小腿部分属正常（马身在下部），不遮脸部。\n\n4~6.5秒（摇摇木马）：女仆身体挥动摆动发力，木马跟随弧形摇杆摆动摆动，幅度约15°向前：时马头微扬、刚性时马头微低，节奏均匀，约每1.2秒一个来回）；她的跟着节奏轻轻前倾笑后仰（上身随动，幅度与木马一致），呆毛追随身体晃动，嘴巴咧开，咯咯地笑（无声，左边轻轻左右）。 ⚠️强调：摇动节奏均匀轻快（前后各摇一个来回为一组），幅度小、稳当（木马不侧翻、不升降）；她始终手扶圆部分、不松手；笑声感通过“楼梯左侧+眯眼斜嘴”表现。\n\n6.5~8.5秒（摇得更欢）：女仆摇到开心处，仰起头，笑得弯成两道月牙，摇动的幅度稍稍加大（约20°，仍然稳定当），更放松地跟着一颗颗浮动；头顶冒出两个小星星光点作用（半透明，随着她的节奏一明一暗地闪）；马身上的彩色小圆点依次闪过一圈亮光（Q版：圆点像小彩灯一样“叮叮叮”亮一圈就暗下），画面又童趣。 ⚠️放大：幅度加大但节奏不失控（木马仍稳定、不升降）；星星光点少量、半透明、不遮挡；马身圆点亮柔和、一闪即灭，不炫目。\n\n8.5~10秒（下马消散+恢复正姿）：女仆渐渐摇动，木马停下来，她撑起侧面马背，利落地起身，跨回地面，站回起点位置（双脚回到标准站姿的原始位置）；然后到底看了看木马，然后“玩得真开心”的满足——木马以魔术般的动作凭空消散（马身化作几缕色彩小光点散开）。她转回头，曼陀罗自然垂落，头部摆正，目光平视前方。第10秒时结束彻底为正面标准垂直。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，目光平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无木马、无星光高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-077",
+      "name": "变鸽子",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "变鸽子\n动作概述\n\nQ版蓝发女仆曼德凭空变出一顶黑色礼帽（Q版，帽身圆润，帽檐围着一圈紫色缎带和一个小蝴蝶结），单手托着举到胸前，另一只手用指尖轻轻敲了敲帽顶，表情神秘，朝镜头挤了眼——”看好了”。她把空着的手伸进帽子里摸索了两下（故作神秘的停顿），突然“噗”地一声，一只圆滚滚的Q版小白鸽从帽口扑棱棱飞了出来，绕着飞了半圈——她先是一惊（随即转为神秘得逞的笑）。额头食指，白鸽飞回轻轻代表她的指尖上（Q版：白鸽收翅站稳，歪着圆脑袋用豆豆眼看她），她用左手温柔地抚摸着抚摸鸽子的羽毛。版玫瑰花，她举着花向镜头得意地展示。最后白玫瑰与礼帽以魔术般的动作凭空消散，恢复标准正面垂直。全程原地一致（经典魔术：帽中变鸽），双脚定点，礼帽、白鸽、玫瑰均在画幅安全正常。\n\n按秒分割画面\n\n0~2秒（变出礼帽）：标准正面。曼德从身前以魔术般的动作凭空变出一顶Q版黑色礼帽（帽身圆润高挺，外形大致画宽度宽度的） 20%，帽檐，围着一圈紫色缎带、侧面系一只小蝴蝶结），额头托着帽底举到胸前，左手食指轻轻敲击帽顶（“叩叩”的节奏感），附加指尖在帽檐沿划了一圈（像施法前的示意图），最后看向镜头，神秘地挤了下眼部。 ⚠️强调：礼帽Q版圆润、黑紫色引人注目；“敲帽顶+挤眼”的动作是魔术师开场仪式感；帽子整体在画幅内、不遮挡脸部。\n\n24秒（帽中飞鸽）：女仆把左手伸进帽口里摸索了两下（手在帽子里搅动、仿佛在找什么），表情故作神秘和期待，停顿了半秒——突然“噗”地一声，一只圆滚滚的Q版小白鸽从帽口扑棱棱飞（半透）明翅膀扇动、羽毛飘落一两片），绕着她的头顶飞了半圈（谋略在画幅上部、不与她的头眉毛重叠）；她被惊得眼睛瞪圆、上身微微后仰（双脚不动），随即反应过来，寻找神秘得逞的。 ⚠️强调：鸽子从帽口垂直飞出、速度轻快不莽撞；Q版白鸽圆滚滚（像白团子插了翅膀），豆豆眼配小红嘴；环绕轨迹小、在画幅内；飞出时飘落的羽毛12片、半透明。\n\n4~6.5秒（引鸽落指）：女仆稳稳地延长颈食指（指尖朝上，其余手指蜷起），白鸽绕完一圈后俯冲回来，轻盈地凸显她的食指上——收拢站稳，歪着圆脑袋，用豆豆眼饶有兴趣地看着她（Q版：鸽子歪头眨眼）；她用左手的食指和中温柔地抚摸着鸽子头指的鸽子眼睛，鸽子不安地眯起眼睛，她也用温柔宠溺的浅笑。 ⚠️强调：鸽子落指动作轻稳（不扑腾、不滑落）；“人鸽对视”是温馨核心画面：她的温柔笑+鸽子的歪头豆豆眼；鸽子全程停在她指尖、画幅内。\n\n6.5~8.5秒（鸽子变花）：女仆着鸽子的额头轻轻往上一托（同时手指微微合拢）——“啵”地一声，鸽子化成了一团柔和的白色光点，光点散开后，一朵洁白的Q版玫瑰花凭空出现在她的掌心（花瓣、带两片翠绿小叶、花茎挺直），她低头望着花，又举向镜头方向，得意地扬起了扬下巴，俏皮一笑。 ⚠️瞬间强调：鸽子变花的是“魔术点”：白鸽→白色光点→白玫瑰的跨越要不止（约0.5秒完成）；玫瑰白净精致（Q版比例尺约一个手法大）；展示时花在胸前安全平稳。\n\n8.5~10秒（消散+恢复正姿）：女仆把白玫瑰在掌心里掂了掂，又将玫瑰与托着的礼帽都举到了胸前，以魔术般的动作凭空消散（玫瑰化作几缕白色光丝、礼帽化作黑色细光点，同时淡去）。曼陀罗自然垂落，头部摆正，目光平视前方，嘴角牵着目光“表演完毕”的得意浅笑。第10秒结束时彻底为标准正面。\n\n动作结束后状态\n\n最终：与参考图最左侧标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，眼神平视鲸前方，表情平和，呆毛柔顺，鱼尾自然下垂。无礼帽、无白鸽、无玫瑰高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-078",
+      "name": "凭空生花",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "凭空生花\n动作概述\n\nQ版蓝发女仆手工摊开，掌心拍摄镜头，翻了两下，示意图“看清楚了，说明书什么都没有”，表情神秘地微笑。 补充她的下一代一翻、再向上一翻——“啵”地一声，右手掌心中凭空冒出一朵红玫瑰（Q版，花瓣鸢、带着两片）翠绿的叶子和珍珠晶莹的水珠），她低头望着花，又举到鼻尖闻了闻，闭眼关注陶醉的浅笑，并睁开眼冲镜头，俏地眨了眨眼。接着她把玫瑰轻轻向头顶上方一抛——玫瑰在空中“啵”地散开，化作一片粉红色的花瓣雨（6~8）片花瓣缓慢旋转飘落，她的肩头、发间），她仰头望着花瓣雨，开心地笑了。最后花瓣花瓣前化作细小光点消散，恢复正面标准垂直。整个原地均匀（华丽小魔术：依靠空生花），双脚指定原点，玫瑰、花瓣均在画幅安全彼此。\n\n按秒分割画面\n\n0~2秒（空手示意图）：标准正面挺直。女仆双手五指并拢、掌心朝上，平平地摊开在胸前极限，向镜头翻了两下（左手翻、颧翻，各一次），示意图“看清楚了——手掌什么都没有”，脸上带着神秘又俏皮的微笑，微微歪头。 ⚠️强调：空手展示是魔术的必要铺垫（手掌摊平、指缝并拢、翻掌时动作缓慢而响亮）；她的表情是“你们可看好了”的狡黠期待。\n\n2~4秒（翻手生花）：女仆同时下一代一翻（掌心朝下、手背朝上），停顿半秒，再向上一翻——“啵”地一声，右心掌凭空冒出一朵红玫瑰（Q版：花瓣花瓣、鲜红欲滴，花茎上带着两片翠绿的小叶，一片花瓣尖上挂着一颗晶莹的小水珠）眼睛，左手则空空地摊开一张截图“变泪了！”。她低头看着掌心的玫瑰，亮晶晶，看到惊喜又得意的。 ⚠️强调：生花瞬间“啵”的光效轻盈（细小红色光点散开即隐）；玫瑰Q版精致（约一个手掌大），水珠晶莹剔透是点睛细节；玫瑰在掌心中稳稳立住、不倾倒。\n\n4~6.5秒（嗅花沉醉）：女仆把玫瑰慢慢举到鼻尖前，闭上眼睛，轻轻闻了一下——她眉头舒展、嘴角上扬，与陶醉的浅笑（Q版：微微仰头、呼吸感），并睁开眼睛，目光转向镜头，俏皮地眨了眨眼睛，好像在说“还不错吧？”。 ⚠️强调：闻香陶醉是核心表情（闭眼+舒展+浅笑），Q版享受不夸张；花始终在脸侧、不遮挡五官。\n\n6.58.5秒（抛花化雨）：女仆单手把玫瑰轻轻往头顶上方一抛（抛掷高度约为画幅高度的20%，不碰画幅顶边）——玫瑰在空中空中半圈后“啵”地散作开，化68片粉红色的花瓣（花瓣轻软、边缘卷曲，缓缓旋转着飘落，一片铺满她的肩头、一片铺满她的发间、一片铺满她的掌心，其余的飘落向地面）；她仰着头，望着花瓣雨落下来，开心地嘴笑，眼睛弯成月牙。 ⚠️强调：花瓣散开是花朵的高潮：数量6~8片、分布错落（肩头/发间/掌心/飘落），飘落速度缓慢缓慢；花瓣终止她身上的位置不挡脸；所有花瓣都在画幅内飘落。\n\n8.5~10秒（花瓣消散+恢复正姿）：飘落的花瓣在落向地面，片化作细小的粉色光点消散（先落地的两片先化光，最后是掌心里的那片——她低头看着掌心的花瓣，轻轻吹了一口气，花瓣化作光点飞散），她看着光点散尽，外表温柔的笑容。同时曼德自然垂落，头部摆正，目光平视前方。第10秒结束时彻底为标准正面明亮。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，目光平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无玫瑰、无花瓣、无光点高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-079",
+      "name": "明白魔术",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "明白魔术\n动作概述\n\nQ版蓝发女仆曼德凭空出一张迷你幻牌（Q版：牌面比手法略小，白底牌面画着简单的红色花纹，背面是红白条纹），左手托着牌叠，额头从中间抽出一张牌——牌面印着一个Q版蓝发女仆头像（和她同款发型呆毛，彩蛋），她举着牌向镜头展示位置。随后她姿势手——那张牌竟然悬浮在空中，缓慢绕自身轴心旋转一圈，像被无形的手托着，她伸长食指在空中轻轻画圈，牌就跟着她的手指轻轻移动。接着她俏皮地“啪”地合了一下掌——牌瞬间就空消失了，她摊开一份资料截图“没了”。最后她神秘一笑，手腕绕到自己耳后，轻轻一抽——那张牌“变”了出来，举到了脸旁朝镜头俏皮皮地眨了眨眼，仿佛在说“在这儿呢”。 结束整副牌叠在胸前凭空消散，恢复标准正面垂直。全程原地垂直（立体牌魔术：悬浮、消失、再现），双脚固定原点，立体牌、悬浮均在画幅安全直观。\n\n按秒分割画面\n\n0~2秒（变出幻牌）：标准垂直牌。曼德从身前以魔术般的动作凭空变出如Q版迷你幻牌（合拢的一叠，长约手掌的1.2倍牌：面大小约为手掌的） 3/4，白底上印着简洁的红色菱形花纹，背面是红白间隔的条纹），左手托着牌叠，右拇指轻轻拨了拨边（牌叠“唰”地展开成扇形又收拢），低头看着牌，看着自信的微笑。 ⚠️强调：扑克牌Q版紧凑（牌面比手法略小，不出现完整扑克细节，牌面以简化花纹为主）；展开扇形时牌不散落、不飞脱；牌叠在胸前安全稳定。\n\n2~4秒（抽牌展示）：女仆右脸从形胸牌叠中抽出一张牌，举到脸侧，展示给镜头——牌面上印着一个Q版蓝发女仆头像（圆脸、蓝发、呆毛、月牙笑眼，和她本人同款造型，是一张“她自己”的花牌），她看了看牌上的头像，又看看镜头，​​俏皮地歪头笑了笑，？在说“像我吧”。 ⚠️强调：牌面Q版女仆表情可辨（蓝发+呆毛+笑脸，约讨牌面70%面积）；展示时牌举在脸侧、不遮挡她的五官；彩蛋感自然，不解释过多。\n\n4~6.5秒（悬浮旋转）：女仆把抽出的牌轻轻往身前一送、动作手指——牌竟然悬浮在空中（停在胸前约25%）画幅高度处），缓慢绕自身轴心一个旋转整圈（牌面展示→背面→牌面），像被一只无形的手托着；她伸肘食指在空中轻轻画了一个小圈，悬浮的牌就跟着她手指的方向匀速移动（向左移了一段、再画一圈移回原位），她的侧面带着“看，多听话”的得意浅笑。 ⚠️悬浮是核心魔术点：牌停稳、旋转匀速（约1.5秒一整圈）、紧随手指移动的幅度小而连贯；牌全程在胸前安全区、不与脸部重叠、不飞出画幅。\n\n6.5~8.5秒（拍手消失）：女仆收回手指，俏皮地“啪”地合掌（曼德在胸前轻击一下）——悬浮的牌在合掌的瞬间凭空消失（无桌面、无光效，彻底利落地），她随即摊开双手（掌心朝上、五指张开），左右各画面一下，耸了耸肩，表情是“看吧，没了”的就完了。 ⚠️强调：“合掌即”消失干净利落（不拖泥带水、不提前消失）；消失后她要给足1秒的“空手展示”时间（让魔术的“消失”成立）；摊手耸肩动作俏皮。\n\n8.5~10秒（牌从耳后再现+消散）：女仆神秘地眨了眨眼睛，额头绕到自己左耳后（手在耳后停留半秒，做出“在东西”的样子），然后轻轻一抽——刚才那张Q版女仆花牌“变”了出来，举到脸旁，歪头朝镜头俏皮地眨眼，仿佛在说“在这儿呢！”然后她左手也加入了，把整副牌叠变回来，曼德把牌叠在胸前扣起，以魔术般的动作凭空消散（牌叠化作细细的红白光点散开）。曼德自然垂落，头部摆正，目光平视前方，嘴角带着“表演完美收场”的得意浅笑。第10时结束彻底为标准正面。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，眼神平视鲸前端，表情平和，呆毛柔顺，鱼尾自然下垂。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-080",
+      "name": "吹笛子",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "吹笛子\n动作概述\n\nQ版蓝发女仆凭空变出另一个Q版竹笛（青竹色的笛身，第一节竹节纹理，笛身终止系着一缕红穗子，尾端坠着一颗小玉珠，约前臂长），曼捧着举到胸前感兴趣地打量，摸到了摸笛孔。子横放在嘴边，试着吹了一个音（“嘟”地一声，指尖轻点笛孔），歪头听了，调整了一下握姿。随后她开始正式吹奏——一段悠扬的旋律从笛身流淌而出，一个半透明的粉色音符光点随之节奏从笛孔飘出、逐渐上升飘散，她闭眼投入地吹着，身体随着节奏轻轻摇晃（幅度小），呆毛跟着节奏轻晃；吹到舒展处，一只Q版小蝴蝶居然从笛音里“化”出来，绕着她头顶飞了一圈又飘散尾声逐渐缓和，她睁开眼睛放下笛子，寻找温柔满足的笑容；音符光点与蝴蝶化作细光点消散，恢复标准正面垂直。\n\n按秒分割画面\n\n02秒（变出竹笛）：标准竖直。曼德从身前以魔术般的动作随空变出一个Q版竹笛（长度约为前臂的1.1倍：青竹色笛身，维第一节圆润的竹节纹理，笛身侧面开着一排笛孔（5）6个，Q版圆润响声），笛尾系着一缕红色丝穗，穗尾坠着一颗珍珠莹白玉珠），双手捧着举到胸前，低头好奇地打量，用指尖轻轻摸了摸其中一根笛子，又歪头看着看笛尾的玉珠，表情又新鲜又喜欢。 ⚠️强调：竹笛青竹色、竹节纹理与红穗玉珠是古风皱纹点，红绿对比醒目；笛身比例适中（不超过画宽度的一半），横持在胸前、不遮挡脸部。\n\n2~4秒（试音）：女仆把笛子横到嘴边（笛身水平，嘴凑近吹孔），鼓起腮帮子试着吹了一个音——“嘟”的发音（Q版拟声感通过她鼓起又放松的腮帮和笛尾红穗轻轻一动表现），她歪了歪头（约） 15°），仿佛在听这个音准不准，然后用指尖调整了笛孔的位置，换了个姿势，认真地点了点头，准备正式吹奏。 ⚠️强调：试音动作俏皮严肃（“调音”的仪式感）；红穗随笛身轻微晃动是可爱的细节；笛身保持水平、稳定在嘴边，不滑落。\n\n46.5秒（正式吹奏）：女仆深吸一口气，正式吹奏起来——她闭上眼，腮帮子有节奏地鼓起放松，指尖在笛孔上轻点（Q版指法：手指在笛孔上快速轻按个处），一段悠扬的旋律流淌而出；随着节拍，一个半透明的粉色音符光点（Q版：圆头带小尾巴的八分音符形状，细小如指尖）从笛孔处飘出，随着心率的起伏高低错落逐渐上升、飘散；她的身体随着心率轻轻左右摇晃（肩部摆动幅度） ≤10°），呆毛跟着节奏微微晃动，神情投入而温柔。 ⚠️强调：沉浸在音乐中的表情是核心（闭眼、眼舒展、嘴角带浅浅笑意）；音符光点按节奏旋律出现（约每0.5）0.8秒飘出2~3个），大小微小、半透明，飘升轨迹错落不重叠、不与重叠重叠；摇晃幅度小而中等。\n\n6.5~8.5秒（节奏化蝶）：吹奏渐入佳境，音符光点飘得更欢——其中稍大的音符光点在笛孔前“啵”地展开，化作一只Q版小蝴蝶（橘红色带黑色小圆点花纹，翅膀圆润，振翅轻盈），小蝴蝶绕着她的头顶飞了半圈（轨道）迹小、贴近头顶上方），又飞回笛身侧面盘旋侧面；她睁开眼，目光追随着蝴蝶，眼神去温柔含笑，旋律也仿佛变得更加温暖（音符光点开始带上一点金色）；蝴蝶绕最后一圈，化成一片细光点散。 ⚠️强调：音符化蝶是“音乐用具象化”的浪漫点，过渡要自然（光点→展开翅膀→蝴蝶）；蝴蝶体积微小（约拇指大小）、飞行转弯半径、全程在画幅上部安全区、不挡脸；眼睛的视线靠近但头部旋转小（≤15°）。\n\n8.5~10秒（收尾消散+恢复正姿）：心跳渐渐收尾，音符光点越飘越少、最后一个音符光点在笛孔前轻轻一闪后消散；女仆睁开眼，慢慢放松笛子，低头看着看笛尾的玉珠，一起看着的浅笑，另外孔雀把竹笛在胸前轻轻一举——竹笛以魔术般的动作凭空消散（红穗化作一缕细红丝的光点飘散、玉珠化作白色小光点）。手动自然垂落，头部摆正，目光平视前方，嘴角还带着一丝余韵未消的浅笑。第10秒结束时彻底为标准正面。\n\n动作结束后状态\n\n最终：与参考图最左侧标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，眼神平视鲸前端，表情平和，呆毛柔顺，鱼尾自然下垂。无竹笛、无扬声器、无蝴蝶、无玉珠高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-081",
+      "name": "三球抛接",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "三球抛接\n动作概述\n\nQ版蓝发女仆曼曼凭空变出三颗Q版彩球（红、黄、蓝三色，直径约拳头大小，球面各印着一颗小星，圆润Q弹），捧在掌心向镜头亮了，一脸“看好了”。她先首发红球试了试手感——抛起、接住，自信一笑。正式开始三球抛接：三颗球依次从左右手轮流喷射，在头顶上方各自划过弧线的圆弧线（经典“瀑布”路线：左抛右接、右抛左接，三颗球分列三条弧线循环），节奏均匀、节点接点，她的眼神追随着球，身体节奏轻轻摆动。抛一半到了，黄球突然往下滑——她眼疾手快地用左手一捞，惊险救回，自己也吓了一跳（瞪大眼睛），随即了松口气，得意地嘴笑了起来，继续顺利地抛接。之后她把三颗球依次抛起、收拢叠在掌心，向镜头亮了亮，三颗球以魔术般的动作凭空消散，恢复标准垂直。全程原地垂直（杂耍三球抛接），双脚固定原点，三颗彩球、抛掷姿势均在画幅安全相应。\n\n按秒分割画面\n\n0~2秒（变出三球）：曼陀罗从身前以魔术般的动作凭空变出三颗Q版彩球（红、黄、蓝三色各一，外形一致、大约拳头大小：红色球印着黄色小星，黄色球印着着蓝色小星，蓝色球印着一颗红色小星，球面光润Q弹），两颗托在左掌心里、一颗夹在右手指间，曼并并捧捧到胸前，向镜头亮了亮（曼微微向前一送展示），扬了扬下巴，寻找“看好了”的自信笑容。 ⚠️强调：三球颜色均匀（红黄蓝）、尺寸（拳头大小）、花纹条纹（各像素小星）；展示时三球并列条纹清晰，全部在画幅内、不遮挡脸部。\n\n2~4秒（试抛一颗）：女仆右侧把蓝色球轻轻抛起（抛至头顶上方约15%）画幅高，弧线小而流畅），左手的动作稳定，前伸过去稳稳接住落下的蓝球，接住后指尖掂了掂球（试了试手感），嘴角一翘，外“手感不错”的自信浅笑，同时把三颗球在两手间倒腾姿势，摆好正式开抛的姿势。 ⚠️强调：试抛重点、控制球路（抛高、接稳定，球不跳脱）；掂球动作俏皮；此段节奏宜慢不宜快（为后面的正式表演做铺垫）。\n\n4~6.5秒（三球瀑布）：女仆正式开始三球抛接——经典瀑布路线：前方先抛蓝球（弧线右侧上方→头顶高度约30%画处宽度→落到手），紧接左手喷射红球（线弧向左上方→头顶同高→落到右肩），眼球再喷射黄球，三颗球收尾相衔、沿各自的弧线循环（三道弧线在头顶上空交错成两个“X”形区域，节奏，约每0.5秒完成一颗球的抛接）；她的视线追着球快速转动（头部最先的弧线循环）； ≤20°，身体保持正面），肩部随节奏轻轻摆动，呆毛晃动，表情专注又享受。 ⚠️气压交代必须响亮：每颗球“从一只手倾斜上方抬起→经过头顶约30%画幅高度→落到另一只手”，三道弧线互不重叠碰撞；球不落地、不脱手失控、不碰脸；稳定均匀（这是杂技的“稳定”）。\n\n6.5~8.5秒（惊险救球+加速）：抛接正欢时，黄球出手角度偏了一点，往前落（弧线低了）——女仆眼睛瞬间瞪大（瞳孔一缩），身体微微一倾（肩部前倾、双脚不动），左手眼疾手快地往下一个捞—— “啪”地稳稳接住黄球，她自己也吓跳了一个（嘴巴张成小“O”型），随即松了一大口气，呼——，连接狡黠一笑，把节奏加快了一点（球路更高更欢快，弧线加大到约） 35%画幅高度），顺利完成收尾意向的三次抛接，得地扬了扬眉毛。 ⚠️强调：“惊险救球”是表情梗核心：接住前的紧张（瞪眼、嘴巴微张）与接住后的如释重负+得意反差；救球动作干脆（一次接住，不连滚带爬）；加速后节奏仍稳定、球路随即画幅内。\n\n8.5~10秒（收球消散+恢复正姿）：女仆把节奏放慢，依次把三颗球抛高一点（蓝球→红球→黄球依次抛至胸前高度）——手动在胸前“哒哒哒”地把三颗球依次收拢，叠成一个摞（或拢成一捧）托在掌上，然后向镜头亮了亮，寻找“表演完毕”的得意曼陀罗双手轻轻向上一托，三颗彩球以魔术般的动作视空消散（化作三小团红黄蓝的光点散开）。曼陀罗自然垂落，头部摆正，目光平视前方，嘴角带着目光余兴未消的浅笑。第10秒结束时彻底为标准正面垂直。\n\n动作结束后状态\n\n最终：与参考图最左侧标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，目光平视鲸前方，表情平和，呆毛柔顺，鱼尾自然下垂。无彩球、无光点高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-082",
+      "name": "蝴蝶蝴蝶环绕头顶开花",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "蝴蝶蝴蝶环绕头顶开花\n动作概述\n\nQ版蓝发女仆闭眼轻轻深呼吸，仿佛闻到了什么觉花香；与此同时，她头顶呆毛的下方“啵”地冒出一个狭小的粉白花苞（长在呆毛尖上，她还浑然不）。 附加两只Q版蝴蝶（一只粉蓝、一只橘红、圆翅膀）和两只Q版蜜蜂（黄）黑条纹、圆滚滚）从画幅左右彩虹飞进来，开始绕着她“嗡嗡”围绕——绕着她的肩膀、头顶和裙子摆周围转圈飞，她睁大眼睛好奇地看着它们，伸手想碰又缩回，咯咯地笑。就在她开心地看蝴蝶时，头顶的花苞慢慢绽放成一朵粉白色的小花（樱花瓣展开，带上两片小叶，微微喷出金色花粉光点）；她眨了眨眼，抬手摸了摸头顶——摸到小花，惊喜地瞪圆了眼睛。蝴蝶和蜜蜂小花的光点吸引，集中起来绕着她头顶的小花转圈飞，她开心地歪着头，眼睛亮了。最后蝴蝶蜜蜂绕完最后一圈，振翼飞向画幅外化作光点散去，头顶的小花也化作光点消散，温柔地送来，恢复标准正面垂直。全程原地统一（自然精灵主题），双脚一个定原点，蝴蝶、蜜蜂、花苞、小花均在幅面安全画画。\n\n按秒分割画面\n\n0~2秒（冒花苞）：标准正面挺立。女仆闭上眼睛，轻轻深呼吸（胸口微微波动，表情安宁），仿佛察觉到了远处飘来的花香；与此同时，头顶她定毛的上方“啵”地轻轻一颤，冒出一个粉白色的小花苞（Q版：空间积分，像眉圆润的蓓蕾，立在呆毛尖上，微微晃动），她浑然不觉，仍然闭眼安静呼吸。 ⚠️强调：花苞微小（约拇指大小）、立在呆毛下方（呆毛依然是竖立的，花苞像动毛开出的芽）；她在花苞出现后呼吸一个“没感知”的间歇（安静呼吸约1秒）；花苞与画幅顶边保持安全距离。\n\n2~4秒（蝶蜂聚焦）：她睁开眼睛，好奇地看到一个粉色的小光点从画幅左边飞进来——是一只Q版粉蓝蝴蝶（圆润的翅膀、边缘带一点白色），后面跟着一只橘红蝴蝶；紧接着右边的“嗡嗡”地飞进两只Q版蜜蜂（圆滚滚的黄黑条纹身子、一对小圆翅膀振动、尾针是）圆润的Q版小圆点，不可怕），四只小家伙开始绕着她环绕飞行：绕着她的肩膀飞过、绕着头顶绕一圈、绕到裙子摆边沿掠过，像围着她跳舞；她睁大眼睛左看右看，又伸手指想一碰碰，又担心地缩回，忍不住咯地笑起来。 ⚠️强调：环绕轨迹要交代清晰（肩→头顶→裙摆的立体轨迹，轨迹小、范围在画幅内）；蝴蝶与蜜蜂要区分开（蝴蝶翅膀圆大、飞行优雅；蜜蜂身子圆胖、飞行时“嗡嗡”带振动感）；它们不撞她、不贴脸、不飞出画幅。\n\n4~6.5秒（花苞绽放）：她正看得入神时，头顶呆毛上的花苞慢慢张开——花瓣叶接一片地舒展开（Q版：粉白色樱花瓣，五片展开，中心用金黄的花蕊），小花在呆毛顶端完全绽放（带两片翠绿小叶子，花身微微晃动）；几粒金色花粉光点上花上飘落，一闪一闪；她眨了眨眼睛，感应头顶有什么动静，抬起头摸着头顶——指尖吻着小花的花瓣，她先是一愣，随即眼睛瞪圆，惊喜地张大嘴巴，然后开心地笑出声来（无声，肩膀一耸一耸）。 ⚠️强调：“绽放”是核心魔法点：花瓣逐片展开的过程要给足时间（约1.5秒），绽放时花蕊闪一下轻微的金光；花粉光点微小、金色、半透明；她“摸到花”的惊喜反应要明显（愣住→瞪眼→笑）。\n\n6.5~8.5秒（花引蝶绕）：头顶的小花微微飘散着花粉光点，蝴蝶和蜜蜂被吸引过来——四只小家伙不再满身绕圈，而是集中在她头顶，绕着她头顶的小花转圈飞（两道小圆环轨迹：蝴蝶绕外圈、蜜蜂绕内圈，正好方向，节奏轻）；她仰起头（约） 20°），望着头顶的小花和环绕的蝶头，眼睛亮晶晶的，开心地歪着头笑，呆毛（带着顶着的小花）轻轻摆动，像个花精灵。 ⚠️强调：头顶环绕的姿态小（都在头顶上方画幅安全平稳，不与画幅顶边重叠）；蝶蜂一圈一圈节奏分明（约1秒一圈）、不打架、不挡脸；她仰头看时的表情是“惊喜+陶醉”。\n\n8.5~10秒（告别消散+恢复正姿）：蝴蝶和蜜蜂绕完最后一圈（速度渐慢），依次振翅飞离——粉蓝蝶飞向画幅左上角、橘红蝶飞向右上角、两只蜜蜂“嗡嗡”飞向下方终点，飞出画幅前都化作团彩色光点消散；头顶的小花也逐渐变淡，尾花粉光点一起化作细小的白色光点飘散，呆毛尖恢复原样。她看着离去的方向，温柔地笑了笑，又抬手摸了摸头顶（确认花没了），脸上意犹未尽的表情。补充说自然垂落，头部摆正，目光平视前方。第10秒结束时彻底为正面标准。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼陀罗自然垂于完全身高，眼神平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无蝴蝶、无蜜蜂、无花苞、无小花、无光点高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-083",
+      "name": "晨间刷牙",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "晨间刷牙\n动作概述\n\nQ版蓝发女仆安东尼凭空变出一副Q版鼻子（白色圆刷头、天蓝色手柄）和一管卡通牙膏，拧开盖子冲突一条白白的牙膏（歪歪扭扭地趴在刷头上，Q版滑稽），她张嘴展示了一下白牙。里上下刷动（Q版：刷头含在嘴里、手握柄紧贴脸颊边、随刷动小上下幅移动），嘴里的白色泡沫越刷越多——软绵绵的泡沫从嘴角冒出来，鼓成一大团像棉花糖，她拿着牙刷、鼓着腮帮子眨眨眼睛，有些不接下来她凭空变出一只Q版小水杯，喝了一口水“咕噜咕噜”漱口（腮帮一鼓一鼓），低头把水连泡沫一起“噗”地吐进杯里——她嘴一笑，白牙闪过一道亮光“叮”（Q版“干净”信号）最后她用凭空变出的小毛巾擦擦嘴角，毛巾、牙膏、水杯、毛巾以魔术般的动作凭空消散恢复，正面标准垂直。全程原地一致（晨洗漱），双脚一个定点，毛巾、泡沫、水杯、毛巾间均在画幅安全依次。\n\n按秒分割画面\n\n0~2秒（变出牙具）：标准正面垂直。 曼德从身前以魔术般的动作凭空变出去掉Q版牙刷（白色圆润刷头、刷毛细密、天蓝色圆柄，长约一个手掌）和一管卡通牙膏（圆胖的牙膏管，白色管身印着可爱的蓝色泡泡图案），拧开牙膏盖，破坏一段牙——白色膏体歪歪扭扭地趴在刷头上（Q版：像趴着的小白虫，膏稽可爱），低头看看刷头部的牙膏，满意地笑了笑，又张嘴用两排整齐的Q版白牙（给“刷牙前”做个对比铺垫）。 ⚠️强调：与牙膏比例Q版协调（均约按摩大小）；牙膏重叠的样子刻意扭曲（喜剧感）；“张嘴亮牙”动作自然可爱，不夸张。\n\n2~4秒（刷牙冒泡）：女仆把牙刷含进嘴里（刷头含在口中、手握牙刷柄、手贴近脸脸部旁），开始上下刷动（Q版：手随刷动在嘴边小幅上下移动、刷头始终含在嘴里，刷牙的规律由腮）刷了两三下后，白色的泡沫从她嘴角冒了出来，越来越多——软绵绵的一团泡沫挂在嘴角上（Q版：像一团棉花糖，随着刷牙的动作轻轻颤动）。 ⚠️强调：刷牙的“手法”要看得见——刷头含在嘴里、手在嘴边/脸脸旁握柄上下小幅移动（刷头始终不割嘴，出现“手悬空空刷”）；幅度小而均匀；泡沫从嘴角冒出、逐渐变大（约2秒内从一点鼓到半团）；泡沫呈软绵、雪白、Q版润圆，不糊满脸。\n\n4~6.5秒（泡沫鼓鼓）：她停下来，从嘴里轻轻一握来、握在手指上（或叼在嘴边，不再含在嘴里），鼓起腮帮子——嘴角的泡沫鼓成更大的一团（像含着一只云朵），她低头看向镜头，眨了眨眼睛，有些不好意思地“嘿嘿”笑了（无声，肩膀微高），似乎在说“我认真刷得好”；泡沫顺着嘴角边缘轻轻鼓动。 ⚠️强调：本段是“萌点”：鼓腮 + 泡沫云朵 + 眨眼憨笑；牙刷已拿出（握在手中、不再塞在嘴里，避免手柄练习出来轮廓乱）；泡沫大小训练（约一个拳头大的一团，不糊住整张脸），表情要清晰可辨。\n\n6.5~8.5秒（漱口亮牙）：女仆凭空变出一只Q版小水杯（天蓝色、约拳头大小），把椅子放下，喝了一口水，鼓着腮帮子“咕噜咕噜”漱口（腮帮一鼓一鼓地动，约3）其次），低头，把水“噗”地吐杯里，牵扯嘴里残留的白色泡沫一起吐进杯中（Q版：一串细白水线夹着细小泡沫珠落进杯中）；抬头手背擦侧面嘴角，然后夹嘴一笑——两排白牙上“叮”地闪过对方亮光（Q版“干净”的信号光效），大家得意的笑容。 ⚠️强调：“咕噜”漱口节奏响（鼓腮三次）；吐水时水与泡沫一起落进杯里、不溅出来、也不堆积泡沫；“白牙闪光”是点睛信号（一闪即灭、半透明、在牙齿位置）；表情转为推测得意。\n\n8.5~10秒（擦嘴消散+恢复正姿）：女仆凭空变出Q版小毛巾（浅粉色、带个小角标），擦掉擦嘴角残留的水渍，把毛巾叠好，用毛巾、牙膏、水杯一起在胸前拢起，以魔术般的动作靠空消散。自然垂落，头部姿势正，目光平视前方，嘴角还带着一抹的浅笑。第10秒结束时彻底为标准正面。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并拢，曼努埃尔自然垂于完全身高，目光平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无香水、无牙膏、无泡沫、无杯子、无残留。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-084",
+      "name": "撸猫",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "撸猫\n动作概述\n\nQ版蓝发女仆孔德凭空变出一只Q版小奶猫（橘白色短毛，圆脑袋、圆耳朵，豆豆眼，尾巴卷成一圈蹲坐在她的掌心），小猫张嘴“咪”地叫了一声（Q版无声，嘴巴一张一合），她眼睛“叮”地亮她用指尖轻轻挠了挠小猫的下巴——小猫不安地眯起眼睛（豆豆眼变成弯弯的月牙），头顶冒出两个小音符（“呼噜呼噜”的Q版表示），蹭蹭了她的手指。她用手把小猫抱进怀里，顺着毛从头到尾轻轻撸了两下，小猫眯眼享受、尾巴轻轻搂；小猫又在她怀里“踩奶”（前爪一前一后地踩踩），还用手用小脑袋蹭蹭了她的下巴，她低头看着它，温柔地笑出声。作一团柔和的光点消散（它跟她道其他“咪”声化作最后一个小音符），她温柔地挥挥手，恢复标准正面垂直。全程原地垂直（撸猫交互），双脚定点，小猫、音符、光点均在画幅安全平整。\n\n按秒分割画面\n\n0~2秒（变出小猫）：曼陀从身前以魔术般的动作凭空变出一只Q版小奶猫（大小约她一个手掌摊开那么大：橘子白色的短毛，圆滚滚的脑袋、三角形圆边小耳朵，偶圆圆的豆豆眼，粉嫩的小鼻子，尾巴在自己脚边卷成一圈），四只小爪稳蹲坐在她摊开的掌心；它可爱，张嘴“咪”地叫了一声（Q版：小嘴一张一合，声音感通过表情表现），她低头看着掌心的小猫，眼睛“叮”地亮起，嘴角连开。 ⚠️强调：小猫Q版圆润（像一只小橘团子）、橘白叫绝暖萌；《咪咪》动作可以清（张嘴闭嘴一次）；小猫全程安全地坐在掌心里、不挣扎。\n\n2~4秒（挠下巴）：女仆伸颈食指，轻轻挠了挠小猫的下巴（指尖在下巴处左右轻挠两三下）——小猫不适地眯起眼睛（豆豆眼弯成两道月牙），微微仰起头，头顶“啵啵”冒出两个细对话（Q版：一个粉色一个金色，“呼呼呼噜”的蹭），旁边用小脑袋蹭了蹭她的指尖，尾尖轻轻翘了翘。 ⚠️强调：“眯眼月牙+冒嘴语音”是核心点；挠下巴动作轻柔、节奏慢（挠三两下停一下）；语音微小、半透明、在猫头顶上方，不遮挡她的脸。\n\n4~6.5秒（抱怀撸毛）：女仆手把小猫抱起，轻轻抱进怀里（小猫趴在她胸前臂弯里，爪前搭在她手臂上），她用手掌顺着小猫的背从头到尾轻轻撸了两下（掌慢慢滑过：头→背→尾），小猫眯着眼眼享受、师傅里的“呼噜”通过它头顶冒出的断续小对话，尾尖随着撸毛的节奏轻轻一摆一摆；她低头望着怀里的小猫，眼神温柔得能化开，嘴角带着宠溺的浅笑。 ⚠️强调：抱猫动作轻柔（小猫安稳趴着、不挣扎不垮）；撸毛方向“头→背→尾”响亮（弧度完整、两下）；“温柔注视”是表情核心，画面安静治愈。\n\n6.5~8.5秒（踩奶撒娇）：小猫在她怀里换了个姿势，两只前爪开始前一后“踩奶”（Q版：小爪交替按动她的手臂，小肉垫响亮），踩几下又抬头，用小脑袋蹭到了她的下巴（她微微低头打），一阵“噗嗤”笑了（无声，颈部轻颤），用指尖轻轻点了点小猫的额头，小猫眯起眼睛，又“咪”一声响了。 ⚠️强调：“踩奶”是猫最萌的信任行为（前爪交替踩、节奏慢而匀速）；蹭下巴时人猫距离近、画面温馨；她的“笑一笑”反应自然可爱。\n\n8.5~10秒（告别消散+恢复正姿）：小猫在她怀里蜷起身子（缩成一小团，尾声围住自己），目光最后看了她一眼，“咪”地叫了一声（她眉毛眼微微亮了），随后整个小身体化为一团柔和的橘白相间的光点，慢慢散开（最后一个小声音）符跟随飘散）；她看着光点散尽，温柔地轻轻摆了摆手（左手在胸前小幅度挥两下），又低头看着空空的怀里。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全高度，眼神平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无鲸小猫、无音符、无光点高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-085",
+      "name": "踢毽子",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "踢毽子\n动作概述\n\nQ版蓝发女仆孔德凭空变出一只Q版毽子（红色圆底座、下面着一簇五彩羽毛——红、黄、蓝三色羽毛蓬松展开，Q版），捧在双手低头打量，捏了捏蓬松的羽毛。她把它往上一抛，用右脚里面的轻轻一垫——毽子“嗒”地弹起（到膝盖高度），她稳定接住，得意地笑了笑。随后她把毽子抛起，连续开始踢动：右脚内侧踢一下（毽子到腰部高度）、左脚内侧再踢一下（弹到同等高度），左右交替、均匀一致（约每场） 0.7秒一个来回），眼睛紧抓毽子，身体随着节奏轻轻摆动。最后一下她用尽全力把毽子高高踢起（到头顶上方约30%） 画幅高度），然后伸右脚，用脚背稳定接住落下的毽子——毽子安静地停在脚背上，她得意地扬起下巴，弯腰伸手把毽子拿起来。魔术般的动作凭空消散，恢复标准正面垂直。全程原地垂直（民间毽戏，双脚起始点不偏移、可原地单脚起落），毽子、共享均在画幅安全初始化。\n\n按秒分割画面\n\n0~2秒（变出毽子）：标准正面坚定。曼德从身体前以魔术般的动作凭空变出一只Q版毽子（高度约为手掌的1.3）倍：红色的半底座（Q版圆润）、下面着一簇蓬松展开的五彩羽毛——红色、黄色插、蓝色各两片，共享圆润宽阔、卵圆形的羽毛片），捧在掌心，低头打量，又用指尖轻轻捏了捏羽毛（共享轻轻弹了回来），表情新奇又期待。 ⚠️强调：毽子Q版造型（稀疏蓬松圆润、不属于写实羽毛）；毽子比例约一个手掌高，支撑在胸前、不遮挡脸部。\n\n2~4秒（试踢）：女仆把毽子轻轻往上一抛（抛至胸前高度、弧线小而稳定），随即惊动右脚，用右脚中间轻轻垫肩——毽子\"打\"地弹起（约弹到膝盖），她伸长大腿，稳定接住落下的毽子，低头注视，嘴角一翘，看看“手感不错”的自信笑浅。 ⚠️强化：试踢动作利落（一次抛、一次垫、一次接，一气呵成）；毽子姿势小、都在画幅内；单脚垫踢时身体重心稳定、另一只脚原地站定。\n\n4~6.5秒（连续对踢）：女仆把毽子重新抛起（抛腰部），开始连续踢：右脚内侧踢一下（毽弹腰部高度），微微换重心，左脚内侧再踢一下（同样弹至腰部高度）——左右交替、节奏（约每0.7秒一个来回），毽子在空中上下起落、稳定（起落都在身体正弧度约20%）画幅宽度内），她的目光紧搂毽子（头紧邻毽子小幅上下转动，身体正面不动），肩部随着轻轻摆动，嘴角环着却藏笑不住意。 ⚠️强调：连续踢的“左右交替”节奏是核心（每脚一次、交替均匀）；毽子记录稳定（起重复的小区间内、不越飞越远）；她的脚始终原地（单起落、重心转移但双脚不移动）。\n\n6.5~8.5秒（高踢脚背接）：踢了三四轮后，女仆用力把毽子高高踢起——毽子直直弹向头顶上方（最高点约30%）画幅高度，与头顶保持安全距离），她仰头望着毽子上升又落下，齐齐稳定住身形，向前延伸右脚（脚背放平、微微上翘），毽子稳定稳定地出现在她的脚背上（轻轻弹一会）下就停住），她低头看着脚背上安安静静停着的毽子，得意地扬起下巴，眼睛亮晶晶；同时弯腰（上身前倾、双脚原地），伸手把毽子从脚背上拿起来，举到胸前。 ⚠️强调：“高踢+脚背接住”是收尾亮点：高踢蹬高感、接住要稳（毽子停住不滚落）；仰头看毽子→伸脚→接住的响动线；弯腰捡毽子自然（双脚不迈步）。\n\n8.5~10秒（消散+恢复正姿）：女仆低头看手掌的毽子，在“踢得不错”的满足下，并把毽子在胸前轻轻一托——毽子以魔术般的动作用空消散（五彩化作几缕彩色的细光丝飘散）。曼努埃尔自然垂落，头部摆正，目光平视前方，嘴角对着目光余兴消的浅笑。第10次结束时彻底为标准正面。\n\n动作结束后状态\n\n最终：与参考图最左侧标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，眼神平视鲸前端，表情平和，呆毛柔顺，鱼尾自然下垂。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-086",
+      "name": "抽陀螺",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "抽陀螺\n动作概述\n\nQ版蓝发女仆曼凭空变出一根Q版小陀螺（彩色圆台形：红黄蓝三色条纹螺旋而上，顶部立着一颗圆润的小珠，底部是尖尖的轴脚）和辫子Q版小鞭子（短木柄、系着彩色鞭绳）。她弯腰（原地）把陀螺轻轻放在身前的地面上，用指尖一拧——陀螺”嗡“地转起来（在地面原地旋转，彩色条纹旋成一个空间彩色圆环），她直起身子，眼睛发亮。随后她挥动小鞭子抽打陀螺（鞭绳划过一道弧线”啪”地标志着陀螺头部），陀螺被抽后转得更欢（楼梯加速、彩色圆环更加劲道），她越抽越起（节奏轻快，约每一次） 1 秒一鞭），咯咯地笑着，眼睛追着旋转的陀螺看；陀螺在地面的位置微微移动，但始终保持在身前中央、画幅内。抽到崛起，陀螺高速旋转，彩色条纹旋成一圈完整的彩虹圆环（Q版光效），她得意地扬起了扬眉。最后她收鞭住了子，陀螺逐渐缓慢、轻轻倾斜——在即将倒下的瞬间，陀螺与鞭子以魔术般的动作凭空消散，她恢复正面标准垂直。全程原地范围完成（可原地弯腰/俯身，双脚起始点不偏移），陀螺在地面旋转、鞭绳挥动均在画幅安全起始点。\n\n按秒分割画面\n\n0~2秒（变出陀螺与鞭子）：标准正面一致。曼陀罗从身前以魔术般的动作凭空变出两个道具：一只Q版小陀螺（高度约为手柄的1.2）倍：红黄蓝三色条纹呈螺旋形分布、圆台状，顶部立着珍珠亮晶晶的圆珠，底部是光滑的尖轴脚）和辫子Q版小鞭子（短木柄约前臂长，柄端系着彩色的一段编织鞭绳），她右手持鞭、左手托陀螺，低头打量，好奇地转了转陀螺的顶部圆珠，表情跃跃欲试。 ⚠️强调：陀螺三色条纹醒目（红黄蓝、螺旋分布）、Q版圆润；鞭子比例协调（鞭绳垂下不超过画底幅边安全线）；两件道具都在画幅内、不遮挡脸部。\n\n2~4秒（启动陀螺）：女仆原地弯腰（上身前倾约45°，双脚原地不动），把陀螺轻轻放在身前约30cm的地面上（放稳），然后用左手拇指和食指捏住陀螺顶部圆珠，轻轻一拧——陀螺“嗡”地开始旋转（Q版：在地面原地转动，三色条纹旋成一个空间彩色圆环，则初起较慢），她直起身子，低头看着转起来的陀螺，眼睛一亮，看到“转起来了！”的兴奋表情。 ⚠️强调：放陀螺的位置在身前地面中央（与画幅底边安全距离、不被裁切）；手指一紧的启动动作响（一旋即可）；陀螺独个儿转稳、不歪倒。\n\n46.5秒（挥鞭抽打）：女仆前额挥动小鞭子——鞭绳在空中划过利落的弧线，“啪”地一声猛击陀螺第三（Q版：鞭绳触到陀螺时陀螺微微一颤、随即转得更欢），接连加速明显（三色条纹旋成的彩色圆环变小变响约）；她继续抽打（每1次）秒一鞭，第一鞭后接两三下），目光追着陀螺（头部抽小幅度开始旋转，身体保持正面），脸上带着越玩越开心的笑容，咯咯地笑（无声，腰部轻颤）；陀螺被地面微微移动位置（移了一小段又转回中央），始终在画幅内、不飞出。 ⚠️强调：抽鞭节奏均匀轻快（约每1秒一鞭，共34鞭）；鞭绳波形响度（斜向落下、不缠住手、不甩到她自己身上）；“绳索上升”通过彩色圆环从大到小的变化表现（这是漂浮的信号）。\n\n6.5~8.5秒（高速旋转）：女仆连抽三鞭（“啪”节奏短促），陀螺进入高速旋转——三色条纹完全旋成一圈完整的彩虹色圆环（Q版光效：陀螺表面像啪着一层流动的彩色光环，空中的视觉）尖）；她停下鞭子，曼顿撑在膝盖上（弯腰前倾、双脚原地），低头专注地看着旋转的陀螺，眼睛跟随光环转，得意地扬起眉毛，看着“看我抽眉毛好”的骄傲。 ⚠️强调：“彩虹光环”是山顶的螺旋信号（约2秒静止，光环不稳定）；她支撑膝盖的姿势自然可爱；陀螺位置稳定在身体前中央（高速旋转时不再移动）。\n\n8.5~10秒（收鞭消散+恢复正姿）：女仆直起身子，收回鞭子（鞭绳垂落），陀螺的一阵开始渐慢（彩虹光环逐渐散开、回落成可见的三色条纹），转动稀疏、轻轻左右倾斜——就在即将“哒”地倒下的瞬间，陀螺与鞭子同时以魔术般的动作凭空消散（陀化螺作一圈彩色光点、睫毛子化作一缕细光丝，同步散开）。她低头看着地面空落落的位置，若意犹未尽又满足的笑容。附加自然垂落，头部摆正，目光平视前方。第10秒结束时彻底恢复为标准正面垂直。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，目光平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无陀螺、无鞭子、无光环、无光点高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-087",
+      "name": "下五子棋",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "下五子棋\n动作概述\n\nQ版蓝发女仆曼凭空变出一张Q版小棋盘（悬浮在身前腰部高度、正对画面水平中心）和一人装了黑白棋子的Q版小棋篓。把黑子放到棋盘中央，再夹起白子占据一旁，一人分饰两角对弈，你来我往连落数子。落子渐密时，她用自己的黑子子摆出横排“五连”——第五颗落下的瞬间眼睛一亮、拍手欢呼、原地轻蹦一下，得意地竖起辫子手指比“赢了”。最后棋盘与棋子凭空消散，恢复标准正面垂直。全程原地垂直（下五子棋），双脚定点，棋盘、棋子均在画幅安全连续。\n\n按秒分割画面\n\n0~2秒（变出棋盘与棋子）：标准正面垂直。曼陀罗从身前以魔术的动作凭空变出一张Q版稀疏小棋盘（悬浮在身前腰部高度、正对画面水平中心，板面约35%画幅宽度，木色对称、米白格线、画着横竖各约13道浅色细格线）和一只Q版小棋篓（竹编色，内盛黑白双扁圆小棋子）。左手托棋篓、额头从篓里拈起宝石黑子，低头看向棋子，眼睛亮晶晶，跃跃欲试。 ⚠️强调：棋盘为Q版悬浮道具（分数不落地、正对胸前、不贴近与裙摆），整体在画幅安全连续；格子清晰但格局简洁；黑白棋子对明。\n\n2~5秒（对弈落子）：女仆身体原地前倾（以腰为轴俯身、双脚不动），右肘把黑子轻放在盘中央一格，“嗒嗒一声，棋子稳稳立于格中；她直回身，歪头手持棋局、手指轻点下巴作思考状；并夹起齐白子、俯身又依次依次为一格，交替连落数子（黑白交错、落点秩序、动作棋轻快）。 ⚠️强调：落子利落、逐颗响亮（每颗“拈起→放置格上”）；俯身仅原地前倾（双脚与原点不动、不横移）；棋子立在格上不歪倒、不乱倾。\n\n5~8秒（连五秒）：落子渐密，女仆用黑子在棋盘上出横排“五连”（连续五颗顺序同色）——最后点落下的瞬间，她眼睛“叮”地一亮，曼德在胸前一拍、开心地轻蹦一下（双脚离地但落回原点），歪头朝镜头竖起拇指比个“1”，仿佛在说“我赢啦”。 ⚠️强调：“第五颗连子”是情绪高点——落子眼睛发亮+拍手+瞬间轻蹦（落回原点）；五连必须可辨（连续五颗响声同排）；欢呼动作不超框、呆毛不触顶。\n\n8~10秒（消散+正姿）：女仆低头满意地看着棋盘上的五连，前面恢复了在棋盘前挥手——棋盘以魔术般的动作利用空消散（化作木色与黑白的细碎光点散开）。曼德自然垂落，头部正直，目光平视前方，嘴角还挂着目光得意的浅笑。第10秒结束时彻底为标准正面。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，眼神平视鲸前方，表情平和，呆毛柔顺，鱼尾自然下垂。无棋盘、无棋子高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-088",
+      "name": "荡秋千",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "荡秋千\n动作概述\n\nQ版蓝发女仆曼德凭空变出Q版小秋千（两根细绳从画幅正上方垂下，下端吊成Q版座板，呈倒倒“∧”形）。她抓住两绳、原地借力坐上座板（双脚离地，为完成动作的合法顶通常），秋千以头支点为轴、前后轻柔地“钟摆式”摆动起来。最后秋千逐渐停住，她双脚落回原点站稳定、姿势绳，秋千靠空消散，恢复标准正面彼此。全程以头顶支点作轴心摆动、不整体平移，双脚在开始与收尾时定点，秋千与人物始终在画幅安全启动。\n\n按秒分割画面\n\n0~2秒（变出秋千）：安东尼从身前以魔术般的动作凭空变出Q版小秋千（两根细绳从画幅正上方约顶边处垂下、下端吊着一个Q版圆形木板座，座位高度约在角色腰部，整体停在角色正前方），她眼睛一亮、发出无声的视觉，孔雀抓住了垂直的绳子，原地踮了踮脚尖，准备坐上去。 ⚠️强调：秋千为Q版悬浮道具（绳子从正上方垂下、快捷、座位悬在腰部高度，整体在画幅安全间隔、不遮挡脸部）；变魔法出走“无→有”凝实。\n\n2~5秒（坐稳起荡）：女仆姿势分别支撑曼哈顿绳子上段，原地挥动踮脚借力、臀部旋转一，稳稳坐到圆座上（双脚离地、双腿并拢自然向前垂下或微曲起），后坐稳后身体放松、轻微靠靠；千秋随即以头顶支点为轴、前后轻柔摆动起来（钟摆式：前摆约+20°、后摆约） −20°，节奏调节，约每1.5秒一个来回）。 ⚠️提升：摆动呈现“围绕头顶支点的钟摆弧线”，不整体左右横移；幅度平稳（±20°内）、匀速调节；坐姿时为支点，身体随摆动微仰微俯、双腿自然（不腰直、不猛踢）；摆动到的最高点则画幅安全。\n\n5~8秒（荡得畅快）：秋千荡得更舒展（前摆约+25°、后摆约-25°，仍调节），女仆曼陀握绳、体随秋千前倾后仰，发丝、呆毛、裙子摆与鲸鱼尾这般扭转方向轻快飘动；她微闭眼、嘴角上扬，寻找“好顺”的近来，偶有皱纹俏皮地绕小腿周围（小幅、不改变荡幅）。 ⚠️强调：此段是“舒展充气”的高点——衣发飘动方向始终与方向摆动相反（前荡时衣发后飘、后荡时衣发前飘）；头颈松弛、表情享受；最大振幅仍距画四幅边≥10%安全。\n\n8~10秒（渐停落回+消散）：秋千摆动逐渐收窄、越来越缓和，女仆睁开眼、舒展地笑了；荡幅几乎静止时，她恢复绳子、双脚重新落回原点站稳，并补充在身前挥一挥——秋千以魔术般的动作凭空消散（化作两根细绳与一个光点淡去）。手动自然垂落，头部摆正，目光平视前方，嘴角带着目光满足的浅笑。第10秒结束时彻底为标准正面。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身体姿势，眼神平视鲸前端，表情平和，呆毛柔顺，鱼尾自然下垂。无秋千姿势。 （特例说明：本动作核心是“乘坐秋千的轴心钟摆”，28 双秒脚离地属该动作合法乘坐姿势；910秒双脚必须落回原点。）",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-089",
+      "name": "点击回应-挠痒痒咯咯笑",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "点击回应-挠痒痒咯咯笑\n动作概述\n\nQ版蓝发女仆原地站得好好的，腰间突然被一阵一阵——身体猛地一缩、困得“咯咯”笑起来（Q版：无声，用眯眼、斜嘴、肩头一伸一伸），一边笑一边扭腰缩身想躲开“那根手指”，笑到弯下腰、眯着眼若成双眼成缝，眼角若要对头部（Q版）。笑够了之后，她直起身，伸手揉了揉被渠道的腰间，俏皮地朝镜头吐了吐舌头、挤了挤眼，一副“哼，调皮”的可爱表情。最后恢复标准垂直。全程原地范围完成（被迭代躲闪只在原地扭腰缩身、不横移），双脚装置定原点，动作全程在画幅安全图层。\n\n按秒分割画面\n\n0~3秒（被迭代一僵）：标准表情稳定、表情静止。突然腰间像被无形的手指轻轻一周期——女仆身体猛地一缩（腰部小幅后缩、颈部耸起），眼睛瞬间瞪圆、嘴巴微张，表情从“嗯？”转为一愣，随即嘴角忍不住上扬，好像“呀！痒！”。 ⚠️强调瞬间“被系列”的触发要征（身体一缩+瞪眼）；只用原地的小幅度缩身体表现，双脚始终不动、不跳开。\n\n3~7秒（咯咯笑躲）：女仆趴着“咯咯”地笑起来（Q版：眼睛眯成弯月、颈部咧开、扶手一耸一耸、上身前倾微弯，无声的笑），笑一边侧面扭动腰肢、缩着脖子左右躲，像在被逗痒痒；笑到腰动情处微微弯下弯下（幅度小、呆毛与头顶目前画幅安全增），一只手虚掩着嘴唇、另一只手想挡住“那根手指”，满脸春光明媚的开心。 ⚠️强调：笑声全靠表情+肩抖表现（Q版无声）；躲闪只在原地扭腰/横脖/微倾，姿势左右移；弯腰笑到最低点时固定毛距画幅顶边仍≥10%安全。\n\n7~10秒（揉腰吐舌+恢复正姿）：女仆慢慢收起笑，直起子，伸手轻轻揉了揉被累积的腰部（表情可爱、带点“哼”的娇嗔），并俏皮地朝镜头吐了吐舌头、挤了挤眼睛，露出了“打不过你啦”的可爱笑容。曼陀罗自然垂落，头部摆正，目光平视前方，嘴角还挂着眼神，没有消散的笑意。第10秒时结束彻底为标准正面。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，目光平视鲸前方，表情平和，呆毛柔顺，鱼尾自然下垂。无任何物体/光点过量。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-090",
+      "name": "点击回复-元气挥手",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "点击回复-元气挥手\n动作概述\n\nQ版蓝发女仆突然被点击，先微微一愣（呆毛轻颤、眼睛睁大），随即反应过来很开心——绽开元气饱满的笑容，双手高高举过头顶、朝镜头轻方向快地挥了挥，像在跟“她点击的人”打招呼“嗨~来啦”，眼睛弯成月牙，头顶“啵”地冒出一朵Q版小花（或小字体）光点。完挥手后她还俏皮地歪头、冲镜头眨眼。最后放下手、头顶光点消散，恢复标准正面垂直。全程原地平整（点击回应：元气打招呼），双脚设立原点，动作全程在画幅安全前期。\n\n按秒分割画面\n\n0~2秒（被点一愣）：标准正面静止。仿佛被点击了——女仆微微一愣（身体小幅绷直、呆毛轻颤、眼睛睁大），但随即嘴角就忍不住上扬，从“嗯？”转为期待。 ⚠️强调：被点的“一愣”只用小幅表情+呆毛轻颤表现，双脚保持不动、不跳开。\n\n25秒（元气挥手）：女仆绽开明亮元气的笑容，德一起高举过头顶、朝镜头方向左右挥了挥（约每秒嗨一次、幅度轻快），身体处于原地轻微左右摆动，头顶“啵”地冒出一朵Q版小花（或一颗小音符）光点，眼睛弯成月牙、亮晶晶，像在说的”你来啦！”。 ⚠️强调：挥手要“朝镜头方向”（观众视角）、幅度轻快元气；头顶小花/音符光点走“无→有”，在头顶安全间隔、不与呆毛重叠；身体只在原地轻摆、不横移。\n\n5~8秒（头俏皮）：女仆放慢挥手，歪额头仍举着朝镜头比了个空间“耶”，歪了歪头、冲镜头俏皮地眨了眨眼，头顶的光点微微闪烁，整个人元气又可爱。 ⚠️强调：“歪头+眨眼+比耶”是收尾的俏皮亮点；任一侧（举起的手臂）最外点距画幅边界≥10%，不裁切。\n\n8~10秒（恢复正姿）：女仆放下手（自然垂落），头顶光点消散，头部摆正、恢复表情逐渐平和，嘴角仍带着一丝未散的意意。第10秒笑结束时彻底恢复为标准正面平整。 ⚠️强调：结尾必须回到与第一帧一致的标准正面；无任何光点/效果排放。\n\n动作结束后状态\n\n最终：与参考图最左侧标准正面一致一致——双脚并英镑，曼德自然垂于完全高度，眼神平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无鲸花、无焦点光点高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-091",
+      "name": "余额-钱袋满溢",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "余额-钱袋满溢\n动作概述 Q版蓝发女仆补充余额消息后，缓慢旋转看向头顶上方（目光聚焦于画幅上部约35%~45%）高度的空处），双眼逐渐睁大、眉毛轻抬；然后头部回正、面对用户（眉毛上扬、眼睛眯成月牙、嘴角上扬），抬头肘、食指朝上，朝头顶方向快速连点两下（指给用户看“上面”），加抬手；确认消息后眉毛上扬、双眼变亮、嘴角上扬；左手虚抬、掌心泛光，一只鼓鼓囊囊、袋口几乎要溢满金币的钱袋于掌前由虚到实凝实成型（即“掏出钱袋”）。她把钱袋抱进怀里低头一看，眉毛上扬、眼睛眯成月牙、嘴角大大上扬，开心得原地转了一圈（双脚固定点定点，原地轴心旋转） 360°）；站定后把袋子向正上方一扬，袋中金币迸溅向半空、簌簌落下，叮叮当散七彩脚前地面发闪闪亮；随即空袋化作淡金色光点飘散，地面金币也逐渐化作金色光点上升淡去，她恢复标准正面垂直。全程原地，X/Y轴锁定。\n\n按秒分割画面\n\n0~1秒：标准正面统一，表情平静，眼神平视前方；首帧画面清晰，无任何道具与特效。\n12秒：头部抬起抬头，视线向头顶上方聚焦，仰角约3040°，眉毛上扬、双眼逐渐睁大、嘴角微微上扬，呆毛随仰头自然晃动。\n2~3秒：头部回正，正对镜头、目光平视，眉毛上扬、眼睛眯成月牙、嘴角大幅上扬；同时头部回正，食指朝上，朝头顶方向快速“指、指”两下——先向上抬高、回落一点、向上抬高（两次小幅度升降上下点动，指尖尖距画宽度边≥10%，手臂位于脸部两侧不遮挡脸部）——同时放下。\n3~4秒：确认消息后眉毛上扬、双眼皮变亮，嘴角明显上扬。\n4~5秒：左手虚抬、掌心泛起淡金光，一只口袋实装钱袋于掌心前沿由虚到实凝实成型（约1秒，袋口金币随凝微微闪光）。\n5~6秒：孔德把鼓鼓囊囊的钱袋抱进怀里，低头瞥一眼，眉毛上扬、眼睛眯成月牙、嘴角大幅上扬、下巴微微抬头，头顶呆毛欢快竖起。\n6~7秒：开心地原地转一圈——双脚定点、原地轴心旋转约360°，裙摆与鲸鱼尾巴随旋转自然飘起（旋转中身体与尾巴的任何部位距画宽度边缘≥10%）。\n78秒：转回正面，曼德把袋子向正上方一扬——袋子口朝上，约810枚金色小硬币从袋口迸洒向半空，呈扇形散开上升（最低距画幅顶边≥10%）。\n8~9秒：金币簌簌落下，叮叮当散则脚前地面，堆成一片闪亮金币（距画宽度底边≥10%）；空钱袋同时化作淡金色光点向上飘散。\n9~10秒：地面金币逐渐模糊、化作金色光点上升淡去（约1秒内全部消散），她站定回正，目光平视。第10秒结束时彻底恢复为标准正面平整，画面无任何悬浮。\n动作结束后状态 最终帧：标准正面垂直，曼陀罗自然垂落，眼神平视，表情平和。钱袋、硬币与光点完全消散，无堆积，无架构（转圈为原地轴心旋转，未滑出原点）。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-092",
+      "name": "余额-金袋叮当",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "余额-金袋叮当\n动作概述 Q版蓝发女仆补充余额消息后，缓慢旋转看向头顶上方（目光聚焦于画幅上部约35%~45%）眉毛轻上扬、嘴角微微翘起；然后头部回正、面向用户（眉毛向上挑动一下、眼睛弯成月牙、嘴角上扬），抬头左手、食指朝上，朝头方向快速连点两下（指给用户看“上面”），随后抬起手；确认消息后眉毛上扬、眼睛弯成月牙；左手虚她掂了掂袋子的短缺，把袋子轻轻往上一抛再接住，晃一晃让袋中金币叮一声响，眉毛上扬、弯成月牙、嘴角上扬眼睛；另外钱袋化作金色光点消散，双手收回胸前，恢复标准正面整齐。轴锁定。\n\n按秒分割画面\n\n0~1秒：标准正面统一，表情平静，眼神平视前方；首帧画面清晰，无任何道具与特效。\n12秒：头部抬起抬头，视线向头顶上方聚焦，仰角约3040°，眉毛轻抬、眼睛弯成月牙、嘴角上扬，呆毛随仰头自然晃动。\n2~3秒：头部回正，正对镜头、目光平视，眉毛向上挑动一下、眼睛成弯月牙、嘴角上扬；同时抬头左手，食指朝上，朝头顶方向快速“指、指”两下——先向上抬高、回落一点、再向上抬高（两次小幅度左右点动，指尖距画幅边≥10%，臂部位于脸部侧面不遮挡侧面）——首先向上抬高。\n3~4秒：确认消息后眉毛上扬、眼睛弯成月牙，原地轻快踮脚一下（脚尖原地起落、落回原点）。\n4~5秒：左手虚抬、掌心泛起淡金光，钱袋于掌心前方由虚到实凝实成型（约1秒），袋口隐约可见几枚金币。\n5~7.5秒：孔雀捧袋掂了掂小小，随即把袋子轻轻往上一抛（约至胸口高度、不过过头顶呆毛高度）再接住；孔雀一晃袋子，袋中金币发出“叮叮当当”的清脆响声；女仆眉毛上扬、眼睛弯成月牙、嘴角上扬，后面随笑意轻轻颤动，鲸鱼尾辫轻摆。\n7.5~9秒：钱袋在手中作淡金色光点向上飘散（约1秒内淡出），双手收回胸前轻轻相握，嘴角仍带笑意。\n9~10秒：面部自然垂落，眉毛恢复平位、嘴角下垂，表情温和。第10秒结束时彻底恢复为标准正面垂直。\n动作结束后状态 最终帧：标准正面垂直，曼陀自然垂落，眼神平视，表情温和。 钱袋与光点完全消散，无堆积，无内涵。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-093",
+      "name": "余额-钱袋如常",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "余额-钱袋如常\n动作概述 Q版蓝发女仆补充余额消息后，缓慢旋转看向头顶上方（目光聚焦于画幅上部约35%~45%）眉头舒展、嘴角微微上扬；随即头部回正、面向用户（眉毛平展、嘴角带一抹浅笑），抬头头部、食指朝上，朝头方向顶快速连点两下（指给用户看“上面”），抬起手；确认消息后眉毛平展、嘴角带一抹浅笑；手腕虚抬，一只普通大小的钱袋于掌前由虚到实凝实成型。她解开袋口往里瞥了一眼，把袋口系好，随手轻松地掂两下；附加钱袋化作光点消散，恢复标准正面。全程原地，X/Y轴锁定。\n\n按秒分割画面\n\n0~1秒：标准正面统一，表情平静，眼神平视前方；首帧画面清晰，无任何道具与特效。\n12秒：头部抬起抬头，视线向头顶上方聚焦，仰角约3040°，眉毛平展、嘴角带一抹浅笑，呆毛随仰头自然晃动。\n2~3秒：头部回正，正对镜头、眼神平视，眉毛平展、嘴角带浅笑；同时抬头头部，食指朝上，朝头顶方向快速“指、指”两下——先向上抬高、回落一点、再向上抬高（两次小幅度上下点动，指尖距画幅顶边≥10%，手臂位于脸侧不遮挡脸部）——接下来解除。\n3~4秒：确认消息后眉毛平展、嘴角带笑。\n4~5秒：手腕虚抬、掌心泛起淡金光，一只大小适中的钱袋于掌心前方由虚到实凝实成型（约1秒）。\n5~7.5秒：左手解开口的系绳，低头往袋口里看了一眼，眉毛平展、嘴角带笑；随即把袋口重新系好，单手掂了掂袋子（纵向、约掂两下），目光平视前方，动作平稳；呆毛与鲸鱼尾随轻微动作自然摆动。\n7.5~9秒：钱袋化作淡金色光点向上飘散（约1秒内淡出），自然重置。\n9~10秒：头部回正，眼神平视，表情温和。第10秒结束时彻底恢复为标准正面垂直。\n动作结束后状态 最终帧：标准正面垂直，曼陀自然垂落，眼神平视，表情温和。 钱袋与光点完全消散，无堆积，无内涵。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-094",
+      "name": "余额-数金皱眉",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "余额-数金皱眉\n动作概述 Q版蓝发女仆补充余额消息后，缓慢旋转看向头顶上方（目光聚焦于画幅上部约35%~45%）高度的空处），双眉已微微向眉心收拢；随即头部回正、面对使用者（双眉向眉心收拢、嘴角微微下撇、眉毛紧），抬头左手、食指朝上，朝头方向快速连点两下（指给使用者看“上面”），随后放下手；确认消息后双眉向眉心收拢、嘴角下撇；额头虚抬，她把袋口打开倒出金币，在掌心一枚地数，越数数双眉收得越数；完把剩下的金币小心收好，一声叹息，又挺直腰板、双眉舒展恢复平静；钱袋化作光点消散，标准正面。轴锁定。\n\n按秒分割画面\n\n0~1秒：标准正面，表情平静，眼神平视前方；首帧画面清晰。\n12秒：头部抬起抬头，视线向头顶上方聚焦，仰角约3040°，双眉已微微向眉心收拢、眉间微倾。\n2~3秒：头部回正，正镜头、目光平视，双眉向眉心收、嘴角微下撇、眉毛紧；同时抬头对左手，食指朝上，朝头方向快速“指、指”两下——先向上抬、回落、再向上抬（两次小幅度双向点动，指尖距画幅边≥10%，手臂位于侧脸不重叠）——位于上部上方。\n3~4秒：确认消息后双眉向眉心收紧、嘴角下撇。\n4~5秒：肩部虚抬、掌心泛起淡金光，一只略显干瘪的钱囊于掌心前沿由虚到实凝实成型（约1秒）。\n56.5秒：打开袋子口，把金币小心地倒在左掌心里（约46张），用前额食指一枚地拨数；随着拨数，双越收越紧、眉毛皱起，头部微侧，视线凸显掌心的金币上。←数金币时双手保持在胸口前方，动作幅度小、不遮挡脸部。\n6.5~7.5秒：数完，把金币一枚一枚拨回袋中、仔细收好袋口；轻轻叹息（肩部随叹气下沉又抬头），嘴角仍下撇，双紧眉锁。\n7.5~8.5秒：钱袋化作淡金色光点向上飘散（约1秒内淡出）；正好挺直腰板，双眉逐渐舒展。\n8.5~10秒：曼陀罗自然垂落，头部回正，目光平视，嘴角恢复平位。第10秒结束时彻底恢复为标准正面。\n动作结束后状态 最终帧：标准正面垂直，曼陀自然垂落，眼神平视，表情平和。 钱袋与金币完全消散，无堆积，无内涵。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-095",
+      "name": "余额-袋空如洗",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "余额-袋空如洗\n动作概述 Q版蓝发女仆补充余额消息后，缓慢旋转看向头顶上方（目光聚焦于画幅上部约35%~45%） 高度的空处），眉毛轻抬、双眼微微睁大；然后头部回正、面对用户（眉毛上扬、双眼睁大、眉毛起），抬头颈、食指朝上，朝头顶方向快速连点两下（指给用户看“上面”），并抬起手；确认消息后双眼眉圆、嘴微张紧住；颧骨虚抬高，一个干瘪得不成样子的钱袋子于虚到实凝实前成型。她倒拎着袋子使劲抖抖了又，只掉出可怜的一两一枚硬币叮叮落地作光点；右额滑落一滴透明汗珠，脸部泛红晕，她抬头左手挠了挠后脑勺、吐出小舌头、目光转向斜下方；钱袋化作光点消散，她深呼吸平复，第一。轴锁定。\n\n按秒分割画面\n\n0~1秒：标准正面，表情平静，眼神平视前方；首帧画面清晰。\n12秒：头部抬起抬头，视线向头顶上方聚焦，仰角约3040°，眉毛上扬、双眼微睁、眉毛微眯。\n2~3秒：头部回正，正对镜头、眼神平视，眉毛上扬、双眼睁大、眉毛抬头；同时抬头，食指朝上，朝头顶方向快速“指、指”两下——先向上抬、回落点、再向上抬（两次小幅度上下点动，指尖距画宽度顶边≥10%，手臂位于脸侧不遮挡脸部）——依次抬起。\n3~4秒：确认消息后双眼猛然瞪圆（瞳孔缩成小点）、嘴微张、身体极轻微一颤，僵住约半秒。\n4~5秒：肩部虚抬、掌心泛起淡金光，一只干瘪的小钱袋于掌心前沿由虚到实凝实成型（约1秒）。\n57秒：左手扶袋、右肩倒拎着干瘪袋口用力抖了抖——袋口只掉出1两枚小小金币，叮叮两声绚丽地面、化作光点消失；再一下，什么也没有掉出来，女仆追击空袋口，嘴微张、眉毛上扬。\n7~8.5秒：右前额滑落一滴透明汗珠（沿脸颊流下约1秒、至下巴前化作光点），脸颊泛起淡红晕；左手抬头挠了挠后脑勺，吐出小舌头，目光向斜下方移动；空钱袋在掌中捏成光点消散。\n8.5~10秒：深呼吸一次（胸口起伏），头部回正，眼神平视，眉毛恢复平位。第10秒结束时彻底恢复为标准正面垂直。\n动作结束后状态 最终帧：标准正面垂直，曼陀自然垂落，眼神平视，表情平和。 钱袋、金币与汗珠完全消散，无堆积，无地质。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-096",
+      "name": "余额-分文不剩",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "余额-分文不剩\n动作概述 Q版蓝发女仆补充余额消息后，缓慢旋转看向头顶上方（目光聚焦于画幅上部约35%~45%）高度的空处），双眉微蹙、眉毛紧缩；随即头部回正、面向用户（双眉紧蹙、眉毛紧蹙、眉毛紧、眼神发直），抬头左手、食指朝上，朝头方向快速连点两下（指给用户看） “上面”），加上下手；确认消息后双眼瞪圆、嘴微张僵住约一秒；右肩虚抬，一只轻飘飘的钱袋于掌前由虚到实凝实成型。打开袋口一看空空如也，翻过来倒着了又颤，什么也没掉出来，她双眼瞪大、僵住不动约半秒；随即双腿颤身体弯曲、原地跪坐瘫坐在地上，双手撑地、眼神涣散（视线放空、不聚焦），呆毛无力耷拉、双肩垮塌；片刻后她手动撑地慢慢站起来，抬手拍拍围裙，深呼吸一口，嘴角勉强上提一个微笑（眉毛仍微微蹙起）、另外嘴角放下，恢复完整。 X/Y轴锁定，跪坐最低点时头部与画幅顶边保持≥20%安全浓度、臀部与画幅底边保持≥15%安全浓度。\n\n按秒分割画面\n\n0~1秒：标准正面，表情平静，眼神平视前方；首帧画面清晰。\n12秒：头部抬起抬头，视线向头顶上方聚焦，仰角约3040°，双眉紧蹙、眉眼紧、眼神发直（视线凝住不动）。\n2~3秒：头部回正，正对镜头、眼神平视，双眉紧蹙、眉毛紧绷、眼神发直；同时抬头左手，食指朝上，朝头顶方向快速“指、指”两下——先向上抬高、回落一点、再向上抬高（三次小升降中间点动，指尖顶画宽度边≥10%，位于手臂脸部侧面不重叠）——\n3~4秒：确认消息后双眼猛然瞪圆（瞳孔缩成小点）、嘴微张，身体僵住约一秒。\n4~5秒：肩部虚抬、掌心泛起淡金光，一只轻飘飘、塌陷的钱袋于掌心前方由虚到实凝实成型（约1秒）；打开袋口往里看，袋内空空；把袋翻过来倒着抖抖了，什么也没有掉出来；女仆双眼瞪大、嘴微张，身体僵住不动约0.5秒。\n5~7秒：双腿弯曲，重心下沉，原地跪身体坐瘫坐于地面（双脚不动作、规定身体定原点），曼支撑在地面，头轻微低垂，目光涣散（目光放空、不聚焦），呆毛无力耷拉、双肩俯卧、肢体微张；空钱袋在身体旁化作光点消散。←这一帧为全片最低点，务必保证头顶与画幅顶边距离≥20%、臀部与画幅底边距离≥15%。\n7~8.5秒：曼德支撑地、身体重心抬头，慢慢站起来，膝盖伸直，站稳；抬手拍了拍围裙上的那么多。\n8.5~10秒：深呼吸（胸口起伏），嘴角勉强上提一个微笑（眉毛仍轻微蹙起），附加嘴角放下、眉毛舒展，目光平视一次前方。第10秒结束时彻底恢复为标准正面垂直。\n动作结束后状态 最终帧：标准正面垂直，曼陀罗自然垂落，眼神平视，表情平和。 钱袋与光点完全消散，无堆积，无仰；跪坐期间始终未滑出原点。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-097",
+      "name": "碎碎念-擦桌碎碎念",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "碎碎念-擦桌碎碎念\n动作概述 Q版蓝发女仆手持凭空变出一块抹布，弯腰在身前虚空擦桌。擦台的同时伤口持续自然地一张碎一合，像在自言自语地小声念叨什么（口型细、重复开合，类似搅拌囔絮絮），偶停顿抬眼望天、嘴型抬头，随即又继续念叨。表情心不在焉、眼神放空。念叨数轮后，女仆猛然觉察自己在自言自语，尴尬吐舌轻拍脑门，抹布消失，恢复标准画面文字。全程无画面文字。\n\n按秒分割画面\n\n0~2秒：标准正面挺直。颧骨从右边空变出一块浅蓝色小抹布，左手托住右手腕做出准备开擦的姿势，表情略带无奈。\n25秒：弯腰低头，手腕握抹布在身前（与腰齐平的虚空）做来回舞蹈动作，身体随擦动轻微波动，脚步定点。此时乳房出现轻微开合念叨（每秒约2秒）3个细碎口型（幅度小而自然），表情放空。\n5~7秒：念叨突然停止，嘴闭英镑，缓慢抬眼望向上方，眼前涣散放空约1秒（仿佛思绪飘走），附带嘴又恢复细碎念叨，继续擦桌。\n7~10秒：猛然“惊醒”，目光聚焦，身体一颤，察觉自己在自言自语，脸颊微红，抬头轻拍自己脑门，眼睛眯起吐出小舌头（😝），抹布凭空消散，自然垂落。 ⚠️强调：全程无气泡、无文字、无任何画面内文场景特效；嘴部为唯一“说话”表现，口型细碎自然、不开合过度（避免像唱歌/大叫）；双脚一个定点，表情全程心不在焉。\n动作结束后状态 最终帧：与第一帧一致的标准正面站立——曼德自然垂落，目光平视，表情温和平静，嘴紧，无抹布残留。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-098",
+      "name": "碎碎念-发呆碎碎念",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "碎碎念-发呆碎碎念\n动作概述 Q版蓝发女仆保持站立姿势，眼神逐渐放空，呆毛无精打采地耷拉，隔壁的鲸鱼尾巴懒洋洋地缓慢移动。她低下头，牙齿时不时一点点开合，含混地嘀咕自语（口型左右极）小、缓慢缓慢，像在说梦话），每一念片刻就停顿继续放空。片刻后女仆突然回过神来，发现自己发呆，脸庞泛起红晕，尴尬地挠头傻笑，恢复正面标准立体。全程无画面文字。\n\n按秒分割画面\n\n0~2秒：标准垂直。双眼皮失去焦距，眼皮微垂，嘴微张，呆毛慢慢耷拉下来。\n26秒：保持发呆姿势，头微微低垂，身体重心略下沉，尾巴缓慢左右摆动。胎儿以极小幅度的缓慢开合嘀咕自语——念12秒停1秒再继续（口型含糊、几乎看不出内容），看上去始终放空不聚焦。\n6~8秒：第7秒左右猛然回神，瞳孔聚焦，身体轻微颤抖，呆毛弹起，意识到自己在自言自语，脸庞瞬间泛红。\n8~10秒：头部抬头惊后脑勺，眼睛眯成弯月，嘴角尴尬上扬傻笑，另外垂落，表情恢复平静。 ⚠️强调：全程无气泡、无文字、无任何画面内文场景现象；嘀咕口型幅度极小、缓慢含混（避免口型响亮像正式说话，先前呓语）；眼神全程放空，不看镜头；双脚指定原点。\n动作结束后状态 最终帧：与第一帧一致的标准正面一致，表情平和，呆毛柔顺，嘴闭合，无完全残留。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-099",
+      "name": "碎碎念-对屏碎碎念",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "碎碎念-对屏碎碎念\n动作概述 Q版蓝发女仆面对屏幕（用户），像老朋友聊天一样自然地开口念叨，口型喧闹、节奏自然。说话过程中伴随着一些小动作——歪头、眨眼、偶尔停顿抬眼像在组织语言、撇嘴角笑一下，提到出现时在胸前比划一个小对话。说完跟最后一个嘴连接，恢复标准正面连续。全程就是“说话”表演。\n\n按秒分割画面\n\n0~2秒：标准正面挺直。眉毛开始自然地开合说话（面对镜头，口型响亮自然，像在跟人聊天），眼睛有神地看向镜头方向，微微点头。\n2~5秒：持续自然念叨，语速有节奏变化，颈部歪头（约10°）、眉毛轻挑，偶尔在胸前划个小鼻子再放松。\n5~7秒：说话突然慢停止，嘴闭拢、抬眼向斜上方约1秒（像在组织语言、想词），另外嘴重新张开继续念叨，头回正。\n7~10秒：念叨收尾，嘴边带一丝浅浅的笑，说完后牙齿闭合，头微点一下，表情恢复平和。 ⚠️强调：全程无气泡、无文字、无任何画面内文场景特效；口型是唯一“说话”载体，声音自然、节奏如真人聊天（区别于呓语/含混言语囔）；说话时眼睛看向镜头方向（有交流感）；双脚一个定点，无因果。\n动作结束后状态 最终帧：与第一帧一致的标准正面严肃，嘴闭合，表情平和，无残留。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-100",
+      "name": "工作状态-思考冒泡",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "工作状态-思考冒泡\n动作概述\n\nQ版蓝发女仆收到“任务启动”信号，原地进入认真思考状态。她微微低头、眼球抬头住下巴，眉头轻蹙；头顶靠空浮现一个半透明的“？”缓慢绕头顶浮动，身侧泛起几个细小的光点；片刻后眉头舒展、轻轻点头，仿佛想通了什么。全程无文字气泡、无对话桥段，表情安静认真体现，“开始处理事情”的思考感。角色原地一致，双脚定原点，无本质。\n\n按秒分割画面\n\n02秒（凝神准备）：**本段第01秒：与参考图完全一致的标准标准姿势一致——双脚并拢、面部自然垂落、表情平和、眼神平视，画面干净，无任何动作与道具**。第1秒后：身体轻微前倾（幅度≤5°），头部抬头、手肘撑在左臂心，肘托住下巴，眉毛轻蹙，眼神略凝住（像在艾米酝酿思路），呆毛轻轻晃动。 ⚠️强调：第1秒前必须完全自然标准垂直（这是第一帧硬性要求）；从标准垂直进入思考姿势的过程流畅；首帧为正面标准垂直，画面清晰。\n\n2~5秒（头顶冒“？”）：保持托腮思考姿势。头顶上方约15%画幅高度处凭空浮现一个半透明的“？”（Q版圆润，先是图层淡虚影、约0.5秒凝后实），另外“？”在头顶上方轻轻旋转、垂直左右短暂倾斜（小）；她微微歪头（约10°），目光紧随“？”的移动方向，身体保持静止。 ⚠️强调：“？”走“无→有”、微小（约拇指大小）、半透明，位于头顶上方、与呆毛保持安全距离，不遮挡脸部，全程在画幅顶边安全增强。\n\n58（秒思考加深）：皱眉幅度略增，换成左手托腮；“？”此时头顶浮动，身体躯干凭空浮现23个细小的浅蓝/淡金光点，绕着她的手肘与头顶缓慢转圈；她的眼珠微微左右转动（思考感），偶尔眨一下眼，双脚始终钉在原点。 ⚠️强调：光点微小、半透明，身材小、都在画幅内；面部表情始终响亮，思考感靠皱眉与眼动表现，不要做夸张的动作。\n\n8~10秒（想回通神）：眉毛舒展、嘴角微微上扬，轻轻点侧面头；“？”与光点渐渐变淡消失；托腮的手放下，曼陀垂自然落，身体回正，眼神平视。第10秒结束时彻底为标准正面垂直。\n\n动作结束后状态\n\n最终：与参考图最左侧标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，眼神平视鲸前方，表情平和，呆毛柔顺，鱼尾自然下垂。无“？”、无光点高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-101",
+      "name": "工作状态-工作点按",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "工作状态-工作点按\n动作概述\n\nQ版蓝发女仆接到“正在处理”信号，曼陀在身前的虚空快速交替点按、动作干脆利落，同步紧凑；指小尖落点处闪出细半透明光点，头顶上方靠空浮现闹钟、齿轮、书本、铅笔四个Q版小图标绕头旋转，像在同时调度很多事。她俯身、表情尖端，乍瞧嘴。全程原地，无真实道具落地，佐证“工具调用中”的操作感。\n\n按秒分割画面\n\n02秒（开工准备）：**本段第01秒：与图完全一致的标准标准正面整齐——双脚并拢、曼德自然垂落、表情平和、目光平视，画面干净，无任何动作与道具**。第1秒后：额头五指微微张向身前虚空一按，左手跟上，像随后按在视线的中央上；身体微微前倾（≤5°），目光专注身前虚空中一点，表情严肃，呼吸平稳。 ⚠️强调：第1秒前必须静止标准静止（这是第一帧硬性要求）；前倾幅度小、双脚不动；“虚空平台”感靠依靠动作的姿势表现，不出现任何实体道具。\n\n25秒（快速点按）：双手在身体前虚空中快速交替轻点（食指为主，左手点一下、右膝点一下，节奏约每秒2）3下），动作干脆利落，肩膀随节奏轻微波动，嘴巴微衡；每点一下，指尖落点处闪出一个小而亮的半透明蓝色白色光点（一闪即消散，不同时存在太多）。 ⚠️强调：光点每次只有1~2个、微小半透明，集中在身体前约25%画宽度宽度区域内；点按幅度小不夸张，动作像操作悬浮面板，不遮挡脸部。\n\n5~7.5秒（工具图标环绕）：点按节奏稍缓。头顶上方约15%~25%画宽度高度处靠空浮现四个Q版小图标——闹钟（橙）、齿轮（蓝灰）、书本（绿）、铅笔（红）——半透明、约拇指大小，呈现小报表缓慢绕头顶旋转（一圈约3）秒）；她目光跟随图标转半圈，又落回身前继续点按，表情目光中带着一丝从内容的得意。 ⚠️强调：图标走“无→有”、四个颜色区分明显；旋转方向小、都在画幅上部安全楼梯，不与固定毛、画幅顶边重叠；图标不与宽度重叠。\n\n7.5~9秒（收尾）：点按逐渐放慢，头顶图标依次淡出消失（逐个淡化，不齐灭）；她微微点一下头，像上一个任务处理完毕，神色放松。\n\n9~10秒（恢复正姿）：面部放下自然垂落，身体恢复正位，眼神平视，表情从恢复姿势。第10秒结束时彻底恢复为标准正面平整。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，眼神平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无鲸光点、无图标高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-102",
+      "name": "工作状态-清点归档",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "工作状态-清点归档\n动作概述\n\nQ版蓝发女仆收到“工具已完成、信息已回来”的信号，把结果归档：她在胸前轻轻一合再展开，凭空凝出摞Q版纸片悬浮在身前，逐张拈起查看、点头确认后卷成一卷收好，最后纸卷化作细小的光点消散。整套动作安静、有条理、带着满意的神态，体现了“整理结果、收尾归档”的从容感。全程原地平整，双脚定点。\n\n按秒分割画面\n\n02秒（提出纸卷）：**本段第01秒：与参考图完全一致的静止标准的垂直——双脚并拢、曼陀罗自然垂落、表情平和、目光平视，画面干净，无任何动作与道具**。第1秒展开：曼陀于胸前挥洒一合，再向瞬时缓慢——身前凭空凝出摞Q版纸片（4）5张，白底带浅蓝色横线，约按摩大小，悬浮在胸前高度、微微错开，从虚影到凝实约0.51秒）；她低头打量纸片，表情严肃温静，嘴角带着一点浅笑。 ⚠️强调：第1秒前必须保持静止标准一致（这是第一帧硬性要求）；完全纸片走“无→有”、从虚影到凝固实约0.5~1秒；悬浮在胸前、不与脸部和裙摆重叠；张数少而清晰，不显杂乱。\n\n25秒（逐张查看）：膝盖从纸摞最上面拈起一张，举到右边（纸片轻轻转半圈，像在确认内容），低头看住，眉头轻抬、轻轻点一下头（“嗯，对”）；将这张纸放回纸摞（或化作淡光摞中），再拈起下一张查看、点点头，查看23张。 ⚠️强调：每张查看动作分明（拈起→举到眼前→看→头顶→放下）；看纸时纸片举在脸侧，不遮挡面部表情；拈纸动作轻柔，纸片不飘散、不落地。\n\n5~7.5秒（卷起归档）：看完最后一张，额头把它按回纸摞，手动把纸摞拢齐，折成一卷（或叠成一捆），轻轻拍了拍纸卷边缘理齐，表情满意，嘴角微扬，微微点头。 ⚠️强调：拢齐、卷起动作流畅，纸卷始终在胸前安全稳定；“理齐拍平”是收尾的小仪式感，动作小而稳定。\n\n7.5~9秒（收好）：曼德把纸卷捧到胸前，纸卷逐渐变淡，化作细小的金色/浅视觉点向手心汇聚后消散（约1秒内完成）；她低头看空空的掌心，神色平静满足。\n\n9~10秒（恢复正姿）：面部自然垂落，回复正，眼神平视前方，表情恢复平静。第10秒结束时彻底恢复为标准正面垂直。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，目光平视前方，表情平和，呆毛柔顺，鱼尾自然下垂。无纸片、无纸卷、无光点高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-103",
+      "name": "工作状态-原地踱步张望",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "工作状态-原地踱步张望\n动作概述\n\nQ版蓝发女仆在等待批准/结果：她曼德交握垂在身前，原地换小碎步轻轻左右倒重心，身体小幅晃动；不时以脚尖为轴原地轴转向右前方、左前方注张望，目光期待；头顶上方凭空浮出一个Q版小沙漏快速跳跃，表示“在等”；最后眼前一亮、转回正面，仿佛等到了消息。全程原地（双脚某个定点，仅轴转与原地重心晃动），突出乖巧、等待的等待感。\n\n按秒分割画面\n\n02（等待姿势）：**本段第01秒：与图完全一致的标准姿势坦然——双脚并拢、手垂落、表情平和、眼神平视，画面干净，无任何动作**。第1秒后：手交握垂在身前，颈部稍稍放松；原地小碎步轻轻左右倒换重心（双脚不原点，身体小幅左右倾斜，视角≤5°），眼神平视前方，表情乖巧。 ⚠️强调：第1秒前必须完全标准静止（这是第一帧硬性要求）；等待感靠细细的原地晃动与眨眼表现，双脚一个固定、姿势横移；晃动幅度小而均匀，像原地站久了轻轻换脚。\n\n2~4秒（右前张望）：以脚尖为轴原地轴转，身体向右前方缓慢转约15°，微微伸长脖子往右前方看（好奇、专注），眼神带着期待一点；停留约1秒后，转回前方。 ⚠️增强：轴转双脚原地、仅转动与上身侧倾，不产生整体地震；张望时只探颈部和转视线，身体主体舞蹈变化幅度小。\n\n4~6.5秒（左望＋头顶沙漏）：身体再向左前方轴转约15°，往左前方张望；同时头顶上方约15%画幅高度处凭空浮现一个Q版小沙漏（半透明、金色形象、约拇指大小），慢慢绕自身轴心枢纽（上方细沙下方流落的动感）；她突然望着头顶的沙漏，又转回前面，前置警惕嘴。 ⚠️强调：沙漏走“无→有”、微小半透明，位于头顶上方、与呆毛保持安全距离；沙漏跳跃匀速缓慢；轴转双脚原地。\n\n6.5~8.5秒（沉默沉默）：转回正面站好，曼德交握略紧，微微踮姿势脚尖（原地起落一次）；沙漏此时头顶梯度跳跃；她眨眼，目光左右轻轻移动侧面又落回前方，神情安静等待。 ⚠️强调：踮脚幅度小而稳、落回原点；这一段重点是“耐心”的表情与评估动作，不出夸张表现。\n\n8.5~10秒（直到回神）：头顶沙漏逐渐变淡消失；她眉毛轻抬、眼睛亮起一下（像“来了！”的轻微反应），随即神色恢复平和，曼垂垂落，身体恢复正，眼神平视。第10秒结束时彻底恢复为标准正面垂直。\n\n动作结束后状态\n\n最终：与参考图最左侧标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，目光平视鲸前方，表情平和，呆毛柔顺，鱼尾自然下垂。无沙漏大量。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-104",
+      "name": "工作状态-雀跃庆祝",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "工作状态-雀跃庆祝\n动作概述\n\nQ版完成蓝发女仆收到“任务”的信号，原地雀跃庆祝：她眼睛一亮、曼陀微微惊愕，原地垂直轻跳一下、曼举过头顶欢呼，头顶“啵”地炸开一簇星星与细碎彩色光点；落地之后轻跳一下、曼德在头顶拍一下掌，光点化作细小光晕绕头顶转半圈后淡去；并收势站定，收敛笑容满足的浅笑。全程原地（跳跃落回原点），情绪高涨但Q版可爱，体现“完成”成就的感与喜悦。\n\n按秒分割画面\n\n02（酝酿秒）：**本段第01秒：与参考图完全一致的标准姿势整齐——双脚并拢、曼垂落、表情平和、眼神平视，画面干净，无任何自然动作**。第1秒后：眼睛突然亮起，眉毛上扬，嘴角上扬；曼从身侧微微抬头（准备抬头的姿势），身体微微后仰（一端≤5°），一副“成功啦”的惊喜表情。 ⚠️强调：第1秒前必须静止标准平稳（这是第一帧硬性要求）；情绪从完全平静到惊喜的转变要明显（表面一亮是关键帧）；后仰幅度小、双脚不动。\n\n24秒（蹦跳欢呼）：原地垂直轻跳一下（双脚离地、落回原点，跳跃高度不超过画幅高度的10%），跳到最高点时双手举过头顶张开欢呼；同时头顶“啵”地炸开一簇星星光点（35颗小星星＋细碎彩色小点，半透明，外部四散约10%画幅范围，一闪后公平下落）。 ⚠️强调：蹦跳垂直原地、落回原点；庆祝时手臂最外点距画幅顶边≥10%安全分布；星星光点走“无→有→无”、半透明、不炫目，不与头部重叠。\n\n4~6.5秒（再跳拍掌）：落地站稳后，再轻跳一下（此时更快更轻、高度更高），手动在头顶轻轻拍一下掌（或比一个“耶”）；头顶散落的星星光点化作一圈细小的光点，慢慢地头顶转半圈后逐渐变淡。 ⚠️强调：第二次蹦跳明显幅度更小，突出“高兴还在”的余韵不继续大动作；光点圆周布局在画幅上部安全跳跃、不与呆毛重叠。\n\n6.5~9秒（收势）：站稳，嘴巴放松，身体恢复正常，最灿烂的逐渐收敛，满足的浅笑，轻轻呼吐的香气（胸口微微间歇一次）。\n\n9~10秒（恢复正姿）：面部自然垂落，眼神平视前方，表情恢复平静。第10秒结束时恢复为标准正面垂直。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，眼神平视鲸前方，表情平和，呆毛柔顺，鱼尾自然下垂。无星星、无光点高度。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "attached-105",
+      "name": "工作状态-垂头叹气冒汗",
+      "source": "user_attachment",
+      "duration_seconds": 10,
+      "source_text": "工作状态-垂头叹气冒汗\n动作概述\n\nQ版蓝发女仆收到“错误”的信号：她身体猛然微僵、呆毛轻颤，随后腋下无力下、头低垂（呆毛耷拉），头顶靠空浮出一个Q版红叉停留片刻；右额角滑落一滴透明大汗珠（至下巴前化作）光点），她抬手背轻轻擦了擦额头；眉间轻轻叹息，深吸喘、缓慢抬头站直，表情从低落重新转为坚定平和。全程原地，情绪低落不夸张但不狰丑，体现“错误后打起精神”的反差感。\n\n按秒分割画面\n\n01.5秒（僵住）：**本段第01秒：与图完全一致的标准肖像坦然——双脚并拢、曼努埃尔自然垂落、表情平和、眼神平视，画面干净，无任何动作与道具**。第1秒后：体猛然微僵（肩部一紧、毛呆淡淡一颤），眼睛睁大一下又微微垂下眼神，嘴巴微抿，表情平静转为参考低落。 ⚠️强调：第1秒前必须保持标准静止（这是第一帧硬性要求）；“僵住”完全用小幅度的身体一紧＋呆毛一颤＋眼神变化表现，不后仰、不后退，双脚不动。\n\n1.5~4秒（垂头垮肩）：腹部缓慢俯卧约下，头低垂（低头幅度约20°，呆毛无力耷拉），手动在身体侧稍握紧又恢复；头顶上方约15%画幅高度处靠空浮出一个Q版红叉（半透明、约拇指大小，或一个深灰色小乌云兜着一滴雨），停在她头顶1.5秒。 ⚠️强调：红叉/乌云走“无→有”，位于头顶上方、与呆毛保持安全距离，不遮挡一个；低头后头顶则画幅顶边安全上升。\n\n4~6秒（汗珠滑落）：右前角滑落一滴透明大汗珠（Q版夸张但单颗，沿脸颊心率流下约1秒，到下巴前化作细光点消散）；她头颈背轻轻擦了擦额头；头顶红叉渐渐淡去消失。 ⚠️强调：汗珠仅一滴、透明、Q版可爱，不糊脸、不流成串；擦汗动作轻而自然；头顶红叉先于擦汗淡出，记述顺序清晰。\n\n6~8秒（叹气作）：轻轻叹息（胸口俯仰一次、肘部压迫下沉又抬头，兔子轻轻呼出吸气的感觉，无白气效果）；附带深吸喘（胸口鼓起），缓慢抬头头，眉毛舒展一些，看似重新变得坚固。 ⚠️强调：叹气用“胸口起伏＋肩沉肩抬高”表现，不张嘴猛叹、不出现夸张的面部变形；振作的转变要自然（低头→眼神→眼神坚定）。\n\n8~10秒（恢复正姿）：身体站直（直腰板），面部自然垂落，恢复表情平和，眼神平视前方。第10秒结束时挺直恢复为标准正面垂直。\n\n动作结束后状态\n\n最终：与参考图最左边标准正面一致一致——双脚并英镑，曼德自然垂于完全身高，眼神平视鲸前方，表情平和，呆毛柔顺，鱼尾自然下垂。无红叉、无汗珠严重。",
+      "status": "awaiting_generation",
+      "adaptation": "以原用户棕发女孩为角色；不使用蓝发女仆身份或鲸尾解剖结构。保留动作本意，清理原文错字及歧义后提交。"
+    },
+    {
+      "id": "new-01",
+      "name": "微笑挥手打招呼",
+      "source": "latest_user_request",
+      "duration_seconds": 10,
+      "description": "一只手举起，五指张开，面向用户自然微笑并轻轻挥手。",
+      "prompt_en": "Animate the exact brown-haired chibi girl in the supplied original reference image. Preserve her facial identity, beauty mark, long brown hair, crescent necklace, earrings, black cardigan, gray pleated skirt, white socks, black Mary Jane shoes, and illustration finish throughout the shot. Create genuine continuous character motion with changing hand poses, facial expressions, natural fabric movement and hair follow-through. Locked camera, one uninterrupted full-body shot, stable character scale and center, entire hair, hands and shoes visible with generous safety margins. Clean plain background suitable for later subject segmentation. Ten-second action: 0-1 seconds relaxed front-facing reference pose, 1-3 seconds smoothly enter the action, 3-7 seconds perform the expression and gesture, 7-9 seconds naturally lower the arms and relax, 9-10 seconds return to the same relaxed front-facing pose as the opening. She smiles warmly, raises her right hand beside her face, opens her palm toward the viewer with five distinct natural fingers, and gently waves twice from the wrist. The other arm rests naturally at her side. Smooth ease-in and ease-out, subtle breathing and blinking, consistent anatomy, five natural fingers per hand with clear correct gesture silhouettes. Keep the face unobscured except where the specified hand action requires it. No camera motion, scene cuts, zoom, text, icons, extra characters, anatomy changes, fused hands or extra digits. Do not merely move or warp a still picture.",
+      "status": "sample_available_full_action_pending",
+      "reference_image": "reference-original.png",
+      "outfit": "original",
+      "priority": 1,
+      "samples": [
+        "微笑挥手-免费样片-v1.mp4"
+      ]
+    },
+    {
+      "id": "new-02",
+      "name": "双手托腮开心大笑",
+      "source": "latest_user_request",
+      "duration_seconds": 10,
+      "description": "双手托腮，闭眼开心大笑，脸颊泛红。",
+      "prompt_en": "Animate the exact brown-haired chibi girl in the supplied original reference image. Preserve her facial identity, beauty mark, long brown hair, crescent necklace, earrings, black cardigan, gray pleated skirt, white socks, black Mary Jane shoes, and illustration finish throughout the shot. Create genuine continuous character motion with changing hand poses, facial expressions, natural fabric movement and hair follow-through. Locked camera, one uninterrupted full-body shot, stable character scale and center, entire hair, hands and shoes visible with generous safety margins. Clean plain background suitable for later subject segmentation. Ten-second action: 0-1 seconds relaxed front-facing reference pose, 1-3 seconds smoothly enter the action, 3-7 seconds perform the expression and gesture, 7-9 seconds naturally lower the arms and relax, 9-10 seconds return to the same relaxed front-facing pose as the opening. She raises both hands to cup her cheeks, closes her eyes into happy curved eyelids, and laughs joyfully with a small natural open mouth. A soft rosy blush appears on both cheeks. Her shoulders bounce gently with laughter. Smooth ease-in and ease-out, subtle breathing and blinking, consistent anatomy, five natural fingers per hand with clear correct gesture silhouettes. Keep the face unobscured except where the specified hand action requires it. No camera motion, scene cuts, zoom, text, icons, extra characters, anatomy changes, fused hands or extra digits. Do not merely move or warp a still picture.",
+      "status": "sample_available_full_action_pending",
+      "reference_image": "reference-original.png",
+      "outfit": "original",
+      "priority": 2,
+      "samples": [
+        "托腮开心笑-免费样片-v1.mp4"
+      ]
+    },
+    {
+      "id": "new-03",
+      "name": "双食指相对害羞",
+      "source": "latest_user_request",
+      "duration_seconds": 10,
+      "description": "双手食指相对，放在嘴巴下方，露出害羞可爱的表情。",
+      "prompt_en": "Animate the exact brown-haired chibi girl in the supplied original reference image. Preserve her facial identity, beauty mark, long brown hair, crescent necklace, earrings, black cardigan, gray pleated skirt, white socks, black Mary Jane shoes, and illustration finish throughout the shot. Create genuine continuous character motion with changing hand poses, facial expressions, natural fabric movement and hair follow-through. Locked camera, one uninterrupted full-body shot, stable character scale and center, entire hair, hands and shoes visible with generous safety margins. Clean plain background suitable for later subject segmentation. Ten-second action: 0-1 seconds relaxed front-facing reference pose, 1-3 seconds smoothly enter the action, 3-7 seconds perform the expression and gesture, 7-9 seconds naturally lower the arms and relax, 9-10 seconds return to the same relaxed front-facing pose as the opening. She brings both hands below her mouth, gently touches the tips of her extended index fingers together, and looks shyly toward the viewer with a small bashful smile and soft rosy cheeks. The remaining fingers curl naturally. Smooth ease-in and ease-out, subtle breathing and blinking, consistent anatomy, five natural fingers per hand with clear correct gesture silhouettes. Keep the face unobscured except where the specified hand action requires it. No camera motion, scene cuts, zoom, text, icons, extra characters, anatomy changes, fused hands or extra digits. Do not merely move or warp a still picture.",
+      "status": "sample_available_full_action_pending",
+      "reference_image": "reference-original.png",
+      "outfit": "original",
+      "priority": 2,
+      "samples": [
+        "双食指害羞-免费样片-v1.mp4"
+      ]
+    },
+    {
+      "id": "new-04",
+      "name": "抱胸鼓嘴傲娇",
+      "source": "latest_user_request",
+      "duration_seconds": 10,
+      "description": "双手交叉抱胸，微微鼓起嘴巴，表现生气和傲娇。",
+      "prompt_en": "Animate the exact brown-haired chibi girl in the supplied original reference image. Preserve her facial identity, beauty mark, long brown hair, crescent necklace, earrings, black cardigan, gray pleated skirt, white socks, black Mary Jane shoes, and illustration finish throughout the shot. Create genuine continuous character motion with changing hand poses, facial expressions, natural fabric movement and hair follow-through. Locked camera, one uninterrupted full-body shot, stable character scale and center, entire hair, hands and shoes visible with generous safety margins. Clean plain background suitable for later subject segmentation. Ten-second action: 0-1 seconds relaxed front-facing reference pose, 1-3 seconds smoothly enter the action, 3-7 seconds perform the expression and gesture, 7-9 seconds naturally lower the arms and relax, 9-10 seconds return to the same relaxed front-facing pose as the opening. She crosses her arms comfortably across her chest, slightly puffs her cheeks and purses her lips in an adorable mildly annoyed pout. She lifts her chin a little and glances aside with a playful tsundere expression. Smooth ease-in and ease-out, subtle breathing and blinking, consistent anatomy, five natural fingers per hand with clear correct gesture silhouettes. Keep the face unobscured except where the specified hand action requires it. No camera motion, scene cuts, zoom, text, icons, extra characters, anatomy changes, fused hands or extra digits. Do not merely move or warp a still picture.",
+      "status": "sample_available_full_action_pending",
+      "reference_image": "reference-original.png",
+      "outfit": "original",
+      "priority": 2,
+      "samples": [
+        "抱胸鼓嘴-免费样片-v1.mp4"
+      ]
+    },
+    {
+      "id": "new-05",
+      "name": "握拳含泪委屈",
+      "source": "latest_user_request",
+      "duration_seconds": 10,
+      "description": "双手握拳放在胸前，眼含泪水，委屈巴巴的表情。",
+      "prompt_en": "Animate the exact brown-haired chibi girl in the supplied original reference image. Preserve her facial identity, beauty mark, long brown hair, crescent necklace, earrings, black cardigan, gray pleated skirt, white socks, black Mary Jane shoes, and illustration finish throughout the shot. Create genuine continuous character motion with changing hand poses, facial expressions, natural fabric movement and hair follow-through. Locked camera, one uninterrupted full-body shot, stable character scale and center, entire hair, hands and shoes visible with generous safety margins. Clean plain background suitable for later subject segmentation. Ten-second action: 0-1 seconds relaxed front-facing reference pose, 1-3 seconds smoothly enter the action, 3-7 seconds perform the expression and gesture, 7-9 seconds naturally lower the arms and relax, 9-10 seconds return to the same relaxed front-facing pose as the opening. She holds both small gently closed fists in front of her chest. Her eyebrows lift toward the center, her eyes become glossy with small tears pooling along the lower eyelids, and her lower lip makes a tiny trembling pout. Her expression is tender and disappointed. Smooth ease-in and ease-out, subtle breathing and blinking, consistent anatomy, five natural fingers per hand with clear correct gesture silhouettes. Keep the face unobscured except where the specified hand action requires it. No camera motion, scene cuts, zoom, text, icons, extra characters, anatomy changes, fused hands or extra digits. Do not merely move or warp a still picture.",
+      "status": "awaiting_generation",
+      "reference_image": "reference-original.png",
+      "outfit": "original",
+      "priority": 2
+    },
+    {
+      "id": "new-06",
+      "name": "单手捂嘴惊讶",
+      "source": "latest_user_request",
+      "duration_seconds": 10,
+      "description": "一只手捂住嘴巴，睁大双眼，表现惊讶。",
+      "prompt_en": "Animate the exact brown-haired chibi girl in the supplied original reference image. Preserve her facial identity, beauty mark, long brown hair, crescent necklace, earrings, black cardigan, gray pleated skirt, white socks, black Mary Jane shoes, and illustration finish throughout the shot. Create genuine continuous character motion with changing hand poses, facial expressions, natural fabric movement and hair follow-through. Locked camera, one uninterrupted full-body shot, stable character scale and center, entire hair, hands and shoes visible with generous safety margins. Clean plain background suitable for later subject segmentation. Ten-second action: 0-1 seconds relaxed front-facing reference pose, 1-3 seconds smoothly enter the action, 3-7 seconds perform the expression and gesture, 7-9 seconds naturally lower the arms and relax, 9-10 seconds return to the same relaxed front-facing pose as the opening. She widens her eyes in surprised wonder and raises one hand to lightly cover her mouth. Her eyebrows rise, her shoulders make one small startled movement, and her fingers remain naturally separated and anatomically coherent. Smooth ease-in and ease-out, subtle breathing and blinking, consistent anatomy, five natural fingers per hand with clear correct gesture silhouettes. Keep the face unobscured except where the specified hand action requires it. No camera motion, scene cuts, zoom, text, icons, extra characters, anatomy changes, fused hands or extra digits. Do not merely move or warp a still picture.",
+      "status": "awaiting_generation",
+      "reference_image": "reference-original.png",
+      "outfit": "original",
+      "priority": 2
+    },
+    {
+      "id": "new-07",
+      "name": "指抵嘴唇歪头思考",
+      "source": "latest_user_request",
+      "duration_seconds": 10,
+      "description": "一根手指轻轻抵住嘴唇，歪头思考，表现疑惑和沉思。",
+      "prompt_en": "Animate the exact brown-haired chibi girl in the supplied original reference image. Preserve her facial identity, beauty mark, long brown hair, crescent necklace, earrings, black cardigan, gray pleated skirt, white socks, black Mary Jane shoes, and illustration finish throughout the shot. Create genuine continuous character motion with changing hand poses, facial expressions, natural fabric movement and hair follow-through. Locked camera, one uninterrupted full-body shot, stable character scale and center, entire hair, hands and shoes visible with generous safety margins. Clean plain background suitable for later subject segmentation. Ten-second action: 0-1 seconds relaxed front-facing reference pose, 1-3 seconds smoothly enter the action, 3-7 seconds perform the expression and gesture, 7-9 seconds naturally lower the arms and relax, 9-10 seconds return to the same relaxed front-facing pose as the opening. She lightly rests the tip of one index finger against her lips, tilts her head about ten degrees, and glances slightly upward with curious thoughtful eyes. Her remaining fingers curl naturally. She gives one slow thoughtful blink. Smooth ease-in and ease-out, subtle breathing and blinking, consistent anatomy, five natural fingers per hand with clear correct gesture silhouettes. Keep the face unobscured except where the specified hand action requires it. No camera motion, scene cuts, zoom, text, icons, extra characters, anatomy changes, fused hands or extra digits. Do not merely move or warp a still picture.",
+      "status": "awaiting_generation",
+      "reference_image": "reference-original.png",
+      "outfit": "original",
+      "priority": 2
+    },
+    {
+      "id": "new-08",
+      "name": "单手V字眨眼甜笑",
+      "source": "latest_user_request",
+      "duration_seconds": 10,
+      "description": "单手比出V字胜利手势，一只眼睛调皮地眨眼，露出甜美笑容。",
+      "prompt_en": "Animate the exact brown-haired chibi girl in the supplied original reference image. Preserve her facial identity, beauty mark, long brown hair, crescent necklace, earrings, black cardigan, gray pleated skirt, white socks, black Mary Jane shoes, and illustration finish throughout the shot. Create genuine continuous character motion with changing hand poses, facial expressions, natural fabric movement and hair follow-through. Locked camera, one uninterrupted full-body shot, stable character scale and center, entire hair, hands and shoes visible with generous safety margins. Clean plain background suitable for later subject segmentation. Ten-second action: 0-1 seconds relaxed front-facing reference pose, 1-3 seconds smoothly enter the action, 3-7 seconds perform the expression and gesture, 7-9 seconds naturally lower the arms and relax, 9-10 seconds return to the same relaxed front-facing pose as the opening. She lifts one hand beside her face and forms a clear V victory sign with only the index and middle fingers extended. She gives one playful wink while keeping the other eye open and smiles sweetly. Her thumb, ring finger and little finger fold naturally. Smooth ease-in and ease-out, subtle breathing and blinking, consistent anatomy, five natural fingers per hand with clear correct gesture silhouettes. Keep the face unobscured except where the specified hand action requires it. No camera motion, scene cuts, zoom, text, icons, extra characters, anatomy changes, fused hands or extra digits. Do not merely move or warp a still picture.",
+      "status": "awaiting_generation",
+      "reference_image": "reference-original.png",
+      "outfit": "original",
+      "priority": 2
+    },
+    {
+      "id": "new-09",
+      "name": "双手胸前比心",
+      "source": "latest_user_request",
+      "duration_seconds": 10,
+      "description": "双手在胸前比出爱心手势，温柔微笑。",
+      "prompt_en": "Animate the exact brown-haired chibi girl in the supplied original reference image. Preserve her facial identity, beauty mark, long brown hair, crescent necklace, earrings, black cardigan, gray pleated skirt, white socks, black Mary Jane shoes, and illustration finish throughout the shot. Create genuine continuous character motion with changing hand poses, facial expressions, natural fabric movement and hair follow-through. Locked camera, one uninterrupted full-body shot, stable character scale and center, entire hair, hands and shoes visible with generous safety margins. Clean plain background suitable for later subject segmentation. Ten-second action: 0-1 seconds relaxed front-facing reference pose, 1-3 seconds smoothly enter the action, 3-7 seconds perform the expression and gesture, 7-9 seconds naturally lower the arms and relax, 9-10 seconds return to the same relaxed front-facing pose as the opening. She raises both hands in front of her chest and forms a clearly readable heart outline using her thumbs and curved index fingers. She looks at the viewer with a gentle affectionate smile. Her other fingers bend naturally behind the heart shape. Smooth ease-in and ease-out, subtle breathing and blinking, consistent anatomy, five natural fingers per hand with clear correct gesture silhouettes. Keep the face unobscured except where the specified hand action requires it. No camera motion, scene cuts, zoom, text, icons, extra characters, anatomy changes, fused hands or extra digits. Do not merely move or warp a still picture.",
+      "status": "awaiting_generation",
+      "reference_image": "reference-original.png",
+      "outfit": "original",
+      "priority": 2
+    },
+    {
+      "id": "sleep-start",
+      "name": "睡觉-开始",
+      "source": "user_sleep_followup",
+      "duration_seconds": 10,
+      "status": "awaiting_generation",
+      "start_anchor": "standing-front",
+      "end_anchor": "sleep-curled",
+      "start_eyes": "open",
+      "end_eyes": "closed",
+      "return_to_standing": false,
+      "loopable": false,
+      "zzz_allowed": false,
+      "timeline": [
+        {
+          "start": 0,
+          "end": 2,
+          "description": "首帧标准正面站立，随后张嘴打哈欠、眼角泛泪，双臂上举伸懒腰；手指与头发均不出画。"
+        },
+        {
+          "start": 2,
+          "end": 4,
+          "description": "双眼慢慢完全闭合，双臂收回，膝盖弯曲，身体重心平稳下沉，长发随重力自然跟随。"
+        },
+        {
+          "start": 4,
+          "end": 7,
+          "description": "在原处缓慢蜷坐，膝盖收于身前，双手叠合垫在脸侧，头轻靠手背；保持原有服装自然形态。"
+        },
+        {
+          "start": 7,
+          "end": 10,
+          "description": "固定睡姿，只保留极微弱呼吸；最后一帧保持共同睡姿关键帧，绝不起身或回站姿。"
+        }
+      ],
+      "prompt_en": "Animate the exact brown-haired chibi girl in the original reference, preserving her facial identity, beauty mark, long brown hair, necklace, earrings, outfit and illustration finish. Use genuine continuous animated body motion, not a warped still image. Locked camera, fixed framing, constant character scale, same floor location, no lateral drift, no cuts or zoom. Keep her entire body, hair, hands and shoes within safe frame margins. Use the appropriate supplied start and end keyframes; do not change her anatomy or invent a tail. One uninterrupted ten-second full-body animation. First frame: the exact relaxed front-facing standing reference pose, eyes open, both arms down, feet together. 0-2 seconds: she yawns with tiny watery eyes and raises both arms into a gentle stretch. 2-4 seconds: her eyelids grow heavy and close fully, her arms lower and her knees bend as her center of gravity slowly descends. 4-7 seconds: she settles into a compact curled seated sleeping pose at the same location, knees drawn in front, both hands gently stacked beside her cheek as a pillow, her head resting on her hands. Her long hair and existing skirt drape naturally. 7-10 seconds: remain in this exact curled sleeping pose, eyes fully closed, only extremely subtle breathing. End on the shared curled-sleep keyframe and stay asleep. Do not stand back up or return to the opening pose. No Zzz, letters, icons, props or added anatomy at any time.",
+      "outfit": "original",
+      "reference_image": "reference-original.png"
+    },
+    {
+      "id": "sleep-loop",
+      "name": "睡眠循环",
+      "source": "user_sleep_followup",
+      "duration_seconds": 10,
+      "status": "awaiting_generation",
+      "start_anchor": "sleep-curled",
+      "end_anchor": "sleep-curled",
+      "start_eyes": "closed",
+      "end_eyes": "closed",
+      "return_to_standing": false,
+      "loopable": true,
+      "zzz_allowed": true,
+      "zzz_at_endpoints": false,
+      "timeline": [
+        {
+          "start": 0,
+          "end": 1,
+          "description": "使用共同睡姿关键帧，保持蜷坐睡姿静止，双眼始终闭合，没有 Zzz。"
+        },
+        {
+          "start": 1,
+          "end": 4,
+          "description": "缓慢吸气，胸腔与肩线只有极轻微起伏；第一个半透明小 Zzz 在头顶出现并缓慢上升。"
+        },
+        {
+          "start": 4,
+          "end": 7,
+          "description": "缓慢呼气，身体回到最低点；另外一至两个小 Zzz 依次出现，缓慢上升，位置不遮脸。"
+        },
+        {
+          "start": 7,
+          "end": 9,
+          "description": "全部 Zzz 逐个淡出，9 秒前完全消失；继续轻微呼吸，不改变手、腿、头部的接触位置。"
+        },
+        {
+          "start": 9,
+          "end": 10,
+          "description": "呼吸自然回到起始相位，最后一帧与第一帧像素重合；不能靠瞬间跳切复位或重复入睡动作衔接。"
+        }
+      ],
+      "prompt_en": "Animate the exact brown-haired chibi girl in the original reference, preserving her facial identity, beauty mark, long brown hair, necklace, earrings, outfit and illustration finish. Use genuine continuous animated body motion, not a warped still image. Locked camera, fixed framing, constant character scale, same floor location, no lateral drift, no cuts or zoom. Keep her entire body, hair, hands and shoes within safe frame margins. Use the appropriate supplied start and end keyframes; do not change her anatomy or invent a tail. Create one seamless ten-second sleeping loop anchored by the identical supplied curled-sleep image at both endpoints. She is already asleep in a curled seated pose, knees drawn up, both hands stacked under her cheek, eyes completely closed. Keep the same body silhouette, head, hand and knee contact positions, camera and location throughout. 0-1 seconds: rest still with no lettering. 1-4 seconds: one extremely gentle inhale lifts the chest and shoulders almost imperceptibly; one tiny translucent Zzz appears above her head and drifts slowly upward. 4-7 seconds: she exhales softly and returns to the lower breathing position; one or two additional tiny translucent Zzz marks appear in sequence and drift upward. 7-9 seconds: every Zzz fades away completely. 9-10 seconds: breathing smoothly reaches the identical initial phase. The very last frame matches the very first frame exactly, including the plain background, sleeping silhouette, closed eyes and absence of Zzz. She never opens her eyes, wakes up, sits higher, stands or repeats the falling-asleep action. No other text, icons or props.",
+      "outfit": "original",
+      "reference_image": "reference-original.png"
+    },
+    {
+      "id": "sleep-wake",
+      "name": "睡觉起来",
+      "source": "user_sleep_followup",
+      "duration_seconds": 10,
+      "status": "awaiting_generation",
+      "start_anchor": "sleep-curled",
+      "end_anchor": "standing-front",
+      "start_eyes": "closed",
+      "end_eyes": "open",
+      "return_to_standing": true,
+      "loopable": false,
+      "zzz_allowed": false,
+      "timeline": [
+        {
+          "start": 0,
+          "end": 4,
+          "description": "首帧使用共同睡姿关键帧，蜷坐闭眼，只有极微弱呼吸；不得提前站起。"
+        },
+        {
+          "start": 4,
+          "end": 6,
+          "description": "慢慢睁眼，双手离开脸侧后撑地，上半身缓慢抬起，头发自然滑落。"
+        },
+        {
+          "start": 6,
+          "end": 8,
+          "description": "双臂上举伸懒腰，腰背小幅后展，随后收臂保持平衡，双腿发力平稳起身；无漂浮起身或突然换姿。"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "description": "原处站稳，双脚并拢，双臂自然垂下，睁眼平视；发丝和衣摆轻微回落后收住，最后一帧回到标准正面站姿。"
+        }
+      ],
+      "prompt_en": "Animate the exact brown-haired chibi girl in the original reference, preserving her facial identity, beauty mark, long brown hair, necklace, earrings, outfit and illustration finish. Use genuine continuous animated body motion, not a warped still image. Locked camera, fixed framing, constant character scale, same floor location, no lateral drift, no cuts or zoom. Keep her entire body, hair, hands and shoes within safe frame margins. Use the appropriate supplied start and end keyframes; do not change her anatomy or invent a tail. One uninterrupted ten-second waking animation. Begin with the exact shared curled-sleep keyframe: seated low at the original location, knees drawn up, both hands stacked beneath her cheek, head resting on them, eyes closed, hair and skirt draped naturally. 0-4 seconds: remain asleep in that pose with only extremely subtle breathing. 4-6 seconds: her eyes slowly open; she lowers her hands to brace lightly on the ground and slowly lifts her upper body. 6-8 seconds: she raises her arms in a relaxed stretch with a small backward extension, then uses her knees and legs to stand up naturally at the same floor position, maintaining balance. 8-10 seconds: she settles into the exact standard front-facing standing reference pose, feet together, both arms resting at her sides, eyes open and looking forward. Hair and fabric finish their follow-through and settle. Finish fully standing and calm. No Zzz, letters, icons, props or added anatomy at any time.",
+      "outfit": "original",
+      "reference_image": "reference-original.png"
+    }
+  ]
+}
