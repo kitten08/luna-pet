@@ -1,0 +1,3 @@
+const {contextBridge,ipcRenderer}=require('electron');
+const listen=channel=>callback=>{const handler=(_e,value)=>callback(value);ipcRenderer.on(channel,handler);return ()=>ipcRenderer.removeListener(channel,handler);};
+contextBridge.exposeInMainWorld('lunaDesktop',Object.freeze({showHome:()=>ipcRenderer.send('luna:show-home'),showPet:()=>ipcRenderer.send('luna:show-pet'),hidePet:()=>ipcRenderer.send('luna:hide-pet'),settings:value=>ipcRenderer.send('luna:settings',value),onSettings:listen('luna:settings'),onAction:listen('luna:action'),dragStart:()=>ipcRenderer.send('luna:drag-start'),dragEnd:()=>ipcRenderer.send('luna:drag-end')}));

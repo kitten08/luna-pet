@@ -5,3 +5,5 @@ builds/
 .DS_Store
 *.log
 .sites-local/
+*.tgz
+*.zip

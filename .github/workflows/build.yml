@@ -1,0 +1,58 @@
+name: Build Luna Pet
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  desktop:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: macos-15-intel
+            command: pack:mac
+            label: mac-intel
+          - os: macos-latest
+            command: pack:mac
+            label: mac-arm64
+          - os: windows-latest
+            command: pack:win
+            label: windows-x64
+          - os: ubuntu-latest
+            command: pack:linux
+            label: linux-x64
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run ${{ matrix.command }}
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+      - uses: actions/upload-artifact@v7
+        with:
+          name: luna-${{ matrix.label }}
+          path: |
+            release/*.zip
+            release/*.exe
+            release/*.AppImage
+          if-no-files-found: error
+  web-and-plugins:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+      - run: npm test
+      - run: npm run build
+      - uses: actions/upload-artifact@v7
+        with:
+          name: luna-web-and-plugins
+          path: |
+            dist/
+            builds/

@@ -1,0 +1,11 @@
+{
+ "manifest_version":3,
+ "name":"Luna · 随身小伙伴",
+ "version":"1.0.0",
+ "description":"让可换装的 Luna 在当前网页陪你。四套服装、109 个动作。",
+ "permissions":["activeTab","scripting","storage"],
+ "action":{"default_title":"呼唤 / 隐藏 Luna"},
+ "background":{"service_worker":"background.js"},
+ "web_accessible_resources":[{"resources":["pet.html","index.html","src/*","assets/*"],"matches":["<all_urls>"]}],
+ "content_security_policy":{"extension_pages":"script-src 'self'; object-src 'self'"}
+}

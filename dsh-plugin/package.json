@@ -1,0 +1,11 @@
+{
+ "name":"dsh-luna-pet",
+ "version":"1.0.0",
+ "description":"Luna 可换装女孩桌宠，109 个动作与四套服装。",
+ "type":"module",
+ "main":"lib/index.js",
+ "exports":{".":"./lib/index.js","./client":"./lib/client.js","./package.json":"./package.json"},
+ "files":["lib","public","cordis.patch.yml","README.md","LICENSE"],
+ "license":"MIT",
+ "dsh":{"bundle":{"patch":"./cordis.patch.yml"},"client":{"platform":"web","inject":[]}}
+}
