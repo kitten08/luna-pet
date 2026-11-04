@@ -11,10 +11,10 @@
   "clips": {
     "sleep-start": {
       "frames": 200,
-      "distinct_frames": 101,
+      "distinct_frames": 127,
       "first": "03fba904fa97f8a1dde51d1346745b4d52fc5d272cf745f3ec8dac64420972d0",
       "last": "2a6b89a6d1547ddd0797ab1e336337fc77679d1c30e9f516132789153cd84745",
-      "file_sha256": "103dee7921eca44fbab740e074d9e0ea5e192d33a6e99b440848326760d077f1"
+      "file_sha256": "d8fe202fbdca8fce2385bc04e45934a426cff05ee0107f17a2352a8ccb3c5f55"
     },
     "sleep-loop": {
       "frames": 200,
@@ -25,10 +25,10 @@
     },
     "sleep-wake": {
       "frames": 200,
-      "distinct_frames": 95,
+      "distinct_frames": 129,
       "first": "2a6b89a6d1547ddd0797ab1e336337fc77679d1c30e9f516132789153cd84745",
       "last": "03fba904fa97f8a1dde51d1346745b4d52fc5d272cf745f3ec8dac64420972d0",
-      "file_sha256": "d1bb19922054be8cec514b6aaee32f65e1dfebd0ad3b4b2363e0e916c5a09728"
+      "file_sha256": "5780e58d7a964dc96b23526746fcf756217a358f5add44a9f0e212474dc6f671"
     },
     "new-05": {
       "frames": 200,
@@ -68,6 +68,10 @@
   },
   "checks": {
     "sleep_seams_equal_after_decoding": true,
-    "standing_endpoints_equal_after_decoding": true
+    "standing_endpoints_equal_after_decoding": true,
+    "all_117_gifs_decoded": true,
+    "all_gifs_10_seconds_200_frames": true,
+    "gif_sampled_safe_bounds": true,
+    "sleep_raw_frame_borders_clear": true
   }
 }
