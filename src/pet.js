@@ -13,14 +13,17 @@ $('#outfits').replaceChildren(...OUTFITS.map(o=>new Option(o.name,o.id)));$('#ac
 function playAction(id) {
  if (!id) return false;
  if (engine.play(id)) return true;
- $('#bubble').textContent = findAction(id)?.media ? '请先换上日常装' : '动作待制作';
+ $('#bubble').textContent = findAction(id) ? '此动作需要日常装或素材仍在加载' : '未找到动作';
  $('#actions').value = engine.action.id ?? '';
  return false;
 }
 engine.preload().then(async()=>{if(globalThis.chrome?.storage){const s=await chrome.storage.local.get('luna-settings');if(s['luna-settings'])state={...state,...s['luna-settings']};}setState(state);}).catch(e=>$('#bubble').textContent=e.message);
 $('#outfits').onchange=e=>{setState({outfit:e.target.value});save();};$('#actions').onchange=e=>playAction(e.target.value);
 $('#wardrobe').onclick=()=>$('#menu').hidden=!$('#menu').hidden;engine.addEventListener('menu',()=>$('#menu').hidden=!$('#menu').hidden);
-$('#sleep').onclick=()=>engine.sleeping?engine.stop():playAction('sleep-loop');$('#stop').onclick=()=>engine.stop();
+$('#sleep').onclick=()=>{
+ if (engine.action.id === 'sleep-start') $('#bubble').textContent='Luna 正在入睡';
+ else playAction(engine.sleeping?'sleep-wake':'sleep-start');
+};$('#stop').onclick=()=>engine.stop();
 $('#auto').onclick=()=>{setState({auto:!state.auto});save();};
 $('#home').onclick=()=>{if(desktop)desktop.showHome();else window.open('index.html','_blank','noopener');};
 $('#close').onclick=()=>{if(desktop)desktop.hidePet();else parent.postMessage({type:'luna-close'},'*');};

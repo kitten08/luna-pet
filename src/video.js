@@ -1,5 +1,6 @@
 import {VIDEO_CLIPS,VIDEO_ACTIONS} from './video-catalog.js';
 import {LOCAL_MOTIONS} from './local-motions.js';
+import {RIG_BY_ID} from './choreography.js';
 const $=s=>document.querySelector(s),player=$('#player');
 let active=null;
 $('#sample-count').textContent=String(VIDEO_CLIPS.length);
@@ -17,7 +18,7 @@ for(const [i,clip]of VIDEO_CLIPS.entries()){
  const n=document.createElement('b'),name=document.createElement('span'),duration=document.createElement('small');
  n.textContent=String(i+1).padStart(2,'0');name.textContent=clip.name;duration.textContent='5s ↗';b.append(n,name,duration);b.onclick=()=>select(clip,true);$('#clips').append(b);
 }
-for(const action of VIDEO_ACTIONS){const li=document.createElement('li'),clip=VIDEO_CLIPS.find(c=>c.id===action.id), motion=LOCAL_MOTIONS.find(c=>c.id===action.id);li.textContent=action.name+(motion?' · 已有动图':clip?' · 已有样片':' · 待制作');li.classList.toggle('available',!!(clip||motion));$('#catalog').append(li);}
+for(const action of VIDEO_ACTIONS){const li=document.createElement('li'),clip=VIDEO_CLIPS.find(c=>c.id===action.id), motion=LOCAL_MOTIONS.find(c=>c.id===action.id);li.textContent=action.name+(motion?' · 关键帧动画':RIG_BY_ID.has(action.id)?' · 2D 动画':clip?' · 视频样片':' · 待制作');li.classList.toggle('available',!!(clip||motion||RIG_BY_ID.has(action.id)));$('#catalog').append(li);}
 $('#catalog-summary').textContent=`${VIDEO_CLIPS.length} 段样片 / ${VIDEO_ACTIONS.length} 个条目`;
 function step(direction){if(!active||!Number.isFinite(player.duration))return;player.pause();const frame=Math.max(0,Math.min(active.frames-1,Math.round(player.currentTime*active.fps)+direction));player.currentTime=Math.min(player.duration-.001,frame/active.fps);updateFrame();}
 $('#previous-frame').onclick=()=>step(-1);$('#next-frame').onclick=()=>step(1);$('#repeat').onchange=e=>player.loop=e.target.checked;

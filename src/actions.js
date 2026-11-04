@@ -1,12 +1,20 @@
-import {VIDEO_ACTIONS, VIDEO_CLIPS} from './video-catalog.js';
+import {VIDEO_ACTIONS} from './video-catalog.js';
 import {LOCAL_MOTIONS} from './local-motions.js';
 
-const mediaById = new Map([...VIDEO_CLIPS, ...LOCAL_MOTIONS].map(media => [media.id, media]));
+import {RIG_BY_ID} from './choreography.js';
+
+const clipsById = new Map(LOCAL_MOTIONS.map(media => [media.id, media]));
+export function mediaFor(action, outfit) {
+  const clip = action && clipsById.get(action.id);
+  if (clip?.outfit === outfit) return clip;
+  return action?.rig ? {duration: action.rig.duration, kind: 'rig'} : undefined;
+}
 export const ACTIONS = VIDEO_ACTIONS.map(action => ({
   ...action,
   category: action.id.startsWith('new-') ? '表情互动'
     : action.id.startsWith('sleep-') ? '睡眠三段' : '附件动作',
-  media: mediaById.get(action.id)
+  rig: RIG_BY_ID.get(action.id),
+  media: clipsById.get(action.id) ?? (RIG_BY_ID.has(action.id) ? {duration: RIG_BY_ID.get(action.id).duration, kind: 'rig'} : undefined)
 }));
 export const findAction = id => ACTIONS.find(action => action.id === id || action.name === id);
 export const OUTFITS=[

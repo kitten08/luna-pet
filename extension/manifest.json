@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Luna · 随身小伙伴",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "让可换装的 Luna 在当前网页陪你。四套服装、用户自定义动作剧场。",
   "permissions": [
     "activeTab",

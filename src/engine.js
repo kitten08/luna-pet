@@ -1,5 +1,13 @@
-import {ACTIONS, OUTFITS, findAction, clamp} from './actions.js';
+import {ACTIONS, OUTFITS, findAction, mediaFor, clamp} from './actions.js';
 
+import {makeRig, paintMotion} from './motion-painter.js';
+
+const surface = (width, height) => {
+  const canvas = document.createElement('canvas');
+  canvas.width = width;
+  canvas.height = height;
+  return canvas;
+};
 const ASSETS = new URL('../assets/', import.meta.url);
 const idle = {id: null, name: '待机'};
 const loadImage = src => new Promise((resolve, reject) => {
@@ -17,6 +25,7 @@ export class PetEngine extends EventTarget {
     this.reduced = reduced;
     this.outfit = OUTFITS[0];
     this.images = new Map();
+    this.rigs = new Map();
     this.action = idle;
     this.running = true;
     this.autonomous = true;
@@ -53,7 +62,10 @@ export class PetEngine extends EventTarget {
 
   async preload() {
     await Promise.all(OUTFITS.map(async outfit => {
-      this.images.set(outfit.id, await loadImage(outfit.file));
+      const image = await loadImage(outfit.file);
+      const closed = outfit.closed ? await loadImage(outfit.closed) : null;
+      this.images.set(outfit.id, image);
+      this.rigs.set(outfit.id, makeRig(image, closed, outfit.id, surface));
     }));
   }
 
@@ -72,17 +84,30 @@ export class PetEngine extends EventTarget {
 
   play(id) {
     const action = findAction(id);
-    const media = action?.media;
-    if (!media || (media.outfit ?? 'original') !== this.outfit.id) return false;
+    const media = mediaFor(action, this.outfit.id);
+    if (!media) return false;
+    if (media.kind === 'rig' && !this.rigs.has(this.outfit.id)) return false;
 
+    const previous = this.video;
+    if (previous?.readyState >= 2 && this.sleeping && action.id.startsWith('sleep-')) {
+      const still = surface(previous.videoWidth, previous.videoHeight);
+      still.getContext('2d').drawImage(previous, 0, 0);
+      this.holdFrame = still;
+    } else this.holdFrame = null;
     this.releaseVideo();
+    this.activeMedia = media;
+    this.action = action;
+    this.motionStart = this.elapsed;
+    this.running = true;
+    this.dispatchEvent(new CustomEvent('action', {detail: action}));
+    if (media.kind === 'rig') return true;
+
     const video = document.createElement('video');
     video.muted = true;
     video.playsInline = true;
     video.loop = Boolean(media.loop);
     video.src = new URL('../' + media.src, import.meta.url).href;
     this.video = video;
-    this.action = action;
     const fail = () => {
       if (this.video !== video) return;
       this.stop();
@@ -90,10 +115,10 @@ export class PetEngine extends EventTarget {
     };
     video.addEventListener('error', fail, {once: true});
     video.addEventListener('ended', () => {
-      if (this.video === video) this.stop();
+      if (this.video !== video) return;
+      if (action.id === 'sleep-start') this.play('sleep-loop');
+      else this.stop();
     }, {once: true});
-    this.running = true;
-    this.dispatchEvent(new CustomEvent('action', {detail: action}));
     video.play().catch(() => {
       if (this.running) fail();
     });
@@ -111,6 +136,8 @@ export class PetEngine extends EventTarget {
 
   stop() {
     this.releaseVideo();
+    this.activeMedia = null;
+    this.holdFrame = null;
     if (this.action === idle) return;
     this.action = idle;
     this.nextAuto = this.elapsed + 14;
@@ -181,9 +208,12 @@ export class PetEngine extends EventTarget {
     if (this.running) {
       this.elapsed += dt;
       this.physics(dt);
+      if (this.activeMedia?.kind === 'rig' && this.elapsed - this.motionStart >= this.activeMedia.duration) {
+        this.stop();
+      }
       if (this.elapsed >= this.nextAuto) {
         this.nextAuto = this.elapsed + 14 + Math.random() * 10;
-        if (this.autonomous && !this.reduced && !this.drag && this.action === idle && this.outfit.id === 'original') {
+        if (this.autonomous && !this.reduced && !this.drag && this.action === idle) {
           const choices = ACTIONS.filter(action => action.media && action.category === '表情互动');
           if (choices.length) this.play(choices[Math.floor(Math.random() * choices.length)].id);
         }
@@ -223,14 +253,27 @@ export class PetEngine extends EventTarget {
     if (!width || !height) return;
     ctx.setTransform(canvas.width / width, 0, 0, canvas.height / height, 0, 0);
     ctx.clearRect(0, 0, width, height);
-    const h = Math.min(height * 0.82, width * 0.94) * this.size;
+    const h = Math.min(height * 0.70, width * 0.94) * this.size;
     const cx = width / 2 + this.x;
     const floor = height * 0.93 + this.y;
     const video = this.video;
-    if (video?.readyState >= 2) {
-      const w = h * video.videoWidth / video.videoHeight;
-      this.bounds = {x: cx - w / 2, y: floor - h, w, h};
-      ctx.drawImage(video, cx - w / 2, floor - h, w, h);
+    const drawable = video?.readyState >= 2 ? video : this.holdFrame;
+    if (drawable) {
+      const frameHeight = h / (this.activeMedia.actorHeight ?? 1);
+      const w = frameHeight * (drawable.videoWidth ?? drawable.width) / (drawable.videoHeight ?? drawable.height);
+      const y = floor - frameHeight * (this.activeMedia.floor ?? 1);
+      this.bounds = {x: cx - w / 2, y, w, h: frameHeight};
+      ctx.drawImage(drawable, cx - w / 2, y, w, frameHeight);
+      return;
+    }
+    if (this.activeMedia?.kind === 'rig') {
+      const rig = this.rigs.get(this.outfit.id);
+      const rigHeight = Math.min(h, height * .67);
+      const w = rigHeight * rig.open.width / rig.open.height;
+      this.bounds = {x: cx - w / 2, y: floor - rigHeight, w, h: rigHeight};
+      const alternate = this.rigs.get(this.outfit.id === 'maid' ? 'original' : 'maid');
+      paintMotion(ctx, rig, this.action.rig, this.elapsed - this.motionStart,
+        cx - w / 2, floor - rigHeight, w, rigHeight, alternate);
       return;
     }
     const image = this.images.get(this.outfit.id);

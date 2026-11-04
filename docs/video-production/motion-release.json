@@ -1,0 +1,73 @@
+{
+  "version": "1.2.0",
+  "actions": 117,
+  "seconds_per_action": 10,
+  "gif_fps": 20,
+  "runtime": {
+    "real_time_2d_action_tracks": 114,
+    "transparent_webm_clips": 8,
+    "sleep_outfit": "original"
+  },
+  "clips": {
+    "sleep-start": {
+      "frames": 200,
+      "distinct_frames": 101,
+      "first": "03fba904fa97f8a1dde51d1346745b4d52fc5d272cf745f3ec8dac64420972d0",
+      "last": "2a6b89a6d1547ddd0797ab1e336337fc77679d1c30e9f516132789153cd84745",
+      "file_sha256": "103dee7921eca44fbab740e074d9e0ea5e192d33a6e99b440848326760d077f1"
+    },
+    "sleep-loop": {
+      "frames": 200,
+      "distinct_frames": 159,
+      "first": "2a6b89a6d1547ddd0797ab1e336337fc77679d1c30e9f516132789153cd84745",
+      "last": "2a6b89a6d1547ddd0797ab1e336337fc77679d1c30e9f516132789153cd84745",
+      "file_sha256": "72d74d3dc71cc9b349ccda329539f347af49856c7a56dafa1e176ce0a6b5bcd6"
+    },
+    "sleep-wake": {
+      "frames": 200,
+      "distinct_frames": 95,
+      "first": "2a6b89a6d1547ddd0797ab1e336337fc77679d1c30e9f516132789153cd84745",
+      "last": "03fba904fa97f8a1dde51d1346745b4d52fc5d272cf745f3ec8dac64420972d0",
+      "file_sha256": "d1bb19922054be8cec514b6aaee32f65e1dfebd0ad3b4b2363e0e916c5a09728"
+    },
+    "new-05": {
+      "frames": 200,
+      "distinct_frames": 196,
+      "first": "c8fa2b500b9ced6189260745d565a319429c31ab9d44b22c099e406eb4a8898c",
+      "last": "655974c0182ecc8db69b18ac444244aaed56950c6a9de5351502814b904dbac5",
+      "file_sha256": "a313cb459dd2dec5d6f3482fe338d127e594085bf69062e84a85cd1a14744bc9"
+    },
+    "new-06": {
+      "frames": 200,
+      "distinct_frames": 195,
+      "first": "c8fa2b500b9ced6189260745d565a319429c31ab9d44b22c099e406eb4a8898c",
+      "last": "557c348966cc126cdabd92b121998b698de809136b6cbc896eb080168f287a9e",
+      "file_sha256": "1cb8752bbe69c6f76ea45191a655c3af2219fade2db154218d0a7684262eac1a"
+    },
+    "new-07": {
+      "frames": 200,
+      "distinct_frames": 194,
+      "first": "c8fa2b500b9ced6189260745d565a319429c31ab9d44b22c099e406eb4a8898c",
+      "last": "32f40e71ea7087d679a3b70c184327ea6574a9825fa17cd5470dfabb4c3a76ca",
+      "file_sha256": "4afb662b5544cd95c33e564dacbe4ffabd37035e2e606dec0618e3172652bb76"
+    },
+    "new-08": {
+      "frames": 200,
+      "distinct_frames": 192,
+      "first": "c8fa2b500b9ced6189260745d565a319429c31ab9d44b22c099e406eb4a8898c",
+      "last": "51775e31b0a642a82573f9d13e40233067fcb7619378c926e2d4f302324260ab",
+      "file_sha256": "ce9b2288694c2795a2862f66772c763ab8b665c04891bffe465f6d1ac852ab43"
+    },
+    "new-09": {
+      "frames": 200,
+      "distinct_frames": 196,
+      "first": "c8fa2b500b9ced6189260745d565a319429c31ab9d44b22c099e406eb4a8898c",
+      "last": "8a1d19e6c6687ed20f23de1cc0e44112becdf8920be4648f4d0d2a9794479f38",
+      "file_sha256": "70c5a341511ec093705bc8a2d58ed17dfecddcbae46c464b343d692b58b36058"
+    }
+  },
+  "checks": {
+    "sleep_seams_equal_after_decoding": true,
+    "standing_endpoints_equal_after_decoding": true
+  }
+}

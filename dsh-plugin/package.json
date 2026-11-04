@@ -1,6 +1,6 @@
 {
   "name": "dsh-luna-pet",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Luna 可换装女孩桌宠，自定义动作剧场与四套服装。",
   "type": "module",
   "main": "lib/index.js",
