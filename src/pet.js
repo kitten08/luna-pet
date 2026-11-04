@@ -5,15 +5,11 @@ const engine=new PetEngine($('#pet'),{overlay:true});let state={outfit:'original
 try{state={...state,...JSON.parse(localStorage.getItem('luna-settings')||'{}')};}catch{}
 const setState=s=>{state={...state,...s};engine.setOutfit(state.outfit);engine.autonomous=!!state.auto;engine.size=Math.max(.65,Math.min(1.15,Number(state.size)||1));if(typeof state.reduced==='boolean')engine.reduced=state.reduced;$('#outfits').value=state.outfit;$('#auto').textContent='自在活动：'+(state.auto?'开启':'关闭');};
 function save(){try{localStorage.setItem('luna-settings',JSON.stringify(state));}catch{}desktop?.settings(state);if(globalThis.chrome?.storage)chrome.storage.local.set({'luna-settings':state});}
-$('#outfits').replaceChildren(...OUTFITS.map(o=>new Option(o.name,o.id)));$('#actions').replaceChildren(new Option('选择动作', ''), ...ACTIONS.map(action => {
- const option = new Option(action.name + (action.media ? '' : ' · 待制作'), action.id);
- option.disabled = !action.media;
- return option;
-}));
+$('#outfits').replaceChildren(...OUTFITS.map(o=>new Option(o.name,o.id)));$('#actions').replaceChildren(new Option('选择动作', ''), ...ACTIONS.map(action => new Option(action.name, action.id)));
 function playAction(id) {
  if (!id) return false;
  if (engine.play(id)) return true;
- $('#bubble').textContent = findAction(id) ? '此动作需要日常装或素材仍在加载' : '未找到动作';
+ $('#bubble').textContent = findAction(id) ? '素材正在加载，请稍后再试' : '未找到动作';
  $('#actions').value = engine.action.id ?? '';
  return false;
 }
@@ -32,6 +28,6 @@ engine.addEventListener('petclick',()=>{$('#bubble').textContent='今天也有�
 window.addEventListener('storage',e=>{if(e.key==='luna-settings'){try{setState(JSON.parse(e.newValue||'{}'));}catch{}}});
 desktop?.onSettings(setState);desktop?.onAction(playAction);
 engine.addEventListener('mediaerror',()=>$('#bubble').textContent='动作素材加载失败');
-let moving=false;$('#move').onpointerdown=e=>{moving=true;e.target.setPointerCapture(e.pointerId);desktop?.dragStart();parent.postMessage({type:'luna-drag-start',x:e.screenX,y:e.screenY},'*');};$('#move').onpointermove=e=>{if(moving)parent.postMessage({type:'luna-drag-move',x:e.screenX,y:e.screenY},'*');};const endMove=()=>{moving=false;desktop?.dragEnd();parent.postMessage({type:'luna-drag-end'},'*');};$('#move').onpointerup=endMove;$('#move').onpointercancel=endMove;
+let moving=false;$('#move').onpointerdown=e=>{moving=true;engine.beginDragAnimation();e.target.setPointerCapture(e.pointerId);desktop?.dragStart();parent.postMessage({type:'luna-drag-start',x:e.screenX,y:e.screenY},'*');};$('#move').onpointermove=e=>{if(moving)parent.postMessage({type:'luna-drag-move',x:e.screenX,y:e.screenY},'*');};const endMove=()=>{moving=false;engine.endDragAnimation();desktop?.dragEnd();parent.postMessage({type:'luna-drag-end'},'*');};$('#move').onpointerup=endMove;$('#move').onpointercancel=endMove;
 window.addEventListener('keydown',e=>{if(e.key==='Escape')$('#menu').hidden=true;});window.addEventListener('beforeunload',()=>engine.destroy());
 window.lunaPet={play:id=>engine.play(id),outfit:id=>{if(!OUTFITS.some(o=>o.id===id))return false;setState({outfit:id});save();return true;},wake:()=>engine.wake(),state:()=>({action:engine.action.id,outfit:engine.outfit.id,sleeping:engine.sleeping,frames:engine.frameCount})};

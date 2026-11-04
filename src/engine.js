@@ -1,7 +1,5 @@
 import {ACTIONS, OUTFITS, findAction, mediaFor, clamp} from './actions.js';
 
-import {makeRig, paintMotion} from './motion-painter.js';
-
 const surface = (width, height) => {
   const canvas = document.createElement('canvas');
   canvas.width = width;
@@ -25,7 +23,7 @@ export class PetEngine extends EventTarget {
     this.reduced = reduced;
     this.outfit = OUTFITS[0];
     this.images = new Map();
-    this.rigs = new Map();
+    this.clickIndex = 0;
     this.action = idle;
     this.running = true;
     this.autonomous = true;
@@ -40,7 +38,7 @@ export class PetEngine extends EventTarget {
       pointerdown: event => this.pointerDown(event),
       pointermove: event => this.pointerMove(event),
       pointerup: () => this.pointerUp(),
-      pointercancel: () => { this.drag = null; this.vx = this.vy = 0; },
+      pointercancel: () => this.cancelDrag(),
       contextmenu: event => {
         event.preventDefault();
         this.dispatchEvent(new Event('menu'));
@@ -62,10 +60,7 @@ export class PetEngine extends EventTarget {
 
   async preload() {
     await Promise.all(OUTFITS.map(async outfit => {
-      const image = await loadImage(outfit.file);
-      const closed = outfit.closed ? await loadImage(outfit.closed) : null;
-      this.images.set(outfit.id, image);
-      this.rigs.set(outfit.id, makeRig(image, closed, outfit.id, surface));
+      this.images.set(outfit.id, await loadImage(outfit.file));
     }));
   }
 
@@ -82,11 +77,10 @@ export class PetEngine extends EventTarget {
     return this.action.id === 'sleep-loop' || this.action.id === 'sleep-start';
   }
 
-  play(id) {
+  play(id, {hold = false} = {}) {
     const action = findAction(id);
     const media = mediaFor(action, this.outfit.id);
-    if (!media) return false;
-    if (media.kind === 'rig' && !this.rigs.has(this.outfit.id)) return false;
+    if (!media || !this.images.has(this.outfit.id)) return false;
 
     const previous = this.video;
     if (previous?.readyState >= 2 && this.sleeping && action.id.startsWith('sleep-')) {
@@ -97,15 +91,13 @@ export class PetEngine extends EventTarget {
     this.releaseVideo();
     this.activeMedia = media;
     this.action = action;
-    this.motionStart = this.elapsed;
     this.running = true;
     this.dispatchEvent(new CustomEvent('action', {detail: action}));
-    if (media.kind === 'rig') return true;
 
     const video = document.createElement('video');
     video.muted = true;
     video.playsInline = true;
-    video.loop = Boolean(media.loop);
+    video.loop = Boolean(media.loop || hold);
     video.src = new URL('../' + media.src, import.meta.url).href;
     this.video = video;
     const fail = () => {
@@ -145,7 +137,22 @@ export class PetEngine extends EventTarget {
   }
 
   wake() {
-    return this.play('sleep-wake');
+    return this.action.id !== 'sleep-start' && this.play('sleep-wake');
+  }
+
+  beginDragAnimation() {
+    return this.play('attached-006', {hold: true});
+  }
+
+  endDragAnimation() {
+    if (this.action.id === 'attached-006') this.stop();
+  }
+
+  cancelDrag() {
+    const moved = this.drag?.moved;
+    this.drag = null;
+    this.vx = this.vy = 0;
+    if (moved) this.endDragAnimation();
   }
 
   togglePause() {
@@ -176,7 +183,10 @@ export class PetEngine extends EventTarget {
     const point = this.point(event);
     const now = performance.now();
     const dt = Math.max(8, now - drag.time) / 1000;
-    drag.moved ||= Math.hypot(point.x - drag.start.x, point.y - drag.start.y) > 5;
+    if (!drag.moved && Math.hypot(point.x - drag.start.x, point.y - drag.start.y) > 5) {
+      drag.moved = true;
+      this.beginDragAnimation();
+    }
     if (drag.moved) {
       this.x = drag.ox + point.x - drag.start.x;
       this.y = Math.min(0, drag.oy + point.y - drag.start.y);
@@ -193,10 +203,11 @@ export class PetEngine extends EventTarget {
     if (!drag) return;
     if (drag.moved) {
       if (performance.now() - drag.time > 100) this.vx = this.vy = 0;
+      this.endDragAnimation();
       return;
     }
     if (this.sleeping) this.wake();
-    else this.play('new-01');
+    else this.play(['attached-004', 'attached-005'][this.clickIndex++ % 2]);
     this.dispatchEvent(new Event('petclick'));
   }
 
@@ -208,13 +219,10 @@ export class PetEngine extends EventTarget {
     if (this.running) {
       this.elapsed += dt;
       this.physics(dt);
-      if (this.activeMedia?.kind === 'rig' && this.elapsed - this.motionStart >= this.activeMedia.duration) {
-        this.stop();
-      }
       if (this.elapsed >= this.nextAuto) {
         this.nextAuto = this.elapsed + 14 + Math.random() * 10;
         if (this.autonomous && !this.reduced && !this.drag && this.action === idle) {
-          const choices = ACTIONS.filter(action => action.media && action.category === '表情互动');
+          const choices = ACTIONS.filter(action => action.category === '表情互动');
           if (choices.length) this.play(choices[Math.floor(Math.random() * choices.length)].id);
         }
       }
@@ -264,16 +272,6 @@ export class PetEngine extends EventTarget {
       const y = floor - frameHeight * (this.activeMedia.floor ?? 1);
       this.bounds = {x: cx - w / 2, y, w, h: frameHeight};
       ctx.drawImage(drawable, cx - w / 2, y, w, frameHeight);
-      return;
-    }
-    if (this.activeMedia?.kind === 'rig') {
-      const rig = this.rigs.get(this.outfit.id);
-      const rigHeight = Math.min(h, height * .67);
-      const w = rigHeight * rig.open.width / rig.open.height;
-      this.bounds = {x: cx - w / 2, y: floor - rigHeight, w, h: rigHeight};
-      const alternate = this.rigs.get(this.outfit.id === 'maid' ? 'original' : 'maid');
-      paintMotion(ctx, rig, this.action.rig, this.elapsed - this.motionStart,
-        cx - w / 2, floor - rigHeight, w, rigHeight, alternate);
       return;
     }
     const image = this.images.get(this.outfit.id);

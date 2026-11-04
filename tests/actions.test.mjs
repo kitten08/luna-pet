@@ -1,16 +1,21 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {ACTIONS, OUTFITS, findAction} from '../src/actions.js';
+import {ACTIONS, OUTFITS, findAction, mediaFor} from '../src/actions.js';
 
-test('the theater only exposes the user action manifest', async () => {
-  const fs = await import('node:fs/promises');
-  const manifest = JSON.parse(await fs.readFile(new URL('../docs/video-production/video-production-manifest.json', import.meta.url)));
-  assert.deepEqual(ACTIONS.map(({id, name}) => ({id, name})), manifest.actions.map(({id, name}) => ({id, name})));
-  assert.equal(findAction('待机呼吸休闲'), undefined);
-  for (const action of ACTIONS) assert.equal(action.media.duration, 10, action.id);
-  for (const id of ['sleep-start','sleep-loop','sleep-wake']) {
-    assert.equal(findAction(id).media.loop, id === 'sleep-loop');
-  }
+test('the current catalog has exactly twenty approved and requested actions in all four outfits', () => {
+ const expected = ['new-05','new-06','new-07','new-08','new-09','sleep-start','sleep-wake','sleep-loop',
+  'new-01','new-03','new-04','attached-004','attached-005','attached-009','attached-006',
+  'attached-007','attached-021','attached-023','attached-024','attached-105'];
+ assert.deepEqual(ACTIONS.map(action => action.id), expected);
+ assert.equal(findAction('new-02'), undefined);
+ assert.equal(findAction('attached-039'), undefined);
+ const paths = new Set();
+ for (const outfit of OUTFITS) for (const action of ACTIONS) {
+  const media = mediaFor(action, outfit.id);
+  assert.equal(media?.outfit, outfit.id, action.name);
+  assert.equal(media.duration, 10);
+  assert.equal(Boolean(media.loop), action.id === 'sleep-loop');
+  paths.add(media.src);
+ }
+ assert.equal(paths.size,80);
 });
-
-test('all four outfits have matching source sprites',async()=>{const fs=await import('node:fs/promises');for(const o of OUTFITS){const b=await fs.readFile(new URL('../assets/'+o.file,import.meta.url));assert.equal(b.toString('hex',0,8),'89504e470d0a1a0a');assert.equal(b[25],6,'RGBA required');if(o.closed)await fs.access(new URL('../assets/'+o.closed,import.meta.url));}});

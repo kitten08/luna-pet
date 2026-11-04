@@ -14,7 +14,7 @@ function updateSound(){const b=$('#sound');b.textContent=state.sound?'♫':'♩'
 function outfitCard(o){return `<button class="outfit-card ${state.outfit===o.id?'active':''}" data-outfit="${o.id}" aria-pressed="${state.outfit===o.id}" style="--color:${o.color}"><div class="thumb ${o.sheet?'sheet':''}"><span class="outfit-tag">${o.tag}</span>${state.outfit===o.id?'<span class="outfit-check">✓</span>':''}<img src="assets/${o.file}" alt="Luna 的${o.name}穿搭"></div><div class="outfit-name">${o.name}</div><div class="outfit-subtitle">${o.subtitle}</div></button>`;}
 function render(){
  if(tab==='wardrobe')panel.innerHTML=`<div class="panel-heading"><h2>她的衣橱</h2><span>THE WARDROBE</span></div><p class="panel-subtitle">每一种风格，都是她可爱的另一面。</p><div class="outfit-grid">${OUTFITS.map(outfitCard).join('')}</div><div class="panel-bottom"><p class="outfit-tip">✧ &nbsp;轻点穿搭，即刻换装。<br>服装会自动记住，下次见面还是你喜欢的她。</p><button class="primary-btn" data-tab="actions">✦ &nbsp;打开动作剧场</button></div>`;
- if(tab==='actions'){panel.innerHTML=`<div class="panel-heading"><h2>动作剧场</h2><span>${ACTIONS.length} MOMENTS</span></div><p class="panel-subtitle">${ACTIONS.length} 个动作 · 10 秒编排</p><input class="search" id="action-search" placeholder="搜索动作，比如跳舞、吃、睡觉…" aria-label="搜索动作"><div class="categories">${['全部',...new Set(ACTIONS.map(a=>a.category))].map(c=>`<button data-category="${c}" class="${category===c?'active':''}">${c}</button>`).join('')}</div><div class="actions-list" id="actions-list"></div><a class="text-button" href="video.html">逐帧预览与视频下载 ↗</a><div class="action-status" id="action-status">${engine.action.id ? "正在播放 " + engine.action.name : "选择已制作的动作播放"}</div>`;$('#action-search').value=query;renderActions();}
+ if(tab==='actions'){panel.innerHTML=`<div class="panel-heading"><h2>动作剧场</h2><span>${ACTIONS.length} MOMENTS</span></div><p class="panel-subtitle">${ACTIONS.length} 个动作 · 四套服装</p><input class="search" id="action-search" placeholder="搜索动作，比如比心、伸懒腰、睡觉…" aria-label="搜索动作"><div class="categories">${['全部',...new Set(ACTIONS.map(a=>a.category))].map(c=>`<button data-category="${c}" class="${category===c?'active':''}">${c}</button>`).join('')}</div><div class="actions-list" id="actions-list"></div><a class="text-button" id="clip-download" hidden>下载当前动作 ↧</a><div class="action-status" id="action-status">${engine.action.id ? "正在播放 " + engine.action.name : "选择动作播放"}</div>`;$('#action-search').value=query;renderActions();}
  if(tab==='settings')panel.innerHTML=`<div class="panel-heading"><h2>陪伴设置</h2><span>JUST FOR YOU</span></div><p class="panel-subtitle">让陪伴，成为你喜欢的样子。</p><label class="setting"><span>自在活动<small>偶尔播放已制作的表情互动</small></span><input id="auto-setting" type="checkbox" ${state.auto?'checked':''}></label><label class="setting"><span>轻柔音效<small>点击她时，听见一声小小的回应</small></span><input id="sound-setting" type="checkbox" ${state.sound?'checked':''}></label><label class="setting"><span>轻缓动作<small>关闭自动点播，仍可手动播放</small></span><input id="reduced-setting" type="checkbox" ${state.reduced?'checked':''}></label><div class="range-block"><div><label for="size-setting">Luna 的大小</label><output id="size-output">${Math.round(state.size*100)}%</output></div><input id="size-setting" type="range" min="65" max="115" step="5" value="${Math.round(state.size*100)}"></div><div class="help-note">♡ &nbsp;所有设置都保存在当前设备。<br>右键 Luna 可以打开互动菜单，可用菜单结束播放。按空格暂停或继续。</div><div class="panel-bottom"><button class="primary-btn secondary" id="settings-reset">恢复默认设置</button></div>`;
  if(tab==='download')panel.innerHTML=`<div class="panel-heading"><h2>带她回家</h2><span>ALWAYS TOGETHER</span></div><p class="panel-subtitle">从浏览器到桌面，陪伴不止在这里。</p><div class="download-card"><h3>☾ &nbsp;桌面小伙伴</h3><p>透明置顶、自由拖拽、托盘菜单。<br>在桌面上，也能换装与点播动作。</p><button class="primary-btn" id="desktop-open">${window.lunaDesktop?'呼唤桌面 Luna':'查看桌面版本'}</button><small>macOS / Windows / Linux · 源码构建</small></div><div class="download-card"><h3>✧ &nbsp;浏览器与 DSH 插件</h3><p>点击浏览器工具栏，让 Luna 来当前网页陪你。也提供 DSH 客户端插件。</p><a href="https://github.com/kitten08/luna-pet" target="_blank" rel="noopener">打开仓库与安装说明 ↗</a></div><div class="help-note">网页版直接打开即可使用。桌面端安装包与插件压缩包请从仓库 Releases 或本次交付文件中获取。</div>`;
 }
@@ -24,21 +24,18 @@ function renderActions() {
  const items = ACTIONS.filter(action =>
   (category === '全部' || action.category === category) && action.name.includes(query)
  );
- items.sort((a, b) => Number(Boolean(b.media)) - Number(Boolean(a.media)));
  list.replaceChildren();
  for (const action of items) {
   const row = document.createElement('button');
   row.className = 'action-row' + (engine.action.id === action.id ? ' playing' : '');
   row.dataset.action = action.id;
   const icon = document.createElement('span');
-  icon.textContent = action.media ? '▷' : '·';
+  icon.textContent = '▷';
   const name = document.createElement('span');
   name.textContent = action.name;
   const status = document.createElement('small');
   const media = mediaFor(action, state.outfit);
-  status.textContent = !media ? '日常装'
-   : media.loop ? '10 秒循环'
-   : media.kind === 'rig' ? '10 秒 · 2D' : '10 秒 · 关键帧';
+  status.textContent = media?.loop ? '10 秒循环' : '10 秒';
   row.append(icon, name, status);
   list.append(row);
  }
@@ -52,12 +49,12 @@ function renderActions() {
 
 function playAction(id) {
  const action = findAction(id);
- if (!action?.media) {
-  toast('这个动作还在制作中');
+ if (!action) {
+  toast('未找到动作');
   return false;
  }
  if (!engine.play(action.id)) {
-  toast('请先换上日常装，再播放这段动作');
+  toast('素材正在加载，请稍后再试');
   return false;
  }
  return true;
@@ -95,7 +92,14 @@ engine.addEventListener('action', event => {
  $('#pause').textContent = 'Ⅱ';
  $('#pause').setAttribute('aria-label', '暂停动画');
  if (tab === 'actions') {
-  $('#action-status').textContent = action.id ? '正在播放 ' + action.name : '选择已制作的动作播放';
+  $('#action-status').textContent = action.id ? '正在播放 ' + action.name : '选择动作播放';
+  const download = $('#clip-download');
+  const media = mediaFor(action, engine.outfit.id);
+  download.hidden = !media;
+  if (media) {
+   download.href = media.src;
+   download.download = `Luna-${engine.outfit.id}-${action.name}.webm`;
+  }
   renderActions();
  }
 });
