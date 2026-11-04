@@ -1,7 +1,15 @@
 import test from 'node:test';import assert from 'node:assert/strict';import {PetEngine} from '../src/engine.js';
 globalThis.devicePixelRatio=1;globalThis.ResizeObserver=class{observe(){}disconnect(){}};globalThis.requestAnimationFrame=()=>1;globalThis.cancelAnimationFrame=()=>{};
 function engine(){const canvas=new EventTarget();canvas.getContext=()=>({});canvas.getBoundingClientRect=()=>({left:0,top:0,width:600,height:600});canvas.setPointerCapture=()=>{};return new PetEngine(canvas,{reduced:false});}
-test('sleep blocks ordinary actions and wakes through the defined wake state',()=>{const p=engine();assert.equal(p.play('睡觉-开始'),true);assert.equal(p.sleeping,true);assert.equal(p.play('写代码'),false);p.wake();assert.equal(p.sleeping,false);assert.equal(p.action.id,'睡觉-起来');assert.equal(p.play('不存在的动作'),false);p.destroy();});
 test('throws stay inside the visible viewport and settle on the floor',()=>{const p=engine();p.x=180;p.y=-40;p.vx=1000;p.vy=-300;for(let i=0;i<1000;i++){p.physics(1/120);assert.ok(Math.abs(p.x)<=168+1e-6);assert.ok(p.y<=0);assert.ok(p.y>=-72-1e-6);}assert.equal(p.y,0);assert.equal(p.vy,0);assert.ok(Math.abs(p.vx)<1);p.destroy();});
-test('tap wakes a sleeping pet without leaving a stale drag state',()=>{const p=engine();p.bounds={x:100,y:100,w:200,h:300};p.play('睡觉-循环');p.pointerDown({button:0,clientX:150,clientY:150,pointerId:1});p.pointerUp();assert.equal(p.drag,null);assert.equal(p.sleeping,false);p.destroy();});
 test('invalid or not-yet-loaded outfits do not replace the active outfit',()=>{const p=engine();assert.equal(p.setOutfit('lolita'),false);assert.equal(p.setOutfit('invalid'),false);assert.equal(p.outfit.id,'original');p.images.set('lolita',{});assert.equal(p.setOutfit('lolita'),true);assert.equal(p.outfit.id,'lolita');p.destroy();});
+test('pending and incompatible outfit actions do not start playback', () => {
+ const pet = engine();
+ assert.equal(pet.play('sleep-start'), false);
+ assert.equal(pet.wake(), false);
+ pet.images.set('jk', {});
+ assert.equal(pet.setOutfit('jk'), true);
+ assert.equal(pet.play('new-01'), false);
+ assert.equal(pet.action.id, null);
+ pet.destroy();
+});

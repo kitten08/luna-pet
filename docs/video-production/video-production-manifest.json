@@ -7,7 +7,7 @@
   "sleep_action_count": 3,
   "total_action_entries": 117,
   "video_files_generated": 4,
-  "full_10_second_actions_completed": 0,
+  "full_10_second_actions_completed": 1,
   "generation_results": {
     "schema_version": 1,
     "provider": "Hugging Face ZeroGPU",
@@ -248,8 +248,9 @@
       },
       {
         "id": "sleep-curled",
-        "description": "在原位置蜷坐，膝盖收在身前，双手叠合垫在脸侧，头轻靠手背，双眼闭合，长发与裙摆自然落在身侧，无 Zzz；该姿势关键帧需要先生成并验收，当前不是已有视频帧。",
-        "status": "not_generated"
+        "description": "日常装蜷坐闭眼，双手叠在脸侧，鲸尾搭在腿上，无 Zzz。",
+        "status": "reference_available",
+        "file": "assets/motions/sleep-curled.png"
       }
     ],
     "actions": [
@@ -297,7 +298,7 @@
         "name": "睡眠循环",
         "source": "user_sleep_followup",
         "duration_seconds": 10,
-        "status": "awaiting_generation",
+        "status": "local_motion_available",
         "start_anchor": "sleep-curled",
         "end_anchor": "sleep-curled",
         "start_eyes": "closed",
@@ -1495,7 +1496,7 @@
       "name": "睡眠循环",
       "source": "user_sleep_followup",
       "duration_seconds": 10,
-      "status": "awaiting_generation",
+      "status": "local_motion_available",
       "start_anchor": "sleep-curled",
       "end_anchor": "sleep-curled",
       "start_eyes": "closed",
@@ -1533,7 +1534,8 @@
       ],
       "prompt_en": "Animate the exact brown-haired chibi girl in the original reference, preserving her facial identity, beauty mark, long brown hair, necklace, earrings, outfit and illustration finish. Use genuine continuous animated body motion, not a warped still image. Locked camera, fixed framing, constant character scale, same floor location, no lateral drift, no cuts or zoom. Keep her entire body, hair, hands and shoes within safe frame margins. Use the appropriate supplied start and end keyframes; do not change her anatomy or invent a tail. Create one seamless ten-second sleeping loop anchored by the identical supplied curled-sleep image at both endpoints. She is already asleep in a curled seated pose, knees drawn up, both hands stacked under her cheek, eyes completely closed. Keep the same body silhouette, head, hand and knee contact positions, camera and location throughout. 0-1 seconds: rest still with no lettering. 1-4 seconds: one extremely gentle inhale lifts the chest and shoulders almost imperceptibly; one tiny translucent Zzz appears above her head and drifts slowly upward. 4-7 seconds: she exhales softly and returns to the lower breathing position; one or two additional tiny translucent Zzz marks appear in sequence and drift upward. 7-9 seconds: every Zzz fades away completely. 9-10 seconds: breathing smoothly reaches the identical initial phase. The very last frame matches the very first frame exactly, including the plain background, sleeping silhouette, closed eyes and absence of Zzz. She never opens her eyes, wakes up, sits higher, stands or repeats the falling-asleep action. No other text, icons or props.",
       "outfit": "original",
-      "reference_image": "reference-original.png"
+      "reference_image": "reference-original.png",
+      "media": "assets/motions/sleep-loop.webm"
     },
     {
       "id": "sleep-wake",
@@ -1573,6 +1575,42 @@
       "prompt_en": "Animate the exact brown-haired chibi girl in the original reference, preserving her facial identity, beauty mark, long brown hair, necklace, earrings, outfit and illustration finish. Use genuine continuous animated body motion, not a warped still image. Locked camera, fixed framing, constant character scale, same floor location, no lateral drift, no cuts or zoom. Keep her entire body, hair, hands and shoes within safe frame margins. Use the appropriate supplied start and end keyframes; do not change her anatomy or invent a tail. One uninterrupted ten-second waking animation. Begin with the exact shared curled-sleep keyframe: seated low at the original location, knees drawn up, both hands stacked beneath her cheek, head resting on them, eyes closed, hair and skirt draped naturally. 0-4 seconds: remain asleep in that pose with only extremely subtle breathing. 4-6 seconds: her eyes slowly open; she lowers her hands to brace lightly on the ground and slowly lifts her upper body. 6-8 seconds: she raises her arms in a relaxed stretch with a small backward extension, then uses her knees and legs to stand up naturally at the same floor position, maintaining balance. 8-10 seconds: she settles into the exact standard front-facing standing reference pose, feet together, both arms resting at her sides, eyes open and looking forward. Hair and fabric finish their follow-through and settle. Finish fully standing and calm. No Zzz, letters, icons, props or added anatomy at any time.",
       "outfit": "original",
       "reference_image": "reference-original.png"
+    }
+  ],
+  "local_motions": [
+    {
+      "id": "sleep-loop",
+      "name": "睡眠循环",
+      "status": "local_motion_available",
+      "outfit": "original",
+      "duration_seconds": 10,
+      "fps": 20,
+      "frames": 200,
+      "loopable": true,
+      "method": "Generated curled-sleep sprite; locally composited breathing and timed Zzz.",
+      "start_anchor": "sleep-curled",
+      "end_anchor": "sleep-curled",
+      "first_and_last_frames_equal": {
+        "gif": true,
+        "webm_rgba": true
+      },
+      "media": {
+        "webm": {
+          "path": "assets/motions/sleep-loop.webm",
+          "sha256": "72d74d3dc71cc9b349ccda329539f347af49856c7a56dafa1e176ce0a6b5bcd6",
+          "alpha": true
+        },
+        "gif": {
+          "file": "睡眠循环-10秒.gif",
+          "sha256": "936afd6ff90b5799dc35a37bd825823984a903da92084c363dea1973313ea24a",
+          "background": "lavender"
+        }
+      },
+      "anchor": {
+        "path": "assets/motions/sleep-curled.png",
+        "sha256": "314cbfd8cd72760540056fe6144e4f17a23e061be70db560686f5e08b476031f"
+      },
+      "visual_review": "闭眼蜷坐，手叠在脸侧，鲸尾搭腿；呼吸幅度极轻，Zzz 在 9 秒前退场。首尾均无 Zzz。"
     }
   ]
 }

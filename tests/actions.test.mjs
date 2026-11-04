@@ -1,7 +1,14 @@
-import test from 'node:test';import assert from 'node:assert/strict';
-import {ACTIONS,OUTFITS,poseFor,findAction,smooth} from '../src/actions.js';import {CATALOG} from '../src/catalog.js';
-test('all 109 upstream actions have unique playable choreography',()=>{assert.equal(ACTIONS.length,109);assert.equal(new Set(ACTIONS.map(a=>a.id)).size,109);for(const {names}of CATALOG)for(const name of names)assert.ok(findAction(name),name);});
-test('every action generates finite bounded poses across its entire duration',()=>{for(const a of ACTIONS)for(let t=0;t<=a.duration;t+=.05){const p=poseFor(a,t);for(const [key,value]of Object.entries(p))if(typeof value==='number'){assert.ok(Number.isFinite(value),a.id+':'+key);assert.ok(Math.abs(value)<200,a.id+':'+key);}assert.ok(Math.abs(p.head)<.15);assert.ok(Math.abs(p.squash)<.2);}});
-test('smooth entrances and exits return all active actions to a shared pose',()=>{for(const a of ACTIONS){const p=poseFor(a,0,0),q=poseFor(a,a.duration,0);for(const k of ['x','y','tilt','head','armL','armR','step','squash'])assert.ok(Math.abs(p[k]-q[k])<1e-8);assert.equal(p.turn,1);assert.equal(q.turn,1);}assert.equal(smooth(0),0);assert.equal(smooth(1),1);});
-test('reduced motion reduces displacement without dropping action identity',()=>{for(const a of ACTIONS){const full=poseFor(a,1,1,false),small=poseFor(a,1,1,true);for(const k of ['x','y','head','armL','step'])assert.ok(Math.abs(small[k])<=Math.abs(full[k])+1e-9);}});
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {ACTIONS, OUTFITS, findAction} from '../src/actions.js';
+
+test('the theater only exposes the user action manifest', async () => {
+  const fs = await import('node:fs/promises');
+  const manifest = JSON.parse(await fs.readFile(new URL('../docs/video-production/video-production-manifest.json', import.meta.url)));
+  assert.deepEqual(ACTIONS.map(({id, name}) => ({id, name})), manifest.actions.map(({id, name}) => ({id, name})));
+  assert.equal(findAction('待机呼吸休闲'), undefined);
+  assert.equal(findAction('sleep-start').media, undefined);
+  assert.equal(findAction('sleep-wake').media, undefined);
+});
+
 test('all four outfits have matching source sprites',async()=>{const fs=await import('node:fs/promises');for(const o of OUTFITS){const b=await fs.readFile(new URL('../assets/'+o.file,import.meta.url));assert.equal(b.toString('hex',0,8),'89504e470d0a1a0a');assert.equal(b[25],6,'RGBA required');if(o.closed)await fs.access(new URL('../assets/'+o.closed,import.meta.url));}});

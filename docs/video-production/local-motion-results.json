@@ -1,0 +1,34 @@
+{
+  "id": "sleep-loop",
+  "name": "睡眠循环",
+  "status": "local_motion_available",
+  "outfit": "original",
+  "duration_seconds": 10,
+  "fps": 20,
+  "frames": 200,
+  "loopable": true,
+  "method": "Generated curled-sleep sprite; locally composited breathing and timed Zzz.",
+  "start_anchor": "sleep-curled",
+  "end_anchor": "sleep-curled",
+  "first_and_last_frames_equal": {
+    "gif": true,
+    "webm_rgba": true
+  },
+  "media": {
+    "webm": {
+      "path": "assets/motions/sleep-loop.webm",
+      "sha256": "72d74d3dc71cc9b349ccda329539f347af49856c7a56dafa1e176ce0a6b5bcd6",
+      "alpha": true
+    },
+    "gif": {
+      "file": "睡眠循环-10秒.gif",
+      "sha256": "936afd6ff90b5799dc35a37bd825823984a903da92084c363dea1973313ea24a",
+      "background": "lavender"
+    }
+  },
+  "anchor": {
+    "path": "assets/motions/sleep-curled.png",
+    "sha256": "314cbfd8cd72760540056fe6144e4f17a23e061be70db560686f5e08b476031f"
+  },
+  "visual_review": "闭眼蜷坐，手叠在脸侧，鲸尾搭腿；呼吸幅度极轻，Zzz 在 9 秒前退场。首尾均无 Zzz。"
+}

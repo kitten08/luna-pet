@@ -1,6 +1,9 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 const root=path.resolve(import.meta.dirname,'..');
+for (const dir of ['dist', 'builds/browser-extension', 'builds/dsh-plugin']) {
+  await fs.rm(path.join(root, dir), {recursive:true, force:true});
+}
 await fs.mkdir(path.join(root,'dist'),{recursive:true});
 for(const entry of ['index.html','video.html','pet.html','src','assets'])await fs.cp(path.join(root,entry),path.join(root,'dist',entry),{recursive:true});
 const ext=path.join(root,'builds/browser-extension');await fs.mkdir(ext,{recursive:true});

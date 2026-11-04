@@ -1,8 +1,6 @@
 # Third-party notices
 
-The 109 action names, category organization and DSH integration contracts were adapted from [PC2005-cloud/dsh-pet](https://github.com/PC2005-cloud/dsh-pet), commit `31aa345b11a18fc16d5fd35c42b8b9441071170e` (2026-11-03). Original character video assets were not copied. The new animation engine, poses, props, wardrobe and application UI were implemented for Luna.
-
-Upstream license:
+License notice for the retained DSH host integration compatibility code:
 
 MIT License
 

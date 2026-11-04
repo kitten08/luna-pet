@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';import path from 'node:path';import {fileURLToPath} from 'node:url';
 export const name='luna-pet';export const inject=['webServer'];
 const root=fileURLToPath(new URL('../public/',import.meta.url));
-const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.png':'image/png','.svg':'image/svg+xml'};
+const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.png':'image/png','.jpg':'image/jpeg','.gif':'image/gif','.mp4':'video/mp4','.webm':'video/webm','.svg':'image/svg+xml'};
 export function apply(ctx){
  const server=ctx.get('webServer');
  return ctx.effect(()=>server.register({kind:'prefix',path:'/luna-pet-static',handler:async(req,res)=>{
