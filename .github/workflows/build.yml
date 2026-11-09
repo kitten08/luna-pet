@@ -15,18 +15,22 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - os: macos-15-intel
+          - os: macos-latest
             command: pack:mac
             label: mac-intel
+            args: -- --x64
           - os: macos-latest
             command: pack:mac
             label: mac-arm64
+            args: -- --arm64
           - os: windows-latest
             command: pack:win
             label: windows-x64
+            args: ''
           - os: ubuntu-latest
             command: pack:linux
             label: linux-x64
+            args: ''
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v7
@@ -36,7 +40,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm test
-      - run: npm run ${{ matrix.command }}
+      - run: npm run ${{ matrix.command }} ${{ matrix.args }}
         env:
           CSC_IDENTITY_AUTO_DISCOVERY: 'false'
       - uses: actions/upload-artifact@v7
