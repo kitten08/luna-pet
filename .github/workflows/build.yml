@@ -86,7 +86,9 @@ jobs:
       - uses: actions/upload-artifact@v7
         with:
           name: luna-web-and-plugins
-          path: release/*
+          path: |
+            release/*.zip
+            release/*.tgz
           if-no-files-found: error
 
   release:
