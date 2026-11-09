@@ -1,6 +1,6 @@
 {
   "name": "luna-pet",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "private": true,
   "description": "Luna 可换装桌面宠物 / Desktop companion",
   "type": "module",
@@ -26,6 +26,7 @@
     "directories": {
       "output": "release"
     },
+    "artifactName": "Luna-Pet-${version}-${os}-${arch}.${ext}",
     "files": [
       "dist/**/*",
       "desktop/**/*",

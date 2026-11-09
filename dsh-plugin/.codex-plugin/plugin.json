@@ -1,0 +1,47 @@
+{
+  "name": "dsh-luna-pet",
+  "version": "1.3.1",
+  "description": "Luna 可换装女孩桌宠，包含四套服装、20 个精选动作与互动窗口。",
+  "author": {
+    "name": "kitten08",
+    "url": "https://github.com/kitten08"
+  },
+  "homepage": "https://luna-pet-wardrobe-kitten08.dotinghake2.chatgpt.site/",
+  "repository": "https://github.com/kitten08/luna-pet",
+  "license": "MIT",
+  "keywords": [
+    "desktop-pet",
+    "companion",
+    "dsh-plugin",
+    "luna"
+  ],
+  "requires_local_executor": true,
+  "interface": {
+    "displayName": "Luna Pet",
+    "shortDescription": "四套服装的互动桌宠",
+    "longDescription": "Luna 是可换装的 DSH 桌宠，提供日常装、洛丽塔、JK 和女仆装四套服装，以及 20 个精选透明动画。支持点击回应、拖动悬空、睡眠循环、换装和动作点播。插件随包包含全部素材，不依赖地区专属服务。",
+    "developerName": "kitten08",
+    "category": "Entertainment",
+    "capabilities": [
+      "换装与动作剧场",
+      "点击和拖动互动",
+      "睡眠与醒来动画",
+      "本地透明动画素材"
+    ],
+    "websiteURL": "https://luna-pet-wardrobe-kitten08.dotinghake2.chatgpt.site/",
+    "supportURL": "https://github.com/kitten08/luna-pet/issues",
+    "brandColor": "#927da5",
+    "brandColorDark": "#bba6cb",
+    "composerIcon": "./public/assets/icon.png",
+    "logo": "./public/assets/icon.png",
+    "defaultPrompt": "打开 Luna 桌宠"
+  },
+  "extensions": {
+    "com.openai": {
+      "publication": {
+        "countries": [],
+        "release_notes": "v1.3.1：桌面端仅加载本地素材，网页移除外部网络依赖并加入本地离线启动器；保留 20 个动作、四套服装和全部 80 条透明动画。"
+      }
+    }
+  }
+}
